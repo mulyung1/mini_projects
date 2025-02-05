@@ -8,30 +8,39 @@ df = pd.read_csv('cleaned_data.csv')
 new_df = df[['GID_0_0','NAME_0', 'gadm36_1','NAME_1']].copy()
 
 
+
 # Step 3: Convert the new DataFrame into a dictionary
 country_dict = {}
+country_id_counter = 1  # Counter for country IDs
+county_id_counter = 229  # Dictionary to store county counters for each country
 
-for idx, row in new_df.iterrows():
-    country_id=row['GID_0_0']
+for index, row in new_df.iterrows():
+    #country_id=row['GID_0_0']
     country_name = row['NAME_0']
-    province_id=row['gadm36_1']
+    #province_id=row['gadm36_1']
     province_name = row['NAME_1']
     
     if country_name not in country_dict:
         country_dict[country_name] = {
-            "id": country_id,
+            "id": country_id_counter,
             "country_name": country_name,
             "currency": "",
             "code": "",
             "phoneCode": "",
             "counties": []
         }
-    
+        country_id_counter += 1  
+            
+        
     country_dict[country_name]["counties"].append({
-        "id": province_id,
-        "county_name": province_name,
-        "subCounties": []
+    "id": county_id_counter,  # Use the county counter for this country,
+    "county_name": province_name,
+    "subCounties": []
     })
+
+    # Increment the county ID for this country
+    county_id_counter += 1
+
 
 # Convert the dictionary to a list of dictionaries
 country_list = list(country_dict.values())
@@ -45,6 +54,6 @@ if __name__ == '__main__':
     # print(new_df)
     # print(json_output)
     #write jspn to file
-    with open('provinces.json', 'w') as file:
+    with open('provinces_faulty.json', 'w') as file:
         file.write(json_output)
         print('Saved!!')
