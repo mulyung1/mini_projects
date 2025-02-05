@@ -30,10 +30,13 @@ git remote add -f origin git@github.com:mulyung1/mini_projects.git
 git config core.sparseCheckout true
 
 #add the csv_to_json folder to checkout
-echo 'csv_to-json' >> .git/info/sparse-checkout
+echo 'csv_to_json' >> .git/info/sparse-checkout
 
 #pull this folder to your local
 git pull origin main
+
+#go into your mini_project
+cd csv_to_json
 ```
 3.1 **Add/download another mini_project?**
 ```bash
