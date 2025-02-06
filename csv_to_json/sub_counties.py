@@ -1,32 +1,83 @@
 import pandas as pd
 import json
+import os
 
-# Step 1: Load the CSV file into a pandas DataFrame
-df=pd.read_csv("cleaned_sub_counties.csv")
-print(df)
-print("reading csv")
+
+dir='/home/victor/Downloads/data/subcounty_data'
+
+#Initialize an empty list to store individual DataFramesdfs=[]
+dfs = []
+
+# Loop through each file in the directory
+for file in os.listdir(dir):
+    # Check if the file is a CSV file
+    if file.endswith('.csv'):
+        # Create the full file path
+        file_path = os.path.join(dir, file)
+        print(f"Reading file: {file}")
+        
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(file_path)
+        
+        # Append the DataFrame to the list
+        dfs.append(df)
+
+# Combine all DataFrames into one
+combined_df = pd.concat(dfs, ignore_index=True)
+
+# Display the combined DataFrame
+print(combined_df)
+
 
 sub_county_dict={}
+country_id_counter = 1  # Counter for country IDs
+county_id_counter = 1000  # Dictionary to store county counters for each country
 id_count=4000
 
-for index, row in df.iterrows():
-    country_name=row["name_0"]
-    county_name=row["name_1"]
-    sub_county_name=row["name_2"]
 
-    if county_name not in sub_county_dict:
-        sub_county_dict[county_name]={
-            "country_name":country_name,
-            "county_name":county_name,
-            "subCounties":[]
+for index, row in combined_df.iterrows():
+    country_name=row["COUNTRY"]
+    county_name=row["NAME_1"]
+    sub_county_name=row["NAME_2"]
+
+
+    # If the country is not in the dictionary, add it
+    if country_name not in sub_county_dict:
+        sub_county_dict[country_name] = {
+            "id": country_id_counter,
+            "country_name": country_name,
+            "currency": "",
+            "code": "",
+            "phoneCode": "",
+            "counties": []
         }
+        country_id_counter += 1
 
-    sub_county_dict[county_name]["subCounties"].append({
-        "id":id_count,
-        "subcounty_name":sub_county_name
-    })
-    id_count+=1
+    # Check if the county already exists in the country's counties list
+    county_exists = False
+    for county in sub_county_dict[country_name]["counties"]:
+        if county["county_name"] == county_name:
+            county_exists = True
+            # Append the sub-county to the existing county's subCounties list
+            county["subCounties"].append({
+                "id": id_count,
+                "subcounty_name": sub_county_name
+            })
+            id_count += 1
+            break
 
+    # If the county does not exist, add it
+    if not county_exists:
+        sub_county_dict[country_name]["counties"].append({
+            "id": county_id_counter,
+            "county_name": county_name,
+            "subCounties": [{
+                "id": id_count,
+                "subcounty_name": sub_county_name
+            }]
+        })
+        county_id_counter += 1
+        id_count += 1
 
 sub_county_list=list(sub_county_dict.values())
 
@@ -53,7 +104,7 @@ print("converted to csv")
 
 
 if __name__ =="__main__":
-    with open("sub_county_data.json", "w") as outfile:
+    with open("sub_county_data_.json", "w") as outfile:
         outfile.write(json_output)
         print("Saved")
         print(json_output)

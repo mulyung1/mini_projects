@@ -5,3 +5,4 @@ GADM, the Database of Global Administrative Areas, is a high-resolution database
 This dataset contains the codelist for the GADM version 3.6 boundaries at Administrative Level 2. To use this codelist on the HiH Geospatial Platform use the column name gadm36_2 in your tabular data.
 
 https://data.apps.fao.org/catalog/dataset/gadm36-code-list-global-admin-2
+https://data.apps.fao.org/catalog/dataset/gadm36-code-list-global-admin-2
