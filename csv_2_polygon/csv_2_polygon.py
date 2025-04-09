@@ -13,8 +13,11 @@ from qgis.core import (
 )
 from qgis.PyQt.QtCore import QVariant
 
+import os
+
 # Configuration parameters
-csv_path = 'Rangeland_Somalia_BRCiSIII_concern.csv'  
+dir = os.getcwd()  # Current working directory
+csv_path = os.path.join(dir, 'Rangeland_Somalia_BRCiSIII.csv')
 geometry_column = 'plot_details-polygon'      # Name of the column containing geometry data
 crs = 'EPSG:4326'                   # Coordinate reference system (WGS84)
 
@@ -31,7 +34,7 @@ try:
         exit()
 
     # Create temporary polygon layer
-    layer = QgsVectorLayer(f'Polygon?crs={crs}', 'polygons_with_areas', 'memory')
+    layer = QgsVectorLayer(f'Polygon?crs={crs}', 'polygons', 'memory')
     provider = layer.dataProvider()
     
     # Define layer fields structure >> in attribute table
