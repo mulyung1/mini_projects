@@ -1,0 +1,78 @@
+---
+title: "How much can your data tell?"
+format:
+  html:
+    theme: cosmo
+author: Mulyungi V, Amelia H, Wanda F, Khalil W
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+from dotenv import load_dotenv
+import sqlalchemy
+from sqlalchemy import create_engine
+import time
+
+load_dotenv()
+```
+
+
+```{python}
+#create the db engine
+engine = create_engine(os.getenv('DATABASE_URL1'))
+
+start_time = time.time()
+
+query1 = '''select id, crop_name from respi_crops;'''
+query2 = '''select spcs.local_name, spcs.scientific_name, trm.latitude, trm.longitude from respi_fmnr_species spcs join respi_tree_measurement trm on trm.fmnr_species_id=spcs.id order by spcs.scientific_name desc;'''
+query3 = '''select trm.latitude, trm.longitude, ch.local_name, ch.scientific_name from respi_tree_measurement trm join respi_cohort ch on ch.id=trm.cohort_id;
+'''
+
+# Execute the query and fetch the results
+con = engine.connect()
+
+#query to df
+df1 = pd.read_sql_query(query1, con)
+df2 = pd.read_sql_query(query2, con)
+df3 = pd.read_sql_query(query3, con)
+# Close the connection
+con.close()
+engine.dispose()
+
+end_time = time.time()
+elapsed_time = start_time - end_time
+print(f'It took {elapsed_time} seconds to Query and get dataframes')
+
+```
+
+
+```{python}
+# Plot the count distribution
+df1["crop_name"] = df1["crop_name"].str.strip()
+plt.figure(figsize=(8, 5))
+sns.countplot(x=df1["crop_name"], order=df1["crop_name"].value_counts().index, palette="viridis", hue=df1["crop_name"], legend=False, )
+plt.ylabel("Count")
+plt.xlabel("Crop Name")
+plt.xticks(rotation=45)
+plt.title("Distribution of Crop Names")
+plt.show()
+```
+
+## FMNR occurence
+
+```{python}
+#print(df2[70:81])
+print(df2)
+df2.to_csv('data.csv')
+```
+
+## TP occurence
+
+```{python}
+print(df3)
+df3.to_csv('tp_data.csv')
+```
+
