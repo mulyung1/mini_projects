@@ -16,9 +16,10 @@ from qgis.PyQt.QtCore import QVariant
 import os
 
 # Configuration parameters
-dir = os.getcwd()  # Current working directory
+dir = os.getcwd()  
 csv_path = os.path.join(dir, 'Rangeland_Somalia_BRCiSIII.csv')
-geometry_column = 'plot_details-polygon'      # Name of the column containing geometry data
+
+geometry_column = 'Plot Polygon'      # Name of the column containing geometry data
 crs = 'EPSG:4326'                   # Coordinate reference system (WGS84)
 
 #initialise the message bar
