@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title class="title">Login to SOC pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+
+<body>
+    <div class="login-container">
+            <img src="public/logos/CIFOR-ICRAF_TC_logo.png" alt="Patners Logos">
+        <h2>A Dashboard on SOC sequestration Pathways in African Rangelands</h1>
+        <h3>Login to Access Dashboard</h3>
+            
+        <form id="form" action = "">
+            <label for ="first">Username:</label>
+            <input type="text" id="first" name="first" placeholder="Enter your username" required> 
+        
+            <label for="pass">Password:</label>
+            <input type="password" id ="pass" name="pass" placeholder="Enter your password" required>
+
+            <div class="wrap">
+                <button type="submit">Access Dashboard </button>
+            </div>
+
+            <!-- Message container for feedback -->
+            <div id="message" class="message"></div>
+        </form>
+
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
+
