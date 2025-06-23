@@ -1,0 +1,19 @@
+---
+title: "LULC classifier"
+format: html
+---
+
+## install the packages
+
+```bash
+pip install geoai-py
+```
+
+## import packages
+
+```{python}
+import geoai
+```
+
+
+
