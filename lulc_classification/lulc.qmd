@@ -1,19 +1,89 @@
 ---
 title: "LULC classifier"
 format: html
+author: Victor
 ---
 
-## install the packages
+## Install the packages
 
 ```bash
 pip install geoai-py
 ```
 
-## import packages
+## Import packages
 
 ```{python}
 import geoai
+from geoai import download_file, view_raster, export_geotiff_tiles
+```
+
+## Download sample data
+
+```{python}
+train_raster_url = "https://huggingface.co/datasets/giswqs/geospatial/resolve/main/m_3807511_ne_18_060_20181104.tif"
+train_landcover_url = "https://huggingface.co/datasets/giswqs/geospatial/resolve/main/m_3807511_ne_18_060_20181104_landcover.tif"
+test_raster_url = "https://huggingface.co/datasets/giswqs/geospatial/resolve/main/m_3807511_se_18_060_20181104.tif"
+
+
+train_raster_path = download_file(train_raster_url)
+train_landcover_path = download_file(train_landcover_url)
+test_raster_path = download_file(test_raster_url)
 ```
 
 
+## Visualise the data
 
+```{python}
+
+# ESRI World Imagery URL template
+esri_url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+
+# Configure basemap arguments
+basemap_args = {
+    "url": esri_url,
+    "attribution": "Esri, Maxar, Earthstar Geographics",
+    "name": "Esri World Imagery",
+    "opacity": 0.8  # Optional: adjust transparency
+}
+
+view_raster(
+    train_landcover_url, 
+    #basemap=train_raster_url,
+    basemap_args=basemap_args
+)
+
+view_raster(test_raster_url)
+```
+
+
+```{python}
+out_folder = "landcover"
+tiles = export_geotiff_tiles(
+    in_raster=train_raster_path,
+    out_folder=out_folder,
+    in_class_data=train_landcover_path,
+    tile_size=512,
+    stride=256,
+    buffer_radius=0,
+)
+```
+
+```{python}
+# Train U-Net model
+geoai.train_segmentation_model(
+    images_dir=f"{out_folder}/images",
+    labels_dir=f"{out_folder}/labels",
+    output_dir=f"{out_folder}/unet_models",
+    architecture="unet",
+    encoder_name="resnet34",
+    encoder_weights="imagenet",
+    num_channels=4,
+    num_classes=13,
+    batch_size=8,
+    num_epochs=50,
+    learning_rate=0.001,
+    val_split=0.2,
+    verbose=True,
+    plot_curves=True,
+)
+```
