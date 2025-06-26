@@ -1,0 +1,3461 @@
+[
+  {
+    "id": 1,
+    "country_name": "Ethiopia",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 229,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 230,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 231,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 232,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 233,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 234,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 235,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 236,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 237,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 238,
+        "county_name": "Addis Abeba",
+        "subCounties": []
+      },
+      {
+        "id": 239,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 240,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 241,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 242,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 243,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 244,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 245,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 246,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 247,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 248,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 249,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 250,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 251,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 252,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 253,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 254,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 255,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 256,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 257,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 258,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 259,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 260,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 261,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 262,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 263,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 264,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 265,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 266,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 267,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 268,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 269,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 270,
+        "county_name": "Afar",
+        "subCounties": []
+      },
+      {
+        "id": 271,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 272,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 273,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 274,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 275,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 276,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 277,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 278,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 279,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 280,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 281,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 282,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 283,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 284,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 285,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 286,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 287,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 288,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 289,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 290,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 291,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 292,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 293,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 294,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 295,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 296,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 297,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 298,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 299,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 300,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 301,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 302,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 303,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 304,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 305,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 306,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 307,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 308,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 309,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 310,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 311,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 312,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 313,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 314,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 315,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 316,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 317,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 318,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 319,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 320,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 321,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 322,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 323,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 324,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 325,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 326,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 327,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 328,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 329,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 330,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 331,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 332,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 333,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 334,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 335,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 336,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 337,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 338,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 339,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 340,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 341,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 342,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 343,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 344,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 345,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 346,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 347,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 348,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 349,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 350,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 351,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 352,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 353,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 354,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 355,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 356,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 357,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 358,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 359,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 360,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 361,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 362,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 363,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 364,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 365,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 366,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 367,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 368,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 369,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 370,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 371,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 372,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 373,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 374,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 375,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 376,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 377,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 378,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 379,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 380,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 381,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 382,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 383,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 384,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 385,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 386,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 387,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 388,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 389,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 390,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 391,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 392,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 393,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 394,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 395,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 396,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 397,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 398,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 399,
+        "county_name": "Amhara",
+        "subCounties": []
+      },
+      {
+        "id": 400,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 401,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 402,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 403,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 404,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 405,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 406,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 407,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 408,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 409,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 410,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 411,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 412,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 413,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 414,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 415,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 416,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 417,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 418,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 419,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": []
+      },
+      {
+        "id": 420,
+        "county_name": "Dire Dawa",
+        "subCounties": []
+      },
+      {
+        "id": 421,
+        "county_name": "Dire Dawa",
+        "subCounties": []
+      },
+      {
+        "id": 422,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 423,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 424,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 425,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 426,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 427,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 428,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 429,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 430,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 431,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 432,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 433,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 434,
+        "county_name": "Gambela Peoples",
+        "subCounties": []
+      },
+      {
+        "id": 435,
+        "county_name": "Harari People",
+        "subCounties": []
+      },
+      {
+        "id": 436,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 437,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 438,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 439,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 440,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 441,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 442,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 443,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 444,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 445,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 446,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 447,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 448,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 449,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 450,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 451,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 452,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 453,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 454,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 455,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 456,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 457,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 458,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 459,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 460,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 461,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 462,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 463,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 464,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 465,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 466,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 467,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 468,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 469,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 470,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 471,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 472,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 473,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 474,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 475,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 476,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 477,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 478,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 479,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 480,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 481,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 482,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 483,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 484,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 485,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 486,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 487,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 488,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 489,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 490,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 491,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 492,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 493,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 494,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 495,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 496,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 497,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 498,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 499,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 500,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 501,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 502,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 503,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 504,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 505,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 506,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 507,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 508,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 509,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 510,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 511,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 512,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 513,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 514,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 515,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 516,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 517,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 518,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 519,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 520,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 521,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 522,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 523,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 524,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 525,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 526,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 527,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 528,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 529,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 530,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 531,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 532,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 533,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 534,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 535,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 536,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 537,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 538,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 539,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 540,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 541,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 542,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 543,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 544,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 545,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 546,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 547,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 548,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 549,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 550,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 551,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 552,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 553,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 554,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 555,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 556,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 557,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 558,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 559,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 560,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 561,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 562,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 563,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 564,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 565,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 566,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 567,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 568,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 569,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 570,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 571,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 572,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 573,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 574,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 575,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 576,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 577,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 578,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 579,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 580,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 581,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 582,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 583,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 584,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 585,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 586,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 587,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 588,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 589,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 590,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 591,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 592,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 593,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 594,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 595,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 596,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 597,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 598,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 599,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 600,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 601,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 602,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 603,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 604,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 605,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 606,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 607,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 608,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 609,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 610,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 611,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 612,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 613,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 614,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 615,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 616,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 617,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 618,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 619,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 620,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 621,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 622,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 623,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 624,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 625,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 626,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 627,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 628,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 629,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 630,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 631,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 632,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 633,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 634,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 635,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 636,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 637,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 638,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 639,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 640,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 641,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 642,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 643,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 644,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 645,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 646,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 647,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 648,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 649,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 650,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 651,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 652,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 653,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 654,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 655,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 656,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 657,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 658,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 659,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 660,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 661,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 662,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 663,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 664,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 665,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 666,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 667,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 668,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 669,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 670,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 671,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 672,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 673,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 674,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 675,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 676,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 677,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 678,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 679,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 680,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 681,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 682,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 683,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 684,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 685,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 686,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 687,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 688,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 689,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 690,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 691,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 692,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 693,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 694,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 695,
+        "county_name": "Oromia",
+        "subCounties": []
+      },
+      {
+        "id": 696,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 697,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 698,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 699,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 700,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 701,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 702,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 703,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 704,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 705,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 706,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 707,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 708,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 709,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 710,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 711,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 712,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 713,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 714,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 715,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 716,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 717,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 718,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 719,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 720,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 721,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 722,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 723,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 724,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 725,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 726,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 727,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 728,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 729,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 730,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 731,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 732,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 733,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 734,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 735,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 736,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 737,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 738,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 739,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 740,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 741,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 742,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 743,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 744,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 745,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 746,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 747,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 748,
+        "county_name": "Somali",
+        "subCounties": []
+      },
+      {
+        "id": 749,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 750,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 751,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 752,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 753,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 754,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 755,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 756,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 757,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 758,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 759,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 760,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 761,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 762,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 763,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 764,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 765,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 766,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 767,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 768,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 769,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 770,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 771,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 772,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 773,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 774,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 775,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 776,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 777,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 778,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 779,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 780,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 781,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 782,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 783,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 784,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 785,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 786,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 787,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 788,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 789,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 790,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 791,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 792,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 793,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 794,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 795,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 796,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 797,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 798,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 799,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 800,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 801,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 802,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 803,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 804,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 805,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 806,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 807,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 808,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 809,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 810,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 811,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 812,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 813,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 814,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 815,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 816,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 817,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 818,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 819,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 820,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 821,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 822,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 823,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 824,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 825,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 826,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 827,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 828,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 829,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 830,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 831,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 832,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 833,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 834,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 835,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 836,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 837,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 838,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 839,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 840,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 841,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 842,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 843,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 844,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 845,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 846,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 847,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 848,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 849,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 850,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 851,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 852,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 853,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 854,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 855,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 856,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 857,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 858,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 859,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 860,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 861,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 862,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 863,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 864,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 865,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 866,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 867,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 868,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 869,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 870,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 871,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 872,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 873,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 874,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 875,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 876,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 877,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 878,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 879,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 880,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 881,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 882,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 883,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 884,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": []
+      },
+      {
+        "id": 885,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 886,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 887,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 888,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 889,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 890,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 891,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 892,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 893,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 894,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 895,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 896,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 897,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 898,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 899,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 900,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 901,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 902,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 903,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 904,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 905,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 906,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 907,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 908,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 909,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 910,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 911,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 912,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 913,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 914,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 915,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 916,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 917,
+        "county_name": "Tigray",
+        "subCounties": []
+      },
+      {
+        "id": 918,
+        "county_name": "Tigray",
+        "subCounties": []
+      }
+    ]
+  }
+]

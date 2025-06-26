@@ -3,7 +3,7 @@ import json
 import os
 
 
-dir='/home/victor/Downloads/data/subcounty_data'
+dir='/home/victor/Documents/projects/mini_projects/csv_to_json/data'
 
 #Initialize an empty list to store individual DataFramesdfs=[]
 dfs = []
@@ -104,7 +104,7 @@ print("converted to csv")
 
 
 if __name__ =="__main__":
-    with open("sub_county_data_.json", "w") as outfile:
+    with open("sub_county_data2_.json", "w") as outfile:
         outfile.write(json_output)
         print("Saved")
         print(json_output)

@@ -2,10 +2,10 @@ import pandas as pd
 import json
 
 # Step 1: Load the CSV file into a pandas DataFrame
-df = pd.read_csv('cleaned_data.csv')
+df = pd.read_csv('cleaned_woredas.csv')
 
-# Step 2: Create a new DataFrame with  the 'country' and 'provinces' columns and tyheir ids
-new_df = df[['GID_0_0','NAME_0', 'gadm36_1','NAME_1']].copy()
+# Step 2: Create a new DataFrame with  the 'country' and 'provinces' columns and their ids
+new_df = df[['COUNTRY', 'NAME_1']].copy()
 
 
 
@@ -16,7 +16,7 @@ county_id_counter = 229  # Dictionary to store county counters for each country
 
 for index, row in new_df.iterrows():
     #country_id=row['GID_0_0']
-    country_name = row['NAME_0']
+    country_name = row['COUNTRY']
     #province_id=row['gadm36_1']
     province_name = row['NAME_1']
     

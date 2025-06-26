@@ -1,0 +1,14 @@
+Level_0,Level_1,Level_2,Level_3,Level_4,Level_5
+Cote dIvoire,Dictricts,Regions,Departments,sub_prefections,communes
+Senegal,Regions,Departments,Arrondissements,Communes,
+Guinea,Regions,Prefectures,Sub-prefectures,Districts & Quaters,Villages & Sectors
+Ethiopia,Regions,zone,woreda,-,-
+Niger,Region,Department,Communes,-,-
+,,,,,
+Mali,Region,Cercles,Arrondissements,Communes,-
+Somalia,Regions,Districts,-,-,-
+Rwanda,Provinces,Districts,-,-,-
+Kenya,Counties,Subcounties,-,-,
+Ghana,Regions,Districts,,,
+,,,,,
+,, , , ,

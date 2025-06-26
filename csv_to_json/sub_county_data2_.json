@@ -1,0 +1,7200 @@
+[
+  {
+    "id": 1,
+    "country_name": "Ethiopia",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1000,
+        "county_name": "Addis Abeba",
+        "subCounties": [
+          {
+            "id": 4000,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4001,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4002,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4003,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4004,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4005,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4006,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4007,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4008,
+            "subcounty_name": "Addis Abeba"
+          },
+          {
+            "id": 4009,
+            "subcounty_name": "Addis Abeba"
+          }
+        ]
+      },
+      {
+        "id": 1001,
+        "county_name": "Afar",
+        "subCounties": [
+          {
+            "id": 4010,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4011,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4012,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4013,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4014,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4015,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4016,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4017,
+            "subcounty_name": "Afar Zone1"
+          },
+          {
+            "id": 4018,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4019,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4020,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4021,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4022,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4023,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4024,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4025,
+            "subcounty_name": "Afar Zone2"
+          },
+          {
+            "id": 4026,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4027,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4028,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4029,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4030,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4031,
+            "subcounty_name": "Afar Zone3"
+          },
+          {
+            "id": 4032,
+            "subcounty_name": "Afar Zone4"
+          },
+          {
+            "id": 4033,
+            "subcounty_name": "Afar Zone4"
+          },
+          {
+            "id": 4034,
+            "subcounty_name": "Afar Zone4"
+          },
+          {
+            "id": 4035,
+            "subcounty_name": "Afar Zone4"
+          },
+          {
+            "id": 4036,
+            "subcounty_name": "Afar Zone4"
+          },
+          {
+            "id": 4037,
+            "subcounty_name": "Afar Zone5"
+          },
+          {
+            "id": 4038,
+            "subcounty_name": "Afar Zone5"
+          },
+          {
+            "id": 4039,
+            "subcounty_name": "Afar Zone5"
+          },
+          {
+            "id": 4040,
+            "subcounty_name": "Afar Zone5"
+          },
+          {
+            "id": 4041,
+            "subcounty_name": "Afar Zone5"
+          }
+        ]
+      },
+      {
+        "id": 1002,
+        "county_name": "Amhara",
+        "subCounties": [
+          {
+            "id": 4042,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4043,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4044,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4045,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4046,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4047,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4048,
+            "subcounty_name": "Agew Awi"
+          },
+          {
+            "id": 4049,
+            "subcounty_name": "Argoba"
+          },
+          {
+            "id": 4050,
+            "subcounty_name": "Bahir Dar Special Zone"
+          },
+          {
+            "id": 4051,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4052,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4053,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4054,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4055,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4056,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4057,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4058,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4059,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4060,
+            "subcounty_name": "Debub Gondar"
+          },
+          {
+            "id": 4061,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4062,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4063,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4064,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4065,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4066,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4067,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4068,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4069,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4070,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4071,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4072,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4073,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4074,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4075,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4076,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4077,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4078,
+            "subcounty_name": "Debub Wollo"
+          },
+          {
+            "id": 4079,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4080,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4081,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4082,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4083,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4084,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4085,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4086,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4087,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4088,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4089,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4090,
+            "subcounty_name": "Mirab Gojjam"
+          },
+          {
+            "id": 4091,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4092,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4093,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4094,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4095,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4096,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4097,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4098,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4099,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4100,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4101,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4102,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4103,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4104,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4105,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4106,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4107,
+            "subcounty_name": "Misraq Gojjam"
+          },
+          {
+            "id": 4108,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4109,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4110,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4111,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4112,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4113,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4114,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4115,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4116,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4117,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4118,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4119,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4120,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4121,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4122,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4123,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4124,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4125,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4126,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4127,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4128,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4129,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4130,
+            "subcounty_name": "Oromia"
+          },
+          {
+            "id": 4131,
+            "subcounty_name": "Oromia"
+          },
+          {
+            "id": 4132,
+            "subcounty_name": "Oromia"
+          },
+          {
+            "id": 4133,
+            "subcounty_name": "Oromia"
+          },
+          {
+            "id": 4134,
+            "subcounty_name": "Oromia"
+          },
+          {
+            "id": 4135,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4136,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4137,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4138,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4139,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4140,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4141,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4142,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4143,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4144,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4145,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4146,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4147,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4148,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4149,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4150,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4151,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4152,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4153,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4154,
+            "subcounty_name": "Semen Gondar"
+          },
+          {
+            "id": 4155,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4156,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4157,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4158,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4159,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4160,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4161,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4162,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4163,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4164,
+            "subcounty_name": "Semen Wello"
+          },
+          {
+            "id": 4165,
+            "subcounty_name": "Wag Himra"
+          },
+          {
+            "id": 4166,
+            "subcounty_name": "Wag Himra"
+          },
+          {
+            "id": 4167,
+            "subcounty_name": "Wag Himra"
+          },
+          {
+            "id": 4168,
+            "subcounty_name": "Wag Himra"
+          },
+          {
+            "id": 4169,
+            "subcounty_name": "Wag Himra"
+          },
+          {
+            "id": 4170,
+            "subcounty_name": "Wag Himra"
+          }
+        ]
+      },
+      {
+        "id": 1003,
+        "county_name": "Benshangul Gumaz",
+        "subCounties": [
+          {
+            "id": 4171,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4172,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4173,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4174,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4175,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4176,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4177,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4178,
+            "subcounty_name": "Asosa"
+          },
+          {
+            "id": 4179,
+            "subcounty_name": "Kemashi"
+          },
+          {
+            "id": 4180,
+            "subcounty_name": "Kemashi"
+          },
+          {
+            "id": 4181,
+            "subcounty_name": "Kemashi"
+          },
+          {
+            "id": 4182,
+            "subcounty_name": "Kemashi"
+          },
+          {
+            "id": 4183,
+            "subcounty_name": "Kemashi"
+          },
+          {
+            "id": 4184,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4185,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4186,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4187,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4188,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4189,
+            "subcounty_name": "Metekel"
+          },
+          {
+            "id": 4190,
+            "subcounty_name": "Metekel"
+          }
+        ]
+      },
+      {
+        "id": 1004,
+        "county_name": "Dire Dawa",
+        "subCounties": [
+          {
+            "id": 4191,
+            "subcounty_name": "Dire Dawa"
+          },
+          {
+            "id": 4192,
+            "subcounty_name": "Dire Dawa"
+          }
+        ]
+      },
+      {
+        "id": 1005,
+        "county_name": "Gambela Peoples",
+        "subCounties": [
+          {
+            "id": 4193,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4194,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4195,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4196,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4197,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4198,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4199,
+            "subcounty_name": "Agnuak"
+          },
+          {
+            "id": 4200,
+            "subcounty_name": "Majang"
+          },
+          {
+            "id": 4201,
+            "subcounty_name": "Majang"
+          },
+          {
+            "id": 4202,
+            "subcounty_name": "Nuer"
+          },
+          {
+            "id": 4203,
+            "subcounty_name": "Nuer"
+          },
+          {
+            "id": 4204,
+            "subcounty_name": "Nuer"
+          },
+          {
+            "id": 4205,
+            "subcounty_name": "Nuer"
+          }
+        ]
+      },
+      {
+        "id": 1006,
+        "county_name": "Harari People",
+        "subCounties": [
+          {
+            "id": 4206,
+            "subcounty_name": "Hareri"
+          }
+        ]
+      },
+      {
+        "id": 1007,
+        "county_name": "Oromia",
+        "subCounties": [
+          {
+            "id": 4207,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4208,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4209,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4210,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4211,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4212,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4213,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4214,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4215,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4216,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4217,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4218,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4219,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4220,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4221,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4222,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4223,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4224,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4225,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4226,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4227,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4228,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4229,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4230,
+            "subcounty_name": "Arsi"
+          },
+          {
+            "id": 4231,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4232,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4233,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4234,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4235,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4236,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4237,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4238,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4239,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4240,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4241,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4242,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4243,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4244,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4245,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4246,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4247,
+            "subcounty_name": "Bale"
+          },
+          {
+            "id": 4248,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4249,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4250,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4251,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4252,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4253,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4254,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4255,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4256,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4257,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4258,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4259,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4260,
+            "subcounty_name": "Borena"
+          },
+          {
+            "id": 4261,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4262,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4263,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4264,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4265,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4266,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4267,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4268,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4269,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4270,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4271,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4272,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4273,
+            "subcounty_name": "Debub Mirab Shewa"
+          },
+          {
+            "id": 4274,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4275,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4276,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4277,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4278,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4279,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4280,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4281,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4282,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4283,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4284,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4285,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4286,
+            "subcounty_name": "Guji"
+          },
+          {
+            "id": 4287,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4288,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4289,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4290,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4291,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4292,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4293,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4294,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4295,
+            "subcounty_name": "Horo Guduru"
+          },
+          {
+            "id": 4296,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4297,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4298,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4299,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4300,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4301,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4302,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4303,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4304,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4305,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4306,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4307,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4308,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4309,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4310,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4311,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4312,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4313,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4314,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4315,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4316,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4317,
+            "subcounty_name": "Ilubabor"
+          },
+          {
+            "id": 4318,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4319,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4320,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4321,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4322,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4323,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4324,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4325,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4326,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4327,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4328,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4329,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4330,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4331,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4332,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4333,
+            "subcounty_name": "Jimma"
+          },
+          {
+            "id": 4334,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4335,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4336,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4337,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4338,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4339,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4340,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4341,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4342,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4343,
+            "subcounty_name": "Kelem Wellega"
+          },
+          {
+            "id": 4344,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4345,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4346,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4347,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4348,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4349,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4350,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4351,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4352,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4353,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4354,
+            "subcounty_name": "Mirab Arsi"
+          },
+          {
+            "id": 4355,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4356,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4357,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4358,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4359,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4360,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4361,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4362,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4363,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4364,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4365,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4366,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4367,
+            "subcounty_name": "Mirab Hararghe"
+          },
+          {
+            "id": 4368,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4369,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4370,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4371,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4372,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4373,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4374,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4375,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4376,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4377,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4378,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4379,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4380,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4381,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4382,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4383,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4384,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4385,
+            "subcounty_name": "Mirab Shewa"
+          },
+          {
+            "id": 4386,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4387,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4388,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4389,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4390,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4391,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4392,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4393,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4394,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4395,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4396,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4397,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4398,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4399,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4400,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4401,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4402,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4403,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4404,
+            "subcounty_name": "Mirab Welega"
+          },
+          {
+            "id": 4405,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4406,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4407,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4408,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4409,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4410,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4411,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4412,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4413,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4414,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4415,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4416,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4417,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4418,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4419,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4420,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4421,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4422,
+            "subcounty_name": "Misraq Harerge"
+          },
+          {
+            "id": 4423,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4424,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4425,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4426,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4427,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4428,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4429,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4430,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4431,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4432,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4433,
+            "subcounty_name": "Misraq Shewa"
+          },
+          {
+            "id": 4434,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4435,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4436,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4437,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4438,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4439,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4440,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4441,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4442,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4443,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4444,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4445,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4446,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4447,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4448,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4449,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4450,
+            "subcounty_name": "Misraq Wellega"
+          },
+          {
+            "id": 4451,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4452,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4453,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4454,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4455,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4456,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4457,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4458,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4459,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4460,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4461,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4462,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4463,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4464,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4465,
+            "subcounty_name": "North Shewa"
+          },
+          {
+            "id": 4466,
+            "subcounty_name": "North Shewa"
+          }
+        ]
+      },
+      {
+        "id": 1008,
+        "county_name": "Somali",
+        "subCounties": [
+          {
+            "id": 4467,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4468,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4469,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4470,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4471,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4472,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4473,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4474,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4475,
+            "subcounty_name": "Afder"
+          },
+          {
+            "id": 4476,
+            "subcounty_name": "Doolo"
+          },
+          {
+            "id": 4477,
+            "subcounty_name": "Doolo"
+          },
+          {
+            "id": 4478,
+            "subcounty_name": "Doolo"
+          },
+          {
+            "id": 4479,
+            "subcounty_name": "Doolo"
+          },
+          {
+            "id": 4480,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4481,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4482,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4483,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4484,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4485,
+            "subcounty_name": "Fafan"
+          },
+          {
+            "id": 4486,
+            "subcounty_name": "Jarar"
+          },
+          {
+            "id": 4487,
+            "subcounty_name": "Jarar"
+          },
+          {
+            "id": 4488,
+            "subcounty_name": "Jarar"
+          },
+          {
+            "id": 4489,
+            "subcounty_name": "Jarar"
+          },
+          {
+            "id": 4490,
+            "subcounty_name": "Jarar"
+          },
+          {
+            "id": 4491,
+            "subcounty_name": "Korahe"
+          },
+          {
+            "id": 4492,
+            "subcounty_name": "Korahe"
+          },
+          {
+            "id": 4493,
+            "subcounty_name": "Korahe"
+          },
+          {
+            "id": 4494,
+            "subcounty_name": "Korahe"
+          },
+          {
+            "id": 4495,
+            "subcounty_name": "Liben"
+          },
+          {
+            "id": 4496,
+            "subcounty_name": "Liben"
+          },
+          {
+            "id": 4497,
+            "subcounty_name": "Liben"
+          },
+          {
+            "id": 4498,
+            "subcounty_name": "Liben"
+          },
+          {
+            "id": 4499,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4500,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4501,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4502,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4503,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4504,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4505,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4506,
+            "subcounty_name": "Nogob"
+          },
+          {
+            "id": 4507,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4508,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4509,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4510,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4511,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4512,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4513,
+            "subcounty_name": "Shabelle"
+          },
+          {
+            "id": 4514,
+            "subcounty_name": "Siti"
+          },
+          {
+            "id": 4515,
+            "subcounty_name": "Siti"
+          },
+          {
+            "id": 4516,
+            "subcounty_name": "Siti"
+          },
+          {
+            "id": 4517,
+            "subcounty_name": "Siti"
+          },
+          {
+            "id": 4518,
+            "subcounty_name": "Siti"
+          },
+          {
+            "id": 4519,
+            "subcounty_name": "Siti"
+          }
+        ]
+      },
+      {
+        "id": 1009,
+        "county_name": "Southern Nations Nationalities",
+        "subCounties": [
+          {
+            "id": 4520,
+            "subcounty_name": "Alaba"
+          },
+          {
+            "id": 4521,
+            "subcounty_name": "Alle"
+          },
+          {
+            "id": 4522,
+            "subcounty_name": "Amaro"
+          },
+          {
+            "id": 4523,
+            "subcounty_name": "Basketo"
+          },
+          {
+            "id": 4524,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4525,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4526,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4527,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4528,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4529,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4530,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4531,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4532,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4533,
+            "subcounty_name": "Bench Maji"
+          },
+          {
+            "id": 4534,
+            "subcounty_name": "Burji"
+          },
+          {
+            "id": 4535,
+            "subcounty_name": "Dawro"
+          },
+          {
+            "id": 4536,
+            "subcounty_name": "Dawro"
+          },
+          {
+            "id": 4537,
+            "subcounty_name": "Dawro"
+          },
+          {
+            "id": 4538,
+            "subcounty_name": "Dawro"
+          },
+          {
+            "id": 4539,
+            "subcounty_name": "Dawro"
+          },
+          {
+            "id": 4540,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4541,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4542,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4543,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4544,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4545,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4546,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4547,
+            "subcounty_name": "Debub Omo"
+          },
+          {
+            "id": 4548,
+            "subcounty_name": "Derashe"
+          },
+          {
+            "id": 4549,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4550,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4551,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4552,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4553,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4554,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4555,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4556,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4557,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4558,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4559,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4560,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4561,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4562,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4563,
+            "subcounty_name": "Gamo Gofa"
+          },
+          {
+            "id": 4564,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4565,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4566,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4567,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4568,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4569,
+            "subcounty_name": "Gedeo"
+          },
+          {
+            "id": 4570,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4571,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4572,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4573,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4574,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4575,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4576,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4577,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4578,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4579,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4580,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4581,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4582,
+            "subcounty_name": "Gurage"
+          },
+          {
+            "id": 4583,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4584,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4585,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4586,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4587,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4588,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4589,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4590,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4591,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4592,
+            "subcounty_name": "Hadiya"
+          },
+          {
+            "id": 4593,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4594,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4595,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4596,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4597,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4598,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4599,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4600,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4601,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4602,
+            "subcounty_name": "Keffa"
+          },
+          {
+            "id": 4603,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4604,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4605,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4606,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4607,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4608,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4609,
+            "subcounty_name": "Kembata Tembaro"
+          },
+          {
+            "id": 4610,
+            "subcounty_name": "Konso"
+          },
+          {
+            "id": 4611,
+            "subcounty_name": "Konta"
+          },
+          {
+            "id": 4612,
+            "subcounty_name": "Sheka"
+          },
+          {
+            "id": 4613,
+            "subcounty_name": "Sheka"
+          },
+          {
+            "id": 4614,
+            "subcounty_name": "Sheka"
+          },
+          {
+            "id": 4615,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4616,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4617,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4618,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4619,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4620,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4621,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4622,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4623,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4624,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4625,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4626,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4627,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4628,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4629,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4630,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4631,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4632,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4633,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4634,
+            "subcounty_name": "Sidama"
+          },
+          {
+            "id": 4635,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4636,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4637,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4638,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4639,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4640,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4641,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4642,
+            "subcounty_name": "Silti"
+          },
+          {
+            "id": 4643,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4644,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4645,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4646,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4647,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4648,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4649,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4650,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4651,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4652,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4653,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4654,
+            "subcounty_name": "Wolayita"
+          },
+          {
+            "id": 4655,
+            "subcounty_name": "Yem"
+          }
+        ]
+      },
+      {
+        "id": 1010,
+        "county_name": "Tigray",
+        "subCounties": [
+          {
+            "id": 4656,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4657,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4658,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4659,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4660,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4661,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4662,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4663,
+            "subcounty_name": "Debubawi"
+          },
+          {
+            "id": 4664,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4665,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4666,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4667,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4668,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4669,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4670,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4671,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4672,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4673,
+            "subcounty_name": "Mehakelegnaw"
+          },
+          {
+            "id": 4674,
+            "subcounty_name": "Mi'irabawi"
+          },
+          {
+            "id": 4675,
+            "subcounty_name": "Mi'irabawi"
+          },
+          {
+            "id": 4676,
+            "subcounty_name": "Mi'irabawi"
+          },
+          {
+            "id": 4677,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4678,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4679,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4680,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4681,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4682,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4683,
+            "subcounty_name": "Misraqawi"
+          },
+          {
+            "id": 4684,
+            "subcounty_name": "Semien Mi'irabaw"
+          },
+          {
+            "id": 4685,
+            "subcounty_name": "Semien Mi'irabaw"
+          },
+          {
+            "id": 4686,
+            "subcounty_name": "Semien Mi'irabaw"
+          },
+          {
+            "id": 4687,
+            "subcounty_name": "Semien Mi'irabaw"
+          },
+          {
+            "id": 4688,
+            "subcounty_name": "Semien Mi'irabaw"
+          },
+          {
+            "id": 4689,
+            "subcounty_name": "Semien Mi'irabaw"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "country_name": "Kenya",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1011,
+        "county_name": "Baringo",
+        "subCounties": [
+          {
+            "id": 4690,
+            "subcounty_name": "805"
+          },
+          {
+            "id": 4691,
+            "subcounty_name": "BaringoCentral"
+          },
+          {
+            "id": 4692,
+            "subcounty_name": "BaringoNorth"
+          },
+          {
+            "id": 4693,
+            "subcounty_name": "BaringoSouth"
+          },
+          {
+            "id": 4694,
+            "subcounty_name": "EldamaRavine"
+          },
+          {
+            "id": 4695,
+            "subcounty_name": "Mogotio"
+          },
+          {
+            "id": 4696,
+            "subcounty_name": "Tiaty"
+          }
+        ]
+      },
+      {
+        "id": 1012,
+        "county_name": "Bomet",
+        "subCounties": [
+          {
+            "id": 4697,
+            "subcounty_name": "BometCentral"
+          },
+          {
+            "id": 4698,
+            "subcounty_name": "BometEast"
+          },
+          {
+            "id": 4699,
+            "subcounty_name": "Chepalungu"
+          },
+          {
+            "id": 4700,
+            "subcounty_name": "Konoin"
+          },
+          {
+            "id": 4701,
+            "subcounty_name": "Sotik"
+          }
+        ]
+      },
+      {
+        "id": 1013,
+        "county_name": "Bungoma",
+        "subCounties": [
+          {
+            "id": 4702,
+            "subcounty_name": "Bumula"
+          },
+          {
+            "id": 4703,
+            "subcounty_name": "Kabuchai"
+          },
+          {
+            "id": 4704,
+            "subcounty_name": "Kanduyi"
+          },
+          {
+            "id": 4705,
+            "subcounty_name": "Kimilili"
+          },
+          {
+            "id": 4706,
+            "subcounty_name": "Likuyani"
+          },
+          {
+            "id": 4707,
+            "subcounty_name": "Lugari"
+          },
+          {
+            "id": 4708,
+            "subcounty_name": "Mt.Elgon"
+          },
+          {
+            "id": 4709,
+            "subcounty_name": "Sirisia"
+          },
+          {
+            "id": 4710,
+            "subcounty_name": "Tongaren"
+          },
+          {
+            "id": 4711,
+            "subcounty_name": "WebuteWest"
+          },
+          {
+            "id": 4712,
+            "subcounty_name": "WebuyeEast"
+          }
+        ]
+      },
+      {
+        "id": 1014,
+        "county_name": "Busia",
+        "subCounties": [
+          {
+            "id": 4713,
+            "subcounty_name": "Budalangi"
+          },
+          {
+            "id": 4714,
+            "subcounty_name": "Butula"
+          },
+          {
+            "id": 4715,
+            "subcounty_name": "Funyula"
+          },
+          {
+            "id": 4716,
+            "subcounty_name": "Matayos"
+          },
+          {
+            "id": 4717,
+            "subcounty_name": "Nambale"
+          },
+          {
+            "id": 4718,
+            "subcounty_name": "TesoNorth"
+          },
+          {
+            "id": 4719,
+            "subcounty_name": "TesoSouth"
+          }
+        ]
+      },
+      {
+        "id": 1015,
+        "county_name": "Elgeyo-Marakwet",
+        "subCounties": [
+          {
+            "id": 4720,
+            "subcounty_name": "KeiyoNorth"
+          },
+          {
+            "id": 4721,
+            "subcounty_name": "KeiyoSouth"
+          },
+          {
+            "id": 4722,
+            "subcounty_name": "MarakwetEast"
+          },
+          {
+            "id": 4723,
+            "subcounty_name": "MarakwetWest"
+          }
+        ]
+      },
+      {
+        "id": 1016,
+        "county_name": "Embu",
+        "subCounties": [
+          {
+            "id": 4724,
+            "subcounty_name": "Manyatta"
+          },
+          {
+            "id": 4725,
+            "subcounty_name": "MbeereNorth"
+          },
+          {
+            "id": 4726,
+            "subcounty_name": "MbeereSouth"
+          },
+          {
+            "id": 4727,
+            "subcounty_name": "Runyenjes"
+          }
+        ]
+      },
+      {
+        "id": 1017,
+        "county_name": "Garissa",
+        "subCounties": [
+          {
+            "id": 4728,
+            "subcounty_name": "Balambala"
+          },
+          {
+            "id": 4729,
+            "subcounty_name": "Daadab"
+          },
+          {
+            "id": 4730,
+            "subcounty_name": "Fafi"
+          },
+          {
+            "id": 4731,
+            "subcounty_name": "GarissaTownship"
+          },
+          {
+            "id": 4732,
+            "subcounty_name": "Ijara"
+          },
+          {
+            "id": 4733,
+            "subcounty_name": "Lagdera"
+          }
+        ]
+      },
+      {
+        "id": 1018,
+        "county_name": "HomaBay",
+        "subCounties": [
+          {
+            "id": 4734,
+            "subcounty_name": "HomaBayTown"
+          },
+          {
+            "id": 4735,
+            "subcounty_name": "KabondoKasipul"
+          },
+          {
+            "id": 4736,
+            "subcounty_name": "Karachuonyo"
+          },
+          {
+            "id": 4737,
+            "subcounty_name": "Kasipul"
+          },
+          {
+            "id": 4738,
+            "subcounty_name": "Mbita"
+          },
+          {
+            "id": 4739,
+            "subcounty_name": "Ndhiwa"
+          },
+          {
+            "id": 4740,
+            "subcounty_name": "Rangwe"
+          },
+          {
+            "id": 4741,
+            "subcounty_name": "Suba"
+          },
+          {
+            "id": 4742,
+            "subcounty_name": "unknown6"
+          }
+        ]
+      },
+      {
+        "id": 1019,
+        "county_name": "Isiolo",
+        "subCounties": [
+          {
+            "id": 4743,
+            "subcounty_name": "IsioloNorth"
+          },
+          {
+            "id": 4744,
+            "subcounty_name": "IsioloSouth"
+          }
+        ]
+      },
+      {
+        "id": 1020,
+        "county_name": "Kajiado",
+        "subCounties": [
+          {
+            "id": 4745,
+            "subcounty_name": "KajiadoCentral"
+          },
+          {
+            "id": 4746,
+            "subcounty_name": "KajiadoEast"
+          },
+          {
+            "id": 4747,
+            "subcounty_name": "KajiadoNorth"
+          },
+          {
+            "id": 4748,
+            "subcounty_name": "KajiadoSouth"
+          },
+          {
+            "id": 4749,
+            "subcounty_name": "KajiadoWest"
+          }
+        ]
+      },
+      {
+        "id": 1021,
+        "county_name": "Kakamega",
+        "subCounties": [
+          {
+            "id": 4750,
+            "subcounty_name": "Butere"
+          },
+          {
+            "id": 4751,
+            "subcounty_name": "Ikolomani"
+          },
+          {
+            "id": 4752,
+            "subcounty_name": "Khwisero"
+          },
+          {
+            "id": 4753,
+            "subcounty_name": "Lugari"
+          },
+          {
+            "id": 4754,
+            "subcounty_name": "Lurambi"
+          },
+          {
+            "id": 4755,
+            "subcounty_name": "Malava"
+          },
+          {
+            "id": 4756,
+            "subcounty_name": "Matungu"
+          },
+          {
+            "id": 4757,
+            "subcounty_name": "MumiasEast"
+          },
+          {
+            "id": 4758,
+            "subcounty_name": "MumiasWest"
+          },
+          {
+            "id": 4759,
+            "subcounty_name": "Navakholo"
+          },
+          {
+            "id": 4760,
+            "subcounty_name": "Shinyalu"
+          }
+        ]
+      },
+      {
+        "id": 1022,
+        "county_name": "Kericho",
+        "subCounties": [
+          {
+            "id": 4761,
+            "subcounty_name": "Ainamoi"
+          },
+          {
+            "id": 4762,
+            "subcounty_name": "Belgut"
+          },
+          {
+            "id": 4763,
+            "subcounty_name": "Bureti"
+          },
+          {
+            "id": 4764,
+            "subcounty_name": "KipkelionEast"
+          },
+          {
+            "id": 4765,
+            "subcounty_name": "KipkelionWest"
+          },
+          {
+            "id": 4766,
+            "subcounty_name": "Sigowet/Soin"
+          }
+        ]
+      },
+      {
+        "id": 1023,
+        "county_name": "Kiambu",
+        "subCounties": [
+          {
+            "id": 4767,
+            "subcounty_name": "GatunduNorth"
+          },
+          {
+            "id": 4768,
+            "subcounty_name": "GatunduSouth"
+          },
+          {
+            "id": 4769,
+            "subcounty_name": "Githunguri"
+          },
+          {
+            "id": 4770,
+            "subcounty_name": "Juja"
+          },
+          {
+            "id": 4771,
+            "subcounty_name": "Kabete"
+          },
+          {
+            "id": 4772,
+            "subcounty_name": "Kiambaa"
+          },
+          {
+            "id": 4773,
+            "subcounty_name": "Kiambu"
+          },
+          {
+            "id": 4774,
+            "subcounty_name": "Kikuyu"
+          },
+          {
+            "id": 4775,
+            "subcounty_name": "Lari"
+          },
+          {
+            "id": 4776,
+            "subcounty_name": "Limuru"
+          },
+          {
+            "id": 4777,
+            "subcounty_name": "Ruiru"
+          },
+          {
+            "id": 4778,
+            "subcounty_name": "ThikaTown"
+          }
+        ]
+      },
+      {
+        "id": 1024,
+        "county_name": "Kilifi",
+        "subCounties": [
+          {
+            "id": 4779,
+            "subcounty_name": "Ganze"
+          },
+          {
+            "id": 4780,
+            "subcounty_name": "Kaloleni"
+          },
+          {
+            "id": 4781,
+            "subcounty_name": "KilifiNorth"
+          },
+          {
+            "id": 4782,
+            "subcounty_name": "KilifiSouth"
+          },
+          {
+            "id": 4783,
+            "subcounty_name": "Magarini"
+          },
+          {
+            "id": 4784,
+            "subcounty_name": "Malindi"
+          },
+          {
+            "id": 4785,
+            "subcounty_name": "Rabai"
+          }
+        ]
+      },
+      {
+        "id": 1025,
+        "county_name": "Kirinyaga",
+        "subCounties": [
+          {
+            "id": 4786,
+            "subcounty_name": "Gichugu"
+          },
+          {
+            "id": 4787,
+            "subcounty_name": "KirinyagaCentral"
+          },
+          {
+            "id": 4788,
+            "subcounty_name": "Mwea"
+          },
+          {
+            "id": 4789,
+            "subcounty_name": "Ndia"
+          }
+        ]
+      },
+      {
+        "id": 1026,
+        "county_name": "Kisii",
+        "subCounties": [
+          {
+            "id": 4790,
+            "subcounty_name": "Bobasi"
+          },
+          {
+            "id": 4791,
+            "subcounty_name": "BomachogeBorabu"
+          },
+          {
+            "id": 4792,
+            "subcounty_name": "BomachogeChache"
+          },
+          {
+            "id": 4793,
+            "subcounty_name": "Bonchari"
+          },
+          {
+            "id": 4794,
+            "subcounty_name": "KitutuChacheNorth"
+          },
+          {
+            "id": 4795,
+            "subcounty_name": "KitutuChacheSouth"
+          },
+          {
+            "id": 4796,
+            "subcounty_name": "NyaribariChache"
+          },
+          {
+            "id": 4797,
+            "subcounty_name": "NyaribariMasaba"
+          },
+          {
+            "id": 4798,
+            "subcounty_name": "SouthMugirango"
+          }
+        ]
+      },
+      {
+        "id": 1027,
+        "county_name": "Kisumu",
+        "subCounties": [
+          {
+            "id": 4799,
+            "subcounty_name": "KisumuCentral"
+          },
+          {
+            "id": 4800,
+            "subcounty_name": "KisumuEast"
+          },
+          {
+            "id": 4801,
+            "subcounty_name": "KisumuWest"
+          },
+          {
+            "id": 4802,
+            "subcounty_name": "Muhoroni"
+          },
+          {
+            "id": 4803,
+            "subcounty_name": "Nyakach"
+          },
+          {
+            "id": 4804,
+            "subcounty_name": "Nyando"
+          },
+          {
+            "id": 4805,
+            "subcounty_name": "Seme"
+          }
+        ]
+      },
+      {
+        "id": 1028,
+        "county_name": "Kitui",
+        "subCounties": [
+          {
+            "id": 4806,
+            "subcounty_name": "KituiCentral"
+          },
+          {
+            "id": 4807,
+            "subcounty_name": "KituiEast"
+          },
+          {
+            "id": 4808,
+            "subcounty_name": "KituiRural"
+          },
+          {
+            "id": 4809,
+            "subcounty_name": "KituiSouth"
+          },
+          {
+            "id": 4810,
+            "subcounty_name": "KituiWest"
+          },
+          {
+            "id": 4811,
+            "subcounty_name": "MwingiCentral"
+          },
+          {
+            "id": 4812,
+            "subcounty_name": "MwingiNorth"
+          },
+          {
+            "id": 4813,
+            "subcounty_name": "MwingiWest"
+          }
+        ]
+      },
+      {
+        "id": 1029,
+        "county_name": "Kwale",
+        "subCounties": [
+          {
+            "id": 4814,
+            "subcounty_name": "Kinango"
+          },
+          {
+            "id": 4815,
+            "subcounty_name": "Lungalunga"
+          },
+          {
+            "id": 4816,
+            "subcounty_name": "Matuga"
+          },
+          {
+            "id": 4817,
+            "subcounty_name": "Msambweni"
+          }
+        ]
+      },
+      {
+        "id": 1030,
+        "county_name": "Laikipia",
+        "subCounties": [
+          {
+            "id": 4818,
+            "subcounty_name": "LaikipiaEast"
+          },
+          {
+            "id": 4819,
+            "subcounty_name": "LaikipiaNorth"
+          },
+          {
+            "id": 4820,
+            "subcounty_name": "LaikipiaWest"
+          }
+        ]
+      },
+      {
+        "id": 1031,
+        "county_name": "Lamu",
+        "subCounties": [
+          {
+            "id": 4821,
+            "subcounty_name": "LamuEast"
+          },
+          {
+            "id": 4822,
+            "subcounty_name": "LamuWest"
+          }
+        ]
+      },
+      {
+        "id": 1032,
+        "county_name": "Machakos",
+        "subCounties": [
+          {
+            "id": 4823,
+            "subcounty_name": "Kangundo"
+          },
+          {
+            "id": 4824,
+            "subcounty_name": "Kathiani"
+          },
+          {
+            "id": 4825,
+            "subcounty_name": "MachakosTown"
+          },
+          {
+            "id": 4826,
+            "subcounty_name": "Masinga"
+          },
+          {
+            "id": 4827,
+            "subcounty_name": "Matungulu"
+          },
+          {
+            "id": 4828,
+            "subcounty_name": "Mavoko"
+          },
+          {
+            "id": 4829,
+            "subcounty_name": "Mwala"
+          },
+          {
+            "id": 4830,
+            "subcounty_name": "unknown7"
+          },
+          {
+            "id": 4831,
+            "subcounty_name": "Yatta"
+          }
+        ]
+      },
+      {
+        "id": 1033,
+        "county_name": "Makueni",
+        "subCounties": [
+          {
+            "id": 4832,
+            "subcounty_name": "Kaiti"
+          },
+          {
+            "id": 4833,
+            "subcounty_name": "KibweziEast"
+          },
+          {
+            "id": 4834,
+            "subcounty_name": "KibweziWest"
+          },
+          {
+            "id": 4835,
+            "subcounty_name": "Kilome"
+          },
+          {
+            "id": 4836,
+            "subcounty_name": "Makueni"
+          },
+          {
+            "id": 4837,
+            "subcounty_name": "Mbooni"
+          }
+        ]
+      },
+      {
+        "id": 1034,
+        "county_name": "Mandera",
+        "subCounties": [
+          {
+            "id": 4838,
+            "subcounty_name": "Banissa"
+          },
+          {
+            "id": 4839,
+            "subcounty_name": "Lafey"
+          },
+          {
+            "id": 4840,
+            "subcounty_name": "ManderaEast"
+          },
+          {
+            "id": 4841,
+            "subcounty_name": "ManderaNorth"
+          },
+          {
+            "id": 4842,
+            "subcounty_name": "ManderaSouth"
+          },
+          {
+            "id": 4843,
+            "subcounty_name": "ManderaWest"
+          },
+          {
+            "id": 4844,
+            "subcounty_name": "unknown1"
+          }
+        ]
+      },
+      {
+        "id": 1035,
+        "county_name": "Marsabit",
+        "subCounties": [
+          {
+            "id": 4845,
+            "subcounty_name": "Laisamis"
+          },
+          {
+            "id": 4846,
+            "subcounty_name": "Moyale"
+          },
+          {
+            "id": 4847,
+            "subcounty_name": "NorthHorr"
+          },
+          {
+            "id": 4848,
+            "subcounty_name": "Saku"
+          }
+        ]
+      },
+      {
+        "id": 1036,
+        "county_name": "Meru",
+        "subCounties": [
+          {
+            "id": 4849,
+            "subcounty_name": "Buuri"
+          },
+          {
+            "id": 4850,
+            "subcounty_name": "CentralImenti"
+          },
+          {
+            "id": 4851,
+            "subcounty_name": "IgembeCentral"
+          },
+          {
+            "id": 4852,
+            "subcounty_name": "IgembeNorth"
+          },
+          {
+            "id": 4853,
+            "subcounty_name": "IgembeSouth"
+          },
+          {
+            "id": 4854,
+            "subcounty_name": "NorthImenti"
+          },
+          {
+            "id": 4855,
+            "subcounty_name": "SouthImenti"
+          },
+          {
+            "id": 4856,
+            "subcounty_name": "TiganiaEast"
+          },
+          {
+            "id": 4857,
+            "subcounty_name": "TiganiaWest"
+          },
+          {
+            "id": 4858,
+            "subcounty_name": "unknown5"
+          }
+        ]
+      },
+      {
+        "id": 1037,
+        "county_name": "Migori",
+        "subCounties": [
+          {
+            "id": 4859,
+            "subcounty_name": "Awendo"
+          },
+          {
+            "id": 4860,
+            "subcounty_name": "KuriaEast"
+          },
+          {
+            "id": 4861,
+            "subcounty_name": "KuriaWest"
+          },
+          {
+            "id": 4862,
+            "subcounty_name": "Nyatike"
+          },
+          {
+            "id": 4863,
+            "subcounty_name": "Rongo"
+          },
+          {
+            "id": 4864,
+            "subcounty_name": "SunaEast"
+          },
+          {
+            "id": 4865,
+            "subcounty_name": "SunaWest"
+          },
+          {
+            "id": 4866,
+            "subcounty_name": "Uriri"
+          }
+        ]
+      },
+      {
+        "id": 1038,
+        "county_name": "Mombasa",
+        "subCounties": [
+          {
+            "id": 4867,
+            "subcounty_name": "Changamwe"
+          },
+          {
+            "id": 4868,
+            "subcounty_name": "Jomvu"
+          },
+          {
+            "id": 4869,
+            "subcounty_name": "Kisauni"
+          },
+          {
+            "id": 4870,
+            "subcounty_name": "Likoni"
+          },
+          {
+            "id": 4871,
+            "subcounty_name": "Mvita"
+          },
+          {
+            "id": 4872,
+            "subcounty_name": "Nyali"
+          }
+        ]
+      },
+      {
+        "id": 1039,
+        "county_name": "Murang'a",
+        "subCounties": [
+          {
+            "id": 4873,
+            "subcounty_name": "Gatanga"
+          },
+          {
+            "id": 4874,
+            "subcounty_name": "Kandara"
+          },
+          {
+            "id": 4875,
+            "subcounty_name": "Kangema"
+          },
+          {
+            "id": 4876,
+            "subcounty_name": "Kigumo"
+          },
+          {
+            "id": 4877,
+            "subcounty_name": "Kiharu"
+          },
+          {
+            "id": 4878,
+            "subcounty_name": "Maragwa"
+          },
+          {
+            "id": 4879,
+            "subcounty_name": "Mathioya"
+          }
+        ]
+      },
+      {
+        "id": 1040,
+        "county_name": "Nairobi",
+        "subCounties": [
+          {
+            "id": 4880,
+            "subcounty_name": "DagorettiNorth"
+          },
+          {
+            "id": 4881,
+            "subcounty_name": "DagorettiSouth"
+          },
+          {
+            "id": 4882,
+            "subcounty_name": "EmbakasiCentral"
+          },
+          {
+            "id": 4883,
+            "subcounty_name": "EmbakasiEast"
+          },
+          {
+            "id": 4884,
+            "subcounty_name": "EmbakasiNorth"
+          },
+          {
+            "id": 4885,
+            "subcounty_name": "EmbakasiSouth"
+          },
+          {
+            "id": 4886,
+            "subcounty_name": "EmbakasiWest"
+          },
+          {
+            "id": 4887,
+            "subcounty_name": "Kamukunji"
+          },
+          {
+            "id": 4888,
+            "subcounty_name": "Kasarani"
+          },
+          {
+            "id": 4889,
+            "subcounty_name": "Kibra"
+          },
+          {
+            "id": 4890,
+            "subcounty_name": "Langata"
+          },
+          {
+            "id": 4891,
+            "subcounty_name": "Makadara"
+          },
+          {
+            "id": 4892,
+            "subcounty_name": "Mathare"
+          },
+          {
+            "id": 4893,
+            "subcounty_name": "Roysambu"
+          },
+          {
+            "id": 4894,
+            "subcounty_name": "Ruaraka"
+          },
+          {
+            "id": 4895,
+            "subcounty_name": "Starehe"
+          },
+          {
+            "id": 4896,
+            "subcounty_name": "Westlands"
+          }
+        ]
+      },
+      {
+        "id": 1041,
+        "county_name": "Nakuru",
+        "subCounties": [
+          {
+            "id": 4897,
+            "subcounty_name": "Bahati"
+          },
+          {
+            "id": 4898,
+            "subcounty_name": "Gilgil"
+          },
+          {
+            "id": 4899,
+            "subcounty_name": "KuresoiNorth"
+          },
+          {
+            "id": 4900,
+            "subcounty_name": "KuresoiSouth"
+          },
+          {
+            "id": 4901,
+            "subcounty_name": "Molo"
+          },
+          {
+            "id": 4902,
+            "subcounty_name": "Naivasha"
+          },
+          {
+            "id": 4903,
+            "subcounty_name": "NakuruTownEast"
+          },
+          {
+            "id": 4904,
+            "subcounty_name": "NakuruTownWest"
+          },
+          {
+            "id": 4905,
+            "subcounty_name": "Njoro"
+          },
+          {
+            "id": 4906,
+            "subcounty_name": "Rongai"
+          },
+          {
+            "id": 4907,
+            "subcounty_name": "Subukia"
+          }
+        ]
+      },
+      {
+        "id": 1042,
+        "county_name": "Nandi",
+        "subCounties": [
+          {
+            "id": 4908,
+            "subcounty_name": "Aldai"
+          },
+          {
+            "id": 4909,
+            "subcounty_name": "Chesumei"
+          },
+          {
+            "id": 4910,
+            "subcounty_name": "Emgwen"
+          },
+          {
+            "id": 4911,
+            "subcounty_name": "Mosop"
+          },
+          {
+            "id": 4912,
+            "subcounty_name": "NandiHills"
+          },
+          {
+            "id": 4913,
+            "subcounty_name": "Tinderet"
+          }
+        ]
+      },
+      {
+        "id": 1043,
+        "county_name": "Narok",
+        "subCounties": [
+          {
+            "id": 4914,
+            "subcounty_name": "EmuruaDikirr"
+          },
+          {
+            "id": 4915,
+            "subcounty_name": "Kilgoris"
+          },
+          {
+            "id": 4916,
+            "subcounty_name": "NarokEast"
+          },
+          {
+            "id": 4917,
+            "subcounty_name": "NarokNorth"
+          },
+          {
+            "id": 4918,
+            "subcounty_name": "NarokSouth"
+          },
+          {
+            "id": 4919,
+            "subcounty_name": "NarokWest"
+          }
+        ]
+      },
+      {
+        "id": 1044,
+        "county_name": "Nyamira",
+        "subCounties": [
+          {
+            "id": 4920,
+            "subcounty_name": "Borabu"
+          },
+          {
+            "id": 4921,
+            "subcounty_name": "KitutuMasaba"
+          },
+          {
+            "id": 4922,
+            "subcounty_name": "NorthMugirango"
+          },
+          {
+            "id": 4923,
+            "subcounty_name": "WestMugirango"
+          }
+        ]
+      },
+      {
+        "id": 1045,
+        "county_name": "Nyandarua",
+        "subCounties": [
+          {
+            "id": 4924,
+            "subcounty_name": "Kinangop"
+          },
+          {
+            "id": 4925,
+            "subcounty_name": "Kipipiri"
+          },
+          {
+            "id": 4926,
+            "subcounty_name": "Ndaragwa"
+          },
+          {
+            "id": 4927,
+            "subcounty_name": "OlJorok"
+          },
+          {
+            "id": 4928,
+            "subcounty_name": "OlKalou"
+          }
+        ]
+      },
+      {
+        "id": 1046,
+        "county_name": "Nyeri",
+        "subCounties": [
+          {
+            "id": 4929,
+            "subcounty_name": "Kieni"
+          },
+          {
+            "id": 4930,
+            "subcounty_name": "Mathira"
+          },
+          {
+            "id": 4931,
+            "subcounty_name": "Mukurweini"
+          },
+          {
+            "id": 4932,
+            "subcounty_name": "NyeriTown"
+          },
+          {
+            "id": 4933,
+            "subcounty_name": "Othaya"
+          },
+          {
+            "id": 4934,
+            "subcounty_name": "Tetu"
+          }
+        ]
+      },
+      {
+        "id": 1047,
+        "county_name": "Samburu",
+        "subCounties": [
+          {
+            "id": 4935,
+            "subcounty_name": "SamburuEast"
+          },
+          {
+            "id": 4936,
+            "subcounty_name": "SamburuNorth"
+          },
+          {
+            "id": 4937,
+            "subcounty_name": "SamburuWest"
+          }
+        ]
+      },
+      {
+        "id": 1048,
+        "county_name": "Siaya",
+        "subCounties": [
+          {
+            "id": 4938,
+            "subcounty_name": "AlegoUsonga"
+          },
+          {
+            "id": 4939,
+            "subcounty_name": "Bondo"
+          },
+          {
+            "id": 4940,
+            "subcounty_name": "Gem"
+          },
+          {
+            "id": 4941,
+            "subcounty_name": "Rarieda"
+          },
+          {
+            "id": 4942,
+            "subcounty_name": "Ugenya"
+          },
+          {
+            "id": 4943,
+            "subcounty_name": "Ugunja"
+          }
+        ]
+      },
+      {
+        "id": 1049,
+        "county_name": "TaitaTaveta",
+        "subCounties": [
+          {
+            "id": 4944,
+            "subcounty_name": "Mwatate"
+          },
+          {
+            "id": 4945,
+            "subcounty_name": "Taveta"
+          },
+          {
+            "id": 4946,
+            "subcounty_name": "Voi"
+          },
+          {
+            "id": 4947,
+            "subcounty_name": "Wundanyi"
+          }
+        ]
+      },
+      {
+        "id": 1050,
+        "county_name": "TanaRiver",
+        "subCounties": [
+          {
+            "id": 4948,
+            "subcounty_name": "Bura"
+          },
+          {
+            "id": 4949,
+            "subcounty_name": "Galole"
+          },
+          {
+            "id": 4950,
+            "subcounty_name": "Garsen"
+          }
+        ]
+      },
+      {
+        "id": 1051,
+        "county_name": "Tharaka-Nithi",
+        "subCounties": [
+          {
+            "id": 4951,
+            "subcounty_name": "Chuka/Igambang'Ombe"
+          },
+          {
+            "id": 4952,
+            "subcounty_name": "IgembeSouth"
+          },
+          {
+            "id": 4953,
+            "subcounty_name": "Maara"
+          },
+          {
+            "id": 4954,
+            "subcounty_name": "Tharaka"
+          }
+        ]
+      },
+      {
+        "id": 1052,
+        "county_name": "TransNzoia",
+        "subCounties": [
+          {
+            "id": 4955,
+            "subcounty_name": "Cherangany"
+          },
+          {
+            "id": 4956,
+            "subcounty_name": "Endebess"
+          },
+          {
+            "id": 4957,
+            "subcounty_name": "Kiminini"
+          },
+          {
+            "id": 4958,
+            "subcounty_name": "Kwanza"
+          },
+          {
+            "id": 4959,
+            "subcounty_name": "Saboti"
+          },
+          {
+            "id": 4960,
+            "subcounty_name": "unknown4"
+          }
+        ]
+      },
+      {
+        "id": 1053,
+        "county_name": "Turkana",
+        "subCounties": [
+          {
+            "id": 4961,
+            "subcounty_name": "Loima"
+          },
+          {
+            "id": 4962,
+            "subcounty_name": "TurkanaCentral"
+          },
+          {
+            "id": 4963,
+            "subcounty_name": "TurkanaEast"
+          },
+          {
+            "id": 4964,
+            "subcounty_name": "TurkanaNorth"
+          },
+          {
+            "id": 4965,
+            "subcounty_name": "TurkanaSouth"
+          },
+          {
+            "id": 4966,
+            "subcounty_name": "TurkanaWest"
+          },
+          {
+            "id": 4967,
+            "subcounty_name": "unknown2"
+          }
+        ]
+      },
+      {
+        "id": 1054,
+        "county_name": "UasinGishu",
+        "subCounties": [
+          {
+            "id": 4968,
+            "subcounty_name": "Ainabkoi"
+          },
+          {
+            "id": 4969,
+            "subcounty_name": "Kapseret"
+          },
+          {
+            "id": 4970,
+            "subcounty_name": "Kesses"
+          },
+          {
+            "id": 4971,
+            "subcounty_name": "Moiben"
+          },
+          {
+            "id": 4972,
+            "subcounty_name": "Soy"
+          },
+          {
+            "id": 4973,
+            "subcounty_name": "Turbo"
+          }
+        ]
+      },
+      {
+        "id": 1055,
+        "county_name": "Vihiga",
+        "subCounties": [
+          {
+            "id": 4974,
+            "subcounty_name": "Emuhaya"
+          },
+          {
+            "id": 4975,
+            "subcounty_name": "Hamisi"
+          },
+          {
+            "id": 4976,
+            "subcounty_name": "Luanda"
+          },
+          {
+            "id": 4977,
+            "subcounty_name": "Sabatia"
+          },
+          {
+            "id": 4978,
+            "subcounty_name": "Vihiga"
+          }
+        ]
+      },
+      {
+        "id": 1056,
+        "county_name": "Wajir",
+        "subCounties": [
+          {
+            "id": 4979,
+            "subcounty_name": "Eldas"
+          },
+          {
+            "id": 4980,
+            "subcounty_name": "Tarbaj"
+          },
+          {
+            "id": 4981,
+            "subcounty_name": "WajirEast"
+          },
+          {
+            "id": 4982,
+            "subcounty_name": "WajirNorth"
+          },
+          {
+            "id": 4983,
+            "subcounty_name": "WajirSouth"
+          },
+          {
+            "id": 4984,
+            "subcounty_name": "WajirWest"
+          }
+        ]
+      },
+      {
+        "id": 1057,
+        "county_name": "WestPokot",
+        "subCounties": [
+          {
+            "id": 4985,
+            "subcounty_name": "Kacheliba"
+          },
+          {
+            "id": 4986,
+            "subcounty_name": "Kapenguria"
+          },
+          {
+            "id": 4987,
+            "subcounty_name": "PokotSouth"
+          },
+          {
+            "id": 4988,
+            "subcounty_name": "Sigor"
+          },
+          {
+            "id": 4989,
+            "subcounty_name": "unknown3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "country_name": "Rwanda",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1058,
+        "county_name": "Amajyaruguru",
+        "subCounties": [
+          {
+            "id": 4990,
+            "subcounty_name": "Burera"
+          },
+          {
+            "id": 4991,
+            "subcounty_name": "Gakenke"
+          },
+          {
+            "id": 4992,
+            "subcounty_name": "Gicumbi"
+          },
+          {
+            "id": 4993,
+            "subcounty_name": "Musanze"
+          },
+          {
+            "id": 4994,
+            "subcounty_name": "Rulindo"
+          }
+        ]
+      },
+      {
+        "id": 1059,
+        "county_name": "Amajyepfo",
+        "subCounties": [
+          {
+            "id": 4995,
+            "subcounty_name": "Gisagara"
+          },
+          {
+            "id": 4996,
+            "subcounty_name": "Huye"
+          },
+          {
+            "id": 4997,
+            "subcounty_name": "Kamonyi"
+          },
+          {
+            "id": 4998,
+            "subcounty_name": "Muhanga"
+          },
+          {
+            "id": 4999,
+            "subcounty_name": "Nyamagabe"
+          },
+          {
+            "id": 5000,
+            "subcounty_name": "Nyanza"
+          },
+          {
+            "id": 5001,
+            "subcounty_name": "Nyaruguru"
+          },
+          {
+            "id": 5002,
+            "subcounty_name": "Ruhango"
+          }
+        ]
+      },
+      {
+        "id": 1060,
+        "county_name": "Iburasirazuba",
+        "subCounties": [
+          {
+            "id": 5003,
+            "subcounty_name": "Bugesera"
+          },
+          {
+            "id": 5004,
+            "subcounty_name": "Gatsibo"
+          },
+          {
+            "id": 5005,
+            "subcounty_name": "Kayonza"
+          },
+          {
+            "id": 5006,
+            "subcounty_name": "Kirehe"
+          },
+          {
+            "id": 5007,
+            "subcounty_name": "Ngoma"
+          },
+          {
+            "id": 5008,
+            "subcounty_name": "Nyagatare"
+          },
+          {
+            "id": 5009,
+            "subcounty_name": "Rwamagana"
+          }
+        ]
+      },
+      {
+        "id": 1061,
+        "county_name": "Iburengerazuba",
+        "subCounties": [
+          {
+            "id": 5010,
+            "subcounty_name": "Karongi"
+          },
+          {
+            "id": 5011,
+            "subcounty_name": "Ngororero"
+          },
+          {
+            "id": 5012,
+            "subcounty_name": "Nyabihu"
+          },
+          {
+            "id": 5013,
+            "subcounty_name": "Nyamasheke"
+          },
+          {
+            "id": 5014,
+            "subcounty_name": "Rubavu"
+          },
+          {
+            "id": 5015,
+            "subcounty_name": "Rusizi"
+          },
+          {
+            "id": 5016,
+            "subcounty_name": "Rutsiro"
+          }
+        ]
+      },
+      {
+        "id": 1062,
+        "county_name": "UmujyiwaKigali",
+        "subCounties": [
+          {
+            "id": 5017,
+            "subcounty_name": "Gasabo"
+          },
+          {
+            "id": 5018,
+            "subcounty_name": "Kicukiro"
+          },
+          {
+            "id": 5019,
+            "subcounty_name": "Nyarugenge"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "country_name": "Somalia",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1063,
+        "county_name": "Awdal",
+        "subCounties": [
+          {
+            "id": 5020,
+            "subcounty_name": "Baki"
+          },
+          {
+            "id": 5021,
+            "subcounty_name": "Boorama"
+          },
+          {
+            "id": 5022,
+            "subcounty_name": "Lughaya"
+          },
+          {
+            "id": 5023,
+            "subcounty_name": "Zeylac"
+          }
+        ]
+      },
+      {
+        "id": 1064,
+        "county_name": "Bakool",
+        "subCounties": [
+          {
+            "id": 5024,
+            "subcounty_name": "CeelBarde"
+          },
+          {
+            "id": 5025,
+            "subcounty_name": "RabDhuure"
+          },
+          {
+            "id": 5026,
+            "subcounty_name": "Tiyeeglow"
+          },
+          {
+            "id": 5027,
+            "subcounty_name": "Wajid"
+          },
+          {
+            "id": 5028,
+            "subcounty_name": "Xudur"
+          }
+        ]
+      },
+      {
+        "id": 1065,
+        "county_name": "Banaadir",
+        "subCounties": [
+          {
+            "id": 5029,
+            "subcounty_name": "Mogadisho"
+          }
+        ]
+      },
+      {
+        "id": 1066,
+        "county_name": "Bari",
+        "subCounties": [
+          {
+            "id": 5030,
+            "subcounty_name": "Bander-Beyla"
+          },
+          {
+            "id": 5031,
+            "subcounty_name": "Bosaaso"
+          },
+          {
+            "id": 5032,
+            "subcounty_name": "Calawla"
+          },
+          {
+            "id": 5033,
+            "subcounty_name": "Iskushuban"
+          },
+          {
+            "id": 5034,
+            "subcounty_name": "Qandala"
+          },
+          {
+            "id": 5035,
+            "subcounty_name": "Qardho"
+          }
+        ]
+      },
+      {
+        "id": 1067,
+        "county_name": "Bay",
+        "subCounties": [
+          {
+            "id": 5036,
+            "subcounty_name": "Baydhabo"
+          },
+          {
+            "id": 5037,
+            "subcounty_name": "BuurXakaba"
+          },
+          {
+            "id": 5038,
+            "subcounty_name": "Diinsoor"
+          },
+          {
+            "id": 5039,
+            "subcounty_name": "QansaxDheere"
+          }
+        ]
+      },
+      {
+        "id": 1068,
+        "county_name": "Galguduud",
+        "subCounties": [
+          {
+            "id": 5040,
+            "subcounty_name": "Caabudwaaq"
+          },
+          {
+            "id": 5041,
+            "subcounty_name": "Cadaado"
+          },
+          {
+            "id": 5042,
+            "subcounty_name": "CeelBuur"
+          },
+          {
+            "id": 5043,
+            "subcounty_name": "CeelDheer"
+          },
+          {
+            "id": 5044,
+            "subcounty_name": "Dhuusamareeb"
+          }
+        ]
+      },
+      {
+        "id": 1069,
+        "county_name": "Gedo",
+        "subCounties": [
+          {
+            "id": 5045,
+            "subcounty_name": "Baar-Dheere"
+          },
+          {
+            "id": 5046,
+            "subcounty_name": "BeledXaawo"
+          },
+          {
+            "id": 5047,
+            "subcounty_name": "CeelWaaq"
+          },
+          {
+            "id": 5048,
+            "subcounty_name": "Dolow"
+          },
+          {
+            "id": 5049,
+            "subcounty_name": "Garbahaaray"
+          },
+          {
+            "id": 5050,
+            "subcounty_name": "Luuk"
+          }
+        ]
+      },
+      {
+        "id": 1070,
+        "county_name": "Hiiraan",
+        "subCounties": [
+          {
+            "id": 5051,
+            "subcounty_name": "BeledWeyn"
+          },
+          {
+            "id": 5052,
+            "subcounty_name": "BuuloBurdo"
+          },
+          {
+            "id": 5053,
+            "subcounty_name": "Jalalaqsi"
+          }
+        ]
+      },
+      {
+        "id": 1071,
+        "county_name": "JubbadaDhexe",
+        "subCounties": [
+          {
+            "id": 5054,
+            "subcounty_name": "Bu'aale"
+          },
+          {
+            "id": 5055,
+            "subcounty_name": "Jilib"
+          },
+          {
+            "id": 5056,
+            "subcounty_name": "Saakow"
+          }
+        ]
+      },
+      {
+        "id": 1072,
+        "county_name": "JubbadaHoose",
+        "subCounties": [
+          {
+            "id": 5057,
+            "subcounty_name": "Afmadow"
+          },
+          {
+            "id": 5058,
+            "subcounty_name": "Badhaadhe"
+          },
+          {
+            "id": 5059,
+            "subcounty_name": "Jamaame"
+          },
+          {
+            "id": 5060,
+            "subcounty_name": "Kismaayo"
+          }
+        ]
+      },
+      {
+        "id": 1073,
+        "county_name": "Mudug",
+        "subCounties": [
+          {
+            "id": 5061,
+            "subcounty_name": "Gaalkacayo"
+          },
+          {
+            "id": 5062,
+            "subcounty_name": "Goldogob"
+          },
+          {
+            "id": 5063,
+            "subcounty_name": "Hobyo"
+          },
+          {
+            "id": 5064,
+            "subcounty_name": "Jariiban"
+          },
+          {
+            "id": 5065,
+            "subcounty_name": "Xarardheere"
+          }
+        ]
+      },
+      {
+        "id": 1074,
+        "county_name": "Nugaal",
+        "subCounties": [
+          {
+            "id": 5066,
+            "subcounty_name": "Burtinle"
+          },
+          {
+            "id": 5067,
+            "subcounty_name": "Eyl"
+          },
+          {
+            "id": 5068,
+            "subcounty_name": "Garoowe"
+          }
+        ]
+      },
+      {
+        "id": 1075,
+        "county_name": "Sanaag",
+        "subCounties": [
+          {
+            "id": 5069,
+            "subcounty_name": "Badhan"
+          },
+          {
+            "id": 5070,
+            "subcounty_name": "Ceel-Afwein"
+          },
+          {
+            "id": 5071,
+            "subcounty_name": "Ceerigaabo"
+          }
+        ]
+      },
+      {
+        "id": 1076,
+        "county_name": "ShabeellahaDhexe",
+        "subCounties": [
+          {
+            "id": 5072,
+            "subcounty_name": "Aadan"
+          },
+          {
+            "id": 5073,
+            "subcounty_name": "Balcad"
+          },
+          {
+            "id": 5074,
+            "subcounty_name": "Cadale"
+          },
+          {
+            "id": 5075,
+            "subcounty_name": "Jawhar"
+          }
+        ]
+      },
+      {
+        "id": 1077,
+        "county_name": "ShabeellahaHoose",
+        "subCounties": [
+          {
+            "id": 5076,
+            "subcounty_name": "Afgooye"
+          },
+          {
+            "id": 5077,
+            "subcounty_name": "Baraawe"
+          },
+          {
+            "id": 5078,
+            "subcounty_name": "Kuntuwaaray"
+          },
+          {
+            "id": 5079,
+            "subcounty_name": "Marka"
+          },
+          {
+            "id": 5080,
+            "subcounty_name": "Qoryooley"
+          },
+          {
+            "id": 5081,
+            "subcounty_name": "Sablale"
+          },
+          {
+            "id": 5082,
+            "subcounty_name": "WanlaWeyn"
+          }
+        ]
+      },
+      {
+        "id": 1078,
+        "county_name": "Sool",
+        "subCounties": [
+          {
+            "id": 5083,
+            "subcounty_name": "Caynabo"
+          },
+          {
+            "id": 5084,
+            "subcounty_name": "Lascaanod"
+          },
+          {
+            "id": 5085,
+            "subcounty_name": "Taleex"
+          },
+          {
+            "id": 5086,
+            "subcounty_name": "Xudun"
+          }
+        ]
+      },
+      {
+        "id": 1079,
+        "county_name": "Togdheer",
+        "subCounties": [
+          {
+            "id": 5087,
+            "subcounty_name": "Burao"
+          },
+          {
+            "id": 5088,
+            "subcounty_name": "Buuhoodle"
+          },
+          {
+            "id": 5089,
+            "subcounty_name": "Oodweyne"
+          },
+          {
+            "id": 5090,
+            "subcounty_name": "Sheekh"
+          }
+        ]
+      },
+      {
+        "id": 1080,
+        "county_name": "WoqooyiGalbeed",
+        "subCounties": [
+          {
+            "id": 5091,
+            "subcounty_name": "Berbera"
+          },
+          {
+            "id": 5092,
+            "subcounty_name": "Gabiley"
+          },
+          {
+            "id": 5093,
+            "subcounty_name": "Hargeysa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "country_name": "Cote dIvoire",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1081,
+        "county_name": "Abidjan",
+        "subCounties": [
+          {
+            "id": 5094,
+            "subcounty_name": "Abidjan"
+          }
+        ]
+      },
+      {
+        "id": 1082,
+        "county_name": "Bas-Sassandra",
+        "subCounties": [
+          {
+            "id": 5095,
+            "subcounty_name": "Gb\u00f4kle"
+          },
+          {
+            "id": 5096,
+            "subcounty_name": "Nawa"
+          },
+          {
+            "id": 5097,
+            "subcounty_name": "San-P\u00e9dro"
+          }
+        ]
+      },
+      {
+        "id": 1083,
+        "county_name": "Como\u00e9",
+        "subCounties": [
+          {
+            "id": 5098,
+            "subcounty_name": "Ind\u00e9ni\u00e9-Djuablin"
+          },
+          {
+            "id": 5099,
+            "subcounty_name": "SudComo\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1084,
+        "county_name": "Dengu\u00e9l\u00e9",
+        "subCounties": [
+          {
+            "id": 5100,
+            "subcounty_name": "Folon"
+          },
+          {
+            "id": 5101,
+            "subcounty_name": "Kabadougou"
+          }
+        ]
+      },
+      {
+        "id": 1085,
+        "county_name": "G\u00f4h-Djiboua",
+        "subCounties": [
+          {
+            "id": 5102,
+            "subcounty_name": "G\u00f4h"
+          },
+          {
+            "id": 5103,
+            "subcounty_name": "L\u00f4h-Djiboua"
+          }
+        ]
+      },
+      {
+        "id": 1086,
+        "county_name": "Lacs",
+        "subCounties": [
+          {
+            "id": 5104,
+            "subcounty_name": "B\u00e9lier"
+          },
+          {
+            "id": 5105,
+            "subcounty_name": "Iffou"
+          },
+          {
+            "id": 5106,
+            "subcounty_name": "Moronou"
+          },
+          {
+            "id": 5107,
+            "subcounty_name": "N'zi"
+          }
+        ]
+      },
+      {
+        "id": 1087,
+        "county_name": "Lagunes",
+        "subCounties": [
+          {
+            "id": 5108,
+            "subcounty_name": "Agn\u00e9by-Tiassa"
+          },
+          {
+            "id": 5109,
+            "subcounty_name": "GrandsPonts"
+          },
+          {
+            "id": 5110,
+            "subcounty_name": "LaM\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1088,
+        "county_name": "Montagnes",
+        "subCounties": [
+          {
+            "id": 5111,
+            "subcounty_name": "Cavally"
+          },
+          {
+            "id": 5112,
+            "subcounty_name": "Gu\u00e9mon"
+          },
+          {
+            "id": 5113,
+            "subcounty_name": "Tonkpi"
+          }
+        ]
+      },
+      {
+        "id": 1089,
+        "county_name": "Sassandra-Marahou\u00e9",
+        "subCounties": [
+          {
+            "id": 5114,
+            "subcounty_name": "Haut-Sassandra"
+          },
+          {
+            "id": 5115,
+            "subcounty_name": "Marahou\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1090,
+        "county_name": "Savanes",
+        "subCounties": [
+          {
+            "id": 5116,
+            "subcounty_name": "Bagou\u00e9"
+          },
+          {
+            "id": 5117,
+            "subcounty_name": "Poro"
+          },
+          {
+            "id": 5118,
+            "subcounty_name": "Tchologo"
+          }
+        ]
+      },
+      {
+        "id": 1091,
+        "county_name": "Vall\u00e9eduBandama",
+        "subCounties": [
+          {
+            "id": 5119,
+            "subcounty_name": "Gbeke"
+          },
+          {
+            "id": 5120,
+            "subcounty_name": "Hambol"
+          }
+        ]
+      },
+      {
+        "id": 1092,
+        "county_name": "Woroba",
+        "subCounties": [
+          {
+            "id": 5121,
+            "subcounty_name": "Bafing"
+          },
+          {
+            "id": 5122,
+            "subcounty_name": "B\u00e9r\u00e9"
+          },
+          {
+            "id": 5123,
+            "subcounty_name": "Worodougou"
+          }
+        ]
+      },
+      {
+        "id": 1093,
+        "county_name": "Yamoussoukro",
+        "subCounties": [
+          {
+            "id": 5124,
+            "subcounty_name": "Yamoussoukro"
+          }
+        ]
+      },
+      {
+        "id": 1094,
+        "county_name": "Zanzan",
+        "subCounties": [
+          {
+            "id": 5125,
+            "subcounty_name": "Bounkani"
+          },
+          {
+            "id": 5126,
+            "subcounty_name": "Gontougo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "country_name": "Guinea",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1095,
+        "county_name": "Bok\u00e9",
+        "subCounties": [
+          {
+            "id": 5127,
+            "subcounty_name": "Boffa"
+          },
+          {
+            "id": 5128,
+            "subcounty_name": "Bok\u00e9"
+          },
+          {
+            "id": 5129,
+            "subcounty_name": "Fria"
+          },
+          {
+            "id": 5130,
+            "subcounty_name": "Gaoual"
+          },
+          {
+            "id": 5131,
+            "subcounty_name": "Koundara"
+          }
+        ]
+      },
+      {
+        "id": 1096,
+        "county_name": "Conakry",
+        "subCounties": [
+          {
+            "id": 5132,
+            "subcounty_name": "Conakry"
+          }
+        ]
+      },
+      {
+        "id": 1097,
+        "county_name": "Faranah",
+        "subCounties": [
+          {
+            "id": 5133,
+            "subcounty_name": "Dabola"
+          },
+          {
+            "id": 5134,
+            "subcounty_name": "Dinguiraye"
+          },
+          {
+            "id": 5135,
+            "subcounty_name": "Faranah"
+          },
+          {
+            "id": 5136,
+            "subcounty_name": "Kissidougou"
+          }
+        ]
+      },
+      {
+        "id": 1098,
+        "county_name": "Kankan",
+        "subCounties": [
+          {
+            "id": 5137,
+            "subcounty_name": "Kankan"
+          },
+          {
+            "id": 5138,
+            "subcounty_name": "K\u00e9rouan\u00e9"
+          },
+          {
+            "id": 5139,
+            "subcounty_name": "Kouroussa"
+          },
+          {
+            "id": 5140,
+            "subcounty_name": "Mandiana"
+          },
+          {
+            "id": 5141,
+            "subcounty_name": "Siguiri"
+          }
+        ]
+      },
+      {
+        "id": 1099,
+        "county_name": "Kindia",
+        "subCounties": [
+          {
+            "id": 5142,
+            "subcounty_name": "Coyah"
+          },
+          {
+            "id": 5143,
+            "subcounty_name": "Dubr\u00e9ka"
+          },
+          {
+            "id": 5144,
+            "subcounty_name": "For\u00e9cariah"
+          },
+          {
+            "id": 5145,
+            "subcounty_name": "Kindia"
+          },
+          {
+            "id": 5146,
+            "subcounty_name": "T\u00e9lim\u00e9l\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1100,
+        "county_name": "Lab\u00e9",
+        "subCounties": [
+          {
+            "id": 5147,
+            "subcounty_name": "Koubia"
+          },
+          {
+            "id": 5148,
+            "subcounty_name": "Lab\u00e9"
+          },
+          {
+            "id": 5149,
+            "subcounty_name": "L\u00e9louma"
+          },
+          {
+            "id": 5150,
+            "subcounty_name": "Mali"
+          },
+          {
+            "id": 5151,
+            "subcounty_name": "Tougu\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1101,
+        "county_name": "Mamou",
+        "subCounties": [
+          {
+            "id": 5152,
+            "subcounty_name": "Dalaba"
+          },
+          {
+            "id": 5153,
+            "subcounty_name": "Mamou"
+          },
+          {
+            "id": 5154,
+            "subcounty_name": "Pita"
+          }
+        ]
+      },
+      {
+        "id": 1102,
+        "county_name": "Nz\u00e9r\u00e9kor\u00e9",
+        "subCounties": [
+          {
+            "id": 5155,
+            "subcounty_name": "Beyla"
+          },
+          {
+            "id": 5156,
+            "subcounty_name": "Gu\u00e9ck\u00e9dou"
+          },
+          {
+            "id": 5157,
+            "subcounty_name": "Lola"
+          },
+          {
+            "id": 5158,
+            "subcounty_name": "Macenta"
+          },
+          {
+            "id": 5159,
+            "subcounty_name": "Nz\u00e9r\u00e9kor\u00e9"
+          },
+          {
+            "id": 5160,
+            "subcounty_name": "Yamou"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "country_name": "Mali",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1103,
+        "county_name": "Bamako",
+        "subCounties": [
+          {
+            "id": 5161,
+            "subcounty_name": "Bamako"
+          }
+        ]
+      },
+      {
+        "id": 1104,
+        "county_name": "Gao",
+        "subCounties": [
+          {
+            "id": 5162,
+            "subcounty_name": "Ansongo"
+          },
+          {
+            "id": 5163,
+            "subcounty_name": "Bourem"
+          },
+          {
+            "id": 5164,
+            "subcounty_name": "Gao"
+          },
+          {
+            "id": 5165,
+            "subcounty_name": "M\u00e9naka"
+          }
+        ]
+      },
+      {
+        "id": 1105,
+        "county_name": "Kayes",
+        "subCounties": [
+          {
+            "id": 5166,
+            "subcounty_name": "Bafoulab\u00e9"
+          },
+          {
+            "id": 5167,
+            "subcounty_name": "Di\u00e9ma"
+          },
+          {
+            "id": 5168,
+            "subcounty_name": "Kayes"
+          },
+          {
+            "id": 5169,
+            "subcounty_name": "K\u00e9ni\u00e9ba"
+          },
+          {
+            "id": 5170,
+            "subcounty_name": "Kita"
+          },
+          {
+            "id": 5171,
+            "subcounty_name": "Nioro"
+          },
+          {
+            "id": 5172,
+            "subcounty_name": "Y\u00e9liman\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1106,
+        "county_name": "Kidal",
+        "subCounties": [
+          {
+            "id": 5173,
+            "subcounty_name": "Abe\u00efbara"
+          },
+          {
+            "id": 5174,
+            "subcounty_name": "Kidal"
+          },
+          {
+            "id": 5175,
+            "subcounty_name": "Tessalit"
+          },
+          {
+            "id": 5176,
+            "subcounty_name": "Tin-Essako"
+          }
+        ]
+      },
+      {
+        "id": 1107,
+        "county_name": "Koulikoro",
+        "subCounties": [
+          {
+            "id": 5177,
+            "subcounty_name": "Banamba"
+          },
+          {
+            "id": 5178,
+            "subcounty_name": "Dio\u00efla"
+          },
+          {
+            "id": 5179,
+            "subcounty_name": "Kangaba"
+          },
+          {
+            "id": 5180,
+            "subcounty_name": "Kati"
+          },
+          {
+            "id": 5181,
+            "subcounty_name": "Kolokani"
+          },
+          {
+            "id": 5182,
+            "subcounty_name": "Koulikoro"
+          },
+          {
+            "id": 5183,
+            "subcounty_name": "Nara"
+          }
+        ]
+      },
+      {
+        "id": 1108,
+        "county_name": "Mopti",
+        "subCounties": [
+          {
+            "id": 5184,
+            "subcounty_name": "Bandiagara"
+          },
+          {
+            "id": 5185,
+            "subcounty_name": "Bankass"
+          },
+          {
+            "id": 5186,
+            "subcounty_name": "Djenn\u00e9"
+          },
+          {
+            "id": 5187,
+            "subcounty_name": "Douentza"
+          },
+          {
+            "id": 5188,
+            "subcounty_name": "Koro"
+          },
+          {
+            "id": 5189,
+            "subcounty_name": "Mopti"
+          },
+          {
+            "id": 5190,
+            "subcounty_name": "T\u00e9nenkou"
+          },
+          {
+            "id": 5191,
+            "subcounty_name": "Youwarou"
+          }
+        ]
+      },
+      {
+        "id": 1109,
+        "county_name": "S\u00e9gou",
+        "subCounties": [
+          {
+            "id": 5192,
+            "subcounty_name": "Barou\u00e9li"
+          },
+          {
+            "id": 5193,
+            "subcounty_name": "Bla"
+          },
+          {
+            "id": 5194,
+            "subcounty_name": "Macina"
+          },
+          {
+            "id": 5195,
+            "subcounty_name": "Niono"
+          },
+          {
+            "id": 5196,
+            "subcounty_name": "San"
+          },
+          {
+            "id": 5197,
+            "subcounty_name": "S\u00e9gou"
+          },
+          {
+            "id": 5198,
+            "subcounty_name": "Tominian"
+          }
+        ]
+      },
+      {
+        "id": 1110,
+        "county_name": "Sikasso",
+        "subCounties": [
+          {
+            "id": 5199,
+            "subcounty_name": "Bougouni"
+          },
+          {
+            "id": 5200,
+            "subcounty_name": "Kadiolo"
+          },
+          {
+            "id": 5201,
+            "subcounty_name": "Kolondi\u00e9ba"
+          },
+          {
+            "id": 5202,
+            "subcounty_name": "Koutiala"
+          },
+          {
+            "id": 5203,
+            "subcounty_name": "Sikasso"
+          },
+          {
+            "id": 5204,
+            "subcounty_name": "Yanfolila"
+          },
+          {
+            "id": 5205,
+            "subcounty_name": "Yorosso"
+          }
+        ]
+      },
+      {
+        "id": 1111,
+        "county_name": "Timbuktu",
+        "subCounties": [
+          {
+            "id": 5206,
+            "subcounty_name": "Dir\u00e9"
+          },
+          {
+            "id": 5207,
+            "subcounty_name": "Goundam"
+          },
+          {
+            "id": 5208,
+            "subcounty_name": "Gourma-Rharous"
+          },
+          {
+            "id": 5209,
+            "subcounty_name": "Niafunk\u00e9"
+          },
+          {
+            "id": 5210,
+            "subcounty_name": "Tombouctou"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "country_name": "Ghana",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1112,
+        "county_name": "Ahafo",
+        "subCounties": [
+          {
+            "id": 5211,
+            "subcounty_name": "AsunafoNorth"
+          },
+          {
+            "id": 5212,
+            "subcounty_name": "AsunafoSouth"
+          },
+          {
+            "id": 5213,
+            "subcounty_name": "AsutifiNorth"
+          },
+          {
+            "id": 5214,
+            "subcounty_name": "AsutifiSouth"
+          },
+          {
+            "id": 5215,
+            "subcounty_name": "TanoNorth"
+          },
+          {
+            "id": 5216,
+            "subcounty_name": "TanoSouth"
+          }
+        ]
+      },
+      {
+        "id": 1113,
+        "county_name": "Ashanti",
+        "subCounties": [
+          {
+            "id": 5217,
+            "subcounty_name": "AdansiAkrofuom"
+          },
+          {
+            "id": 5218,
+            "subcounty_name": "AdansiAsokwa"
+          },
+          {
+            "id": 5219,
+            "subcounty_name": "AdansiNorth"
+          },
+          {
+            "id": 5220,
+            "subcounty_name": "AdansiSouth"
+          },
+          {
+            "id": 5221,
+            "subcounty_name": "Afigya-KwabreNorth"
+          },
+          {
+            "id": 5222,
+            "subcounty_name": "Afigya-KwabreSouth"
+          },
+          {
+            "id": 5223,
+            "subcounty_name": "Ahafo-AnoNorth"
+          },
+          {
+            "id": 5224,
+            "subcounty_name": "Ahafo-AnoSouthEast"
+          },
+          {
+            "id": 5225,
+            "subcounty_name": "Ahafo-AnoSouthWest"
+          },
+          {
+            "id": 5226,
+            "subcounty_name": "AmansieCentral"
+          },
+          {
+            "id": 5227,
+            "subcounty_name": "AmansieSouth"
+          },
+          {
+            "id": 5228,
+            "subcounty_name": "AmansieWest"
+          },
+          {
+            "id": 5229,
+            "subcounty_name": "Asante-AkimCentral"
+          },
+          {
+            "id": 5230,
+            "subcounty_name": "Asante-AkimNorth"
+          },
+          {
+            "id": 5231,
+            "subcounty_name": "Asante-AkimSouth"
+          },
+          {
+            "id": 5232,
+            "subcounty_name": "Asokore-Mampong"
+          },
+          {
+            "id": 5233,
+            "subcounty_name": "Asokwa"
+          },
+          {
+            "id": 5234,
+            "subcounty_name": "Atwima-Kwanwoma"
+          },
+          {
+            "id": 5235,
+            "subcounty_name": "Atwima-Mponua"
+          },
+          {
+            "id": 5236,
+            "subcounty_name": "Atwima-NwabiagyaNorth"
+          },
+          {
+            "id": 5237,
+            "subcounty_name": "Atwima-NwabiagyaSouth"
+          },
+          {
+            "id": 5238,
+            "subcounty_name": "Bekwai"
+          },
+          {
+            "id": 5239,
+            "subcounty_name": "BosomeFreho"
+          },
+          {
+            "id": 5240,
+            "subcounty_name": "Bosomtwe"
+          },
+          {
+            "id": 5241,
+            "subcounty_name": "Ejisu"
+          },
+          {
+            "id": 5242,
+            "subcounty_name": "Ejura-Sekyedumase"
+          },
+          {
+            "id": 5243,
+            "subcounty_name": "Juaben"
+          },
+          {
+            "id": 5244,
+            "subcounty_name": "Kumasi"
+          },
+          {
+            "id": 5245,
+            "subcounty_name": "KwabreEast"
+          },
+          {
+            "id": 5246,
+            "subcounty_name": "Kwadaso"
+          },
+          {
+            "id": 5247,
+            "subcounty_name": "Mampong"
+          },
+          {
+            "id": 5248,
+            "subcounty_name": "Obuasi"
+          },
+          {
+            "id": 5249,
+            "subcounty_name": "ObuasiEast"
+          },
+          {
+            "id": 5250,
+            "subcounty_name": "Offinso"
+          },
+          {
+            "id": 5251,
+            "subcounty_name": "OffinsoNorth"
+          },
+          {
+            "id": 5252,
+            "subcounty_name": "Oforikrom"
+          },
+          {
+            "id": 5253,
+            "subcounty_name": "OldTafo"
+          },
+          {
+            "id": 5254,
+            "subcounty_name": "SekyereAframPlainsNorth"
+          },
+          {
+            "id": 5255,
+            "subcounty_name": "SekyereCentral"
+          },
+          {
+            "id": 5256,
+            "subcounty_name": "SekyereEast"
+          },
+          {
+            "id": 5257,
+            "subcounty_name": "SekyereKumawu"
+          },
+          {
+            "id": 5258,
+            "subcounty_name": "SekyereSouth"
+          },
+          {
+            "id": 5259,
+            "subcounty_name": "Suame"
+          }
+        ]
+      },
+      {
+        "id": 1114,
+        "county_name": "Bono",
+        "subCounties": [
+          {
+            "id": 5260,
+            "subcounty_name": "Banda"
+          },
+          {
+            "id": 5261,
+            "subcounty_name": "BerekumEast"
+          },
+          {
+            "id": 5262,
+            "subcounty_name": "BerekumWest"
+          },
+          {
+            "id": 5263,
+            "subcounty_name": "Dormaa"
+          },
+          {
+            "id": 5264,
+            "subcounty_name": "DormaaEast"
+          },
+          {
+            "id": 5265,
+            "subcounty_name": "DormaaWest"
+          },
+          {
+            "id": 5266,
+            "subcounty_name": "JamanNorth"
+          },
+          {
+            "id": 5267,
+            "subcounty_name": "JamanSouth"
+          },
+          {
+            "id": 5268,
+            "subcounty_name": "Sunyani"
+          },
+          {
+            "id": 5269,
+            "subcounty_name": "SunyaniWest"
+          },
+          {
+            "id": 5270,
+            "subcounty_name": "Tain"
+          },
+          {
+            "id": 5271,
+            "subcounty_name": "Wenchi"
+          }
+        ]
+      },
+      {
+        "id": 1115,
+        "county_name": "BonoEast",
+        "subCounties": [
+          {
+            "id": 5272,
+            "subcounty_name": "Atebubu-Amantin"
+          },
+          {
+            "id": 5273,
+            "subcounty_name": "KintampoNorth"
+          },
+          {
+            "id": 5274,
+            "subcounty_name": "KintampoSouth"
+          },
+          {
+            "id": 5275,
+            "subcounty_name": "NkoranzaNorth"
+          },
+          {
+            "id": 5276,
+            "subcounty_name": "NkoranzaSouth"
+          },
+          {
+            "id": 5277,
+            "subcounty_name": "PruEast"
+          },
+          {
+            "id": 5278,
+            "subcounty_name": "PruWest"
+          },
+          {
+            "id": 5279,
+            "subcounty_name": "SeneEast"
+          },
+          {
+            "id": 5280,
+            "subcounty_name": "SeneWest"
+          },
+          {
+            "id": 5281,
+            "subcounty_name": "Techiman"
+          },
+          {
+            "id": 5282,
+            "subcounty_name": "TechimanNorth"
+          }
+        ]
+      },
+      {
+        "id": 1116,
+        "county_name": "Central",
+        "subCounties": [
+          {
+            "id": 5283,
+            "subcounty_name": "Abura-Asebu-Kwamankese"
+          },
+          {
+            "id": 5284,
+            "subcounty_name": "AgonaEast"
+          },
+          {
+            "id": 5285,
+            "subcounty_name": "AgonaWest"
+          },
+          {
+            "id": 5286,
+            "subcounty_name": "Ajumako-Enyan-Essiam"
+          },
+          {
+            "id": 5287,
+            "subcounty_name": "Asikuma-Odoben-Brakwa"
+          },
+          {
+            "id": 5288,
+            "subcounty_name": "AssinCentral"
+          },
+          {
+            "id": 5289,
+            "subcounty_name": "AssinNorth"
+          },
+          {
+            "id": 5290,
+            "subcounty_name": "AssinSouth"
+          },
+          {
+            "id": 5291,
+            "subcounty_name": "AwutuSenyaEast"
+          },
+          {
+            "id": 5292,
+            "subcounty_name": "AwutuSenyaWest"
+          },
+          {
+            "id": 5293,
+            "subcounty_name": "CapeCoast"
+          },
+          {
+            "id": 5294,
+            "subcounty_name": "Effutu"
+          },
+          {
+            "id": 5295,
+            "subcounty_name": "Ekumfi"
+          },
+          {
+            "id": 5296,
+            "subcounty_name": "GomoaCentral"
+          },
+          {
+            "id": 5297,
+            "subcounty_name": "GomoaEast"
+          },
+          {
+            "id": 5298,
+            "subcounty_name": "GomoaWest"
+          },
+          {
+            "id": 5299,
+            "subcounty_name": "Komenda-Edina-Eguafo-Abirem-"
+          },
+          {
+            "id": 5300,
+            "subcounty_name": "Mfantseman"
+          },
+          {
+            "id": 5301,
+            "subcounty_name": "Twifo-Atti-Morkwa"
+          },
+          {
+            "id": 5302,
+            "subcounty_name": "Twifo-Hemang-LowerDenkyira"
+          },
+          {
+            "id": 5303,
+            "subcounty_name": "UpperDenkyiraEast"
+          },
+          {
+            "id": 5304,
+            "subcounty_name": "UpperDenkyiraWest"
+          }
+        ]
+      },
+      {
+        "id": 1117,
+        "county_name": "Eastern",
+        "subCounties": [
+          {
+            "id": 5305,
+            "subcounty_name": "AbuakwaNorth"
+          },
+          {
+            "id": 5306,
+            "subcounty_name": "AbuakwaSouth"
+          },
+          {
+            "id": 5307,
+            "subcounty_name": "Achiase"
+          },
+          {
+            "id": 5308,
+            "subcounty_name": "AkwapemNorth"
+          },
+          {
+            "id": 5309,
+            "subcounty_name": "AkwapemSouth"
+          },
+          {
+            "id": 5310,
+            "subcounty_name": "Akyemansa"
+          },
+          {
+            "id": 5311,
+            "subcounty_name": "Asene-Manso-Akroso"
+          },
+          {
+            "id": 5312,
+            "subcounty_name": "Asuogyaman"
+          },
+          {
+            "id": 5313,
+            "subcounty_name": "AtiwaEast"
+          },
+          {
+            "id": 5314,
+            "subcounty_name": "AtiwaWest"
+          },
+          {
+            "id": 5315,
+            "subcounty_name": "Ayensuano"
+          },
+          {
+            "id": 5316,
+            "subcounty_name": "BirimCentral"
+          },
+          {
+            "id": 5317,
+            "subcounty_name": "BirimNorth"
+          },
+          {
+            "id": 5318,
+            "subcounty_name": "BirimSouth"
+          },
+          {
+            "id": 5319,
+            "subcounty_name": "Denkyembour"
+          },
+          {
+            "id": 5320,
+            "subcounty_name": "FanteakwaNorth"
+          },
+          {
+            "id": 5321,
+            "subcounty_name": "FanteakwaSouth"
+          },
+          {
+            "id": 5322,
+            "subcounty_name": "Kwaebibirem"
+          },
+          {
+            "id": 5323,
+            "subcounty_name": "KwahuAframPlainsNorth"
+          },
+          {
+            "id": 5324,
+            "subcounty_name": "KwahuAframPlainsSouth"
+          },
+          {
+            "id": 5325,
+            "subcounty_name": "KwahuEast"
+          },
+          {
+            "id": 5326,
+            "subcounty_name": "KwahuSouth"
+          },
+          {
+            "id": 5327,
+            "subcounty_name": "KwahuWest"
+          },
+          {
+            "id": 5328,
+            "subcounty_name": "LowerManya-Krobo"
+          },
+          {
+            "id": 5329,
+            "subcounty_name": "NewJuabenNorth"
+          },
+          {
+            "id": 5330,
+            "subcounty_name": "NewJuabenSouth"
+          },
+          {
+            "id": 5331,
+            "subcounty_name": "NsawamAdoagyiri"
+          },
+          {
+            "id": 5332,
+            "subcounty_name": "Okere"
+          },
+          {
+            "id": 5333,
+            "subcounty_name": "Suhum"
+          },
+          {
+            "id": 5334,
+            "subcounty_name": "UpperManya"
+          },
+          {
+            "id": 5335,
+            "subcounty_name": "UpperWestAkim"
+          },
+          {
+            "id": 5336,
+            "subcounty_name": "WestAkim"
+          },
+          {
+            "id": 5337,
+            "subcounty_name": "Yilo-Krobo"
+          }
+        ]
+      },
+      {
+        "id": 1118,
+        "county_name": "GreaterAccra",
+        "subCounties": [
+          {
+            "id": 5338,
+            "subcounty_name": "AblekumaCentral"
+          },
+          {
+            "id": 5339,
+            "subcounty_name": "AblekumaNorth"
+          },
+          {
+            "id": 5340,
+            "subcounty_name": "AblekumaWest"
+          },
+          {
+            "id": 5341,
+            "subcounty_name": "Accra"
+          },
+          {
+            "id": 5342,
+            "subcounty_name": "AdaEast"
+          },
+          {
+            "id": 5343,
+            "subcounty_name": "AdaWest"
+          },
+          {
+            "id": 5344,
+            "subcounty_name": "Adenta"
+          },
+          {
+            "id": 5345,
+            "subcounty_name": "Ashaiman"
+          },
+          {
+            "id": 5346,
+            "subcounty_name": "AyawasoCentral"
+          },
+          {
+            "id": 5347,
+            "subcounty_name": "AyawasoEast"
+          },
+          {
+            "id": 5348,
+            "subcounty_name": "AyawasoNorth"
+          },
+          {
+            "id": 5349,
+            "subcounty_name": "AyawasoWest"
+          },
+          {
+            "id": 5350,
+            "subcounty_name": "GaCentral"
+          },
+          {
+            "id": 5351,
+            "subcounty_name": "GaEast"
+          },
+          {
+            "id": 5352,
+            "subcounty_name": "GaNorth"
+          },
+          {
+            "id": 5353,
+            "subcounty_name": "GaSouth"
+          },
+          {
+            "id": 5354,
+            "subcounty_name": "GaWest"
+          },
+          {
+            "id": 5355,
+            "subcounty_name": "Korle-Klottey"
+          },
+          {
+            "id": 5356,
+            "subcounty_name": "Kpone-Katamanso"
+          },
+          {
+            "id": 5357,
+            "subcounty_name": "Krowor"
+          },
+          {
+            "id": 5358,
+            "subcounty_name": "La-Dade-Kotopon"
+          },
+          {
+            "id": 5359,
+            "subcounty_name": "La-Nkwantanang-Madina"
+          },
+          {
+            "id": 5360,
+            "subcounty_name": "Ledzokuku"
+          },
+          {
+            "id": 5361,
+            "subcounty_name": "Ningo-Prampram"
+          },
+          {
+            "id": 5362,
+            "subcounty_name": "OkaikweiNorth"
+          },
+          {
+            "id": 5363,
+            "subcounty_name": "ShaiOsudoku"
+          },
+          {
+            "id": 5364,
+            "subcounty_name": "Tema"
+          },
+          {
+            "id": 5365,
+            "subcounty_name": "TemaWest"
+          },
+          {
+            "id": 5366,
+            "subcounty_name": "WeijaGbawe"
+          }
+        ]
+      },
+      {
+        "id": 1119,
+        "county_name": "NorthEast",
+        "subCounties": [
+          {
+            "id": 5367,
+            "subcounty_name": "BunkpuruguNakpanduri"
+          },
+          {
+            "id": 5368,
+            "subcounty_name": "Chereponi"
+          },
+          {
+            "id": 5369,
+            "subcounty_name": "EastMamprusi"
+          },
+          {
+            "id": 5370,
+            "subcounty_name": "MampruguMoagduri"
+          },
+          {
+            "id": 5371,
+            "subcounty_name": "WestMamprusi"
+          },
+          {
+            "id": 5372,
+            "subcounty_name": "Yunyoo-Nasuan"
+          }
+        ]
+      },
+      {
+        "id": 1120,
+        "county_name": "Northern",
+        "subCounties": [
+          {
+            "id": 5373,
+            "subcounty_name": "Gushegu"
+          },
+          {
+            "id": 5374,
+            "subcounty_name": "Karaga"
+          },
+          {
+            "id": 5375,
+            "subcounty_name": "Kpandai"
+          },
+          {
+            "id": 5376,
+            "subcounty_name": "Kumbungu"
+          },
+          {
+            "id": 5377,
+            "subcounty_name": "Mion"
+          },
+          {
+            "id": 5378,
+            "subcounty_name": "Nanton"
+          },
+          {
+            "id": 5379,
+            "subcounty_name": "NanumbaNorth"
+          },
+          {
+            "id": 5380,
+            "subcounty_name": "NanumbaSouth"
+          },
+          {
+            "id": 5381,
+            "subcounty_name": "Saboba"
+          },
+          {
+            "id": 5382,
+            "subcounty_name": "Sagnerigu"
+          },
+          {
+            "id": 5383,
+            "subcounty_name": "Savelugu"
+          },
+          {
+            "id": 5384,
+            "subcounty_name": "Tamale"
+          },
+          {
+            "id": 5385,
+            "subcounty_name": "TataleSanguli"
+          },
+          {
+            "id": 5386,
+            "subcounty_name": "Tolon"
+          },
+          {
+            "id": 5387,
+            "subcounty_name": "Yendi"
+          },
+          {
+            "id": 5388,
+            "subcounty_name": "Zabzugu"
+          }
+        ]
+      },
+      {
+        "id": 1121,
+        "county_name": "Oti",
+        "subCounties": [
+          {
+            "id": 5389,
+            "subcounty_name": "Biakoye"
+          },
+          {
+            "id": 5390,
+            "subcounty_name": "Jasikan"
+          },
+          {
+            "id": 5391,
+            "subcounty_name": "Kadjebi"
+          },
+          {
+            "id": 5392,
+            "subcounty_name": "KrachiEast"
+          },
+          {
+            "id": 5393,
+            "subcounty_name": "KrachiNchumuru"
+          },
+          {
+            "id": 5394,
+            "subcounty_name": "KrachiWest"
+          },
+          {
+            "id": 5395,
+            "subcounty_name": "NkwantaNorth"
+          },
+          {
+            "id": 5396,
+            "subcounty_name": "NkwantaSouth"
+          }
+        ]
+      },
+      {
+        "id": 1122,
+        "county_name": "Savannah",
+        "subCounties": [
+          {
+            "id": 5397,
+            "subcounty_name": "Bole"
+          },
+          {
+            "id": 5398,
+            "subcounty_name": "CentralGonja"
+          },
+          {
+            "id": 5399,
+            "subcounty_name": "EastGonja"
+          },
+          {
+            "id": 5400,
+            "subcounty_name": "NorthEastGonja"
+          },
+          {
+            "id": 5401,
+            "subcounty_name": "NorthGonja"
+          },
+          {
+            "id": 5402,
+            "subcounty_name": "Sawla-Tuna-Kalba"
+          },
+          {
+            "id": 5403,
+            "subcounty_name": "WestGonja"
+          }
+        ]
+      },
+      {
+        "id": 1123,
+        "county_name": "UpperEast",
+        "subCounties": [
+          {
+            "id": 5404,
+            "subcounty_name": "Bawku"
+          },
+          {
+            "id": 5405,
+            "subcounty_name": "BawkuWest"
+          },
+          {
+            "id": 5406,
+            "subcounty_name": "Binduri"
+          },
+          {
+            "id": 5407,
+            "subcounty_name": "BolgaEast"
+          },
+          {
+            "id": 5408,
+            "subcounty_name": "Bolgatanga"
+          },
+          {
+            "id": 5409,
+            "subcounty_name": "Bongo"
+          },
+          {
+            "id": 5410,
+            "subcounty_name": "BuilsaNorth"
+          },
+          {
+            "id": 5411,
+            "subcounty_name": "BuilsaSouth"
+          },
+          {
+            "id": 5412,
+            "subcounty_name": "Garu"
+          },
+          {
+            "id": 5413,
+            "subcounty_name": "KasenaNankanaEast"
+          },
+          {
+            "id": 5414,
+            "subcounty_name": "KasenaNankanaWest"
+          },
+          {
+            "id": 5415,
+            "subcounty_name": "Nabdam"
+          },
+          {
+            "id": 5416,
+            "subcounty_name": "Pusiga"
+          },
+          {
+            "id": 5417,
+            "subcounty_name": "Talensi"
+          },
+          {
+            "id": 5418,
+            "subcounty_name": "Tempane"
+          }
+        ]
+      },
+      {
+        "id": 1124,
+        "county_name": "UpperWest",
+        "subCounties": [
+          {
+            "id": 5419,
+            "subcounty_name": "Daffiama-Bussie-Issa"
+          },
+          {
+            "id": 5420,
+            "subcounty_name": "Jirapa"
+          },
+          {
+            "id": 5421,
+            "subcounty_name": "Lambussie-Karni"
+          },
+          {
+            "id": 5422,
+            "subcounty_name": "Lawra"
+          },
+          {
+            "id": 5423,
+            "subcounty_name": "Nadowli-Kaleo"
+          },
+          {
+            "id": 5424,
+            "subcounty_name": "Nandom"
+          },
+          {
+            "id": 5425,
+            "subcounty_name": "SissalaEast"
+          },
+          {
+            "id": 5426,
+            "subcounty_name": "SissalaWest"
+          },
+          {
+            "id": 5427,
+            "subcounty_name": "WaEast"
+          },
+          {
+            "id": 5428,
+            "subcounty_name": "WaMunicipal"
+          },
+          {
+            "id": 5429,
+            "subcounty_name": "WaWest"
+          }
+        ]
+      },
+      {
+        "id": 1125,
+        "county_name": "Volta",
+        "subCounties": [
+          {
+            "id": 5430,
+            "subcounty_name": "Adaklu"
+          },
+          {
+            "id": 5431,
+            "subcounty_name": "AfadzatoSouth"
+          },
+          {
+            "id": 5432,
+            "subcounty_name": "AgotimeZiope"
+          },
+          {
+            "id": 5433,
+            "subcounty_name": "AkatsiNorth"
+          },
+          {
+            "id": 5434,
+            "subcounty_name": "AkatsiSouth"
+          },
+          {
+            "id": 5435,
+            "subcounty_name": "Anloga"
+          },
+          {
+            "id": 5436,
+            "subcounty_name": "CentralTongu"
+          },
+          {
+            "id": 5437,
+            "subcounty_name": "HoMunicipal"
+          },
+          {
+            "id": 5438,
+            "subcounty_name": "HoWest"
+          },
+          {
+            "id": 5439,
+            "subcounty_name": "Hohoe"
+          },
+          {
+            "id": 5440,
+            "subcounty_name": "KetaMunicipal"
+          },
+          {
+            "id": 5441,
+            "subcounty_name": "KetuNorth"
+          },
+          {
+            "id": 5442,
+            "subcounty_name": "KetuSouth"
+          },
+          {
+            "id": 5443,
+            "subcounty_name": "Kpando"
+          },
+          {
+            "id": 5444,
+            "subcounty_name": "NorthDayi"
+          },
+          {
+            "id": 5445,
+            "subcounty_name": "NorthTongu"
+          },
+          {
+            "id": 5446,
+            "subcounty_name": "SouthDayi"
+          },
+          {
+            "id": 5447,
+            "subcounty_name": "SouthTongu"
+          }
+        ]
+      },
+      {
+        "id": 1126,
+        "county_name": "Western",
+        "subCounties": [
+          {
+            "id": 5448,
+            "subcounty_name": "AhantaWest"
+          },
+          {
+            "id": 5449,
+            "subcounty_name": "EffiaKwesimintsim"
+          },
+          {
+            "id": 5450,
+            "subcounty_name": "Ellembelle"
+          },
+          {
+            "id": 5451,
+            "subcounty_name": "Jomoro"
+          },
+          {
+            "id": 5452,
+            "subcounty_name": "Mpohor"
+          },
+          {
+            "id": 5453,
+            "subcounty_name": "NzemaEast"
+          },
+          {
+            "id": 5454,
+            "subcounty_name": "Prestea-HuniValley"
+          },
+          {
+            "id": 5455,
+            "subcounty_name": "SekondiTakoradi"
+          },
+          {
+            "id": 5456,
+            "subcounty_name": "Shama"
+          },
+          {
+            "id": 5457,
+            "subcounty_name": "TarkwaNsuaem"
+          },
+          {
+            "id": 5458,
+            "subcounty_name": "WassaAmenfiCentral"
+          },
+          {
+            "id": 5459,
+            "subcounty_name": "WassaAmenfiEast"
+          },
+          {
+            "id": 5460,
+            "subcounty_name": "WassaAmenfiWest"
+          },
+          {
+            "id": 5461,
+            "subcounty_name": "WassaEast"
+          }
+        ]
+      },
+      {
+        "id": 1127,
+        "county_name": "WesternNorth",
+        "subCounties": [
+          {
+            "id": 5462,
+            "subcounty_name": "Aowin"
+          },
+          {
+            "id": 5463,
+            "subcounty_name": "BiaEast"
+          },
+          {
+            "id": 5464,
+            "subcounty_name": "BiaWest"
+          },
+          {
+            "id": 5465,
+            "subcounty_name": "Bibiani-Anhwiaso-Bekwai-"
+          },
+          {
+            "id": 5466,
+            "subcounty_name": "Bodi"
+          },
+          {
+            "id": 5467,
+            "subcounty_name": "Juaboso"
+          },
+          {
+            "id": 5468,
+            "subcounty_name": "Sefwi-Akontombra"
+          },
+          {
+            "id": 5469,
+            "subcounty_name": "Sefwi-Wiawso"
+          },
+          {
+            "id": 5470,
+            "subcounty_name": "Suaman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "country_name": "Niger",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1128,
+        "county_name": "Agadez",
+        "subCounties": [
+          {
+            "id": 5471,
+            "subcounty_name": "Arlit"
+          },
+          {
+            "id": 5472,
+            "subcounty_name": "Bilma"
+          },
+          {
+            "id": 5473,
+            "subcounty_name": "Tchighozerine"
+          }
+        ]
+      },
+      {
+        "id": 1129,
+        "county_name": "Diffa",
+        "subCounties": [
+          {
+            "id": 5474,
+            "subcounty_name": "Diffa"
+          },
+          {
+            "id": 5475,
+            "subcounty_name": "Ma\u00efn\u00e9-Soroa"
+          },
+          {
+            "id": 5476,
+            "subcounty_name": "N'Guigmi"
+          }
+        ]
+      },
+      {
+        "id": 1130,
+        "county_name": "Dosso",
+        "subCounties": [
+          {
+            "id": 5477,
+            "subcounty_name": "Boboye"
+          },
+          {
+            "id": 5478,
+            "subcounty_name": "Dogon-Doutchi"
+          },
+          {
+            "id": 5479,
+            "subcounty_name": "Dosso"
+          },
+          {
+            "id": 5480,
+            "subcounty_name": "Gaya"
+          },
+          {
+            "id": 5481,
+            "subcounty_name": "Loga"
+          }
+        ]
+      },
+      {
+        "id": 1131,
+        "county_name": "Maradi",
+        "subCounties": [
+          {
+            "id": 5482,
+            "subcounty_name": "Agui\u00e9"
+          },
+          {
+            "id": 5483,
+            "subcounty_name": "Dakoro"
+          },
+          {
+            "id": 5484,
+            "subcounty_name": "Groumdji"
+          },
+          {
+            "id": 5485,
+            "subcounty_name": "Madarounfa"
+          },
+          {
+            "id": 5486,
+            "subcounty_name": "Mayahi"
+          },
+          {
+            "id": 5487,
+            "subcounty_name": "Tessaoua"
+          }
+        ]
+      },
+      {
+        "id": 1132,
+        "county_name": "Niamey",
+        "subCounties": [
+          {
+            "id": 5488,
+            "subcounty_name": "Niamey"
+          }
+        ]
+      },
+      {
+        "id": 1133,
+        "county_name": "Tahoua",
+        "subCounties": [
+          {
+            "id": 5489,
+            "subcounty_name": "Bkonni"
+          },
+          {
+            "id": 5490,
+            "subcounty_name": "Bouza"
+          },
+          {
+            "id": 5491,
+            "subcounty_name": "Ill\u00e9la"
+          },
+          {
+            "id": 5492,
+            "subcounty_name": "Keita"
+          },
+          {
+            "id": 5493,
+            "subcounty_name": "Madaoua"
+          },
+          {
+            "id": 5494,
+            "subcounty_name": "Tahoua"
+          },
+          {
+            "id": 5495,
+            "subcounty_name": "Tchin-Tabarade"
+          }
+        ]
+      },
+      {
+        "id": 1134,
+        "county_name": "Tillab\u00e9ry",
+        "subCounties": [
+          {
+            "id": 5496,
+            "subcounty_name": "Filingu\u00e9"
+          },
+          {
+            "id": 5497,
+            "subcounty_name": "Kollo"
+          },
+          {
+            "id": 5498,
+            "subcounty_name": "Ouallam"
+          },
+          {
+            "id": 5499,
+            "subcounty_name": "Say"
+          },
+          {
+            "id": 5500,
+            "subcounty_name": "T\u00e9ra"
+          },
+          {
+            "id": 5501,
+            "subcounty_name": "Tillab\u00e9ry"
+          }
+        ]
+      },
+      {
+        "id": 1135,
+        "county_name": "Zinder",
+        "subCounties": [
+          {
+            "id": 5502,
+            "subcounty_name": "Gour\u00e9"
+          },
+          {
+            "id": 5503,
+            "subcounty_name": "Magaria"
+          },
+          {
+            "id": 5504,
+            "subcounty_name": "Matameye"
+          },
+          {
+            "id": 5505,
+            "subcounty_name": "Mirriah"
+          },
+          {
+            "id": 5506,
+            "subcounty_name": "Tanout"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "country_name": "Senegal",
+    "currency": "",
+    "code": "",
+    "phoneCode": "",
+    "counties": [
+      {
+        "id": 1136,
+        "county_name": "Dakar",
+        "subCounties": [
+          {
+            "id": 5507,
+            "subcounty_name": "Dakar"
+          },
+          {
+            "id": 5508,
+            "subcounty_name": "Gu\u00e9diawaye"
+          },
+          {
+            "id": 5509,
+            "subcounty_name": "Pikine"
+          },
+          {
+            "id": 5510,
+            "subcounty_name": "Rufisque"
+          }
+        ]
+      },
+      {
+        "id": 1137,
+        "county_name": "Diourbel",
+        "subCounties": [
+          {
+            "id": 5511,
+            "subcounty_name": "Bambey"
+          },
+          {
+            "id": 5512,
+            "subcounty_name": "Diourbel"
+          },
+          {
+            "id": 5513,
+            "subcounty_name": "Mback\u00e9"
+          }
+        ]
+      },
+      {
+        "id": 1138,
+        "county_name": "Fatick",
+        "subCounties": [
+          {
+            "id": 5514,
+            "subcounty_name": "Fatick"
+          },
+          {
+            "id": 5515,
+            "subcounty_name": "Foundiougne"
+          },
+          {
+            "id": 5516,
+            "subcounty_name": "Gossas"
+          }
+        ]
+      },
+      {
+        "id": 1139,
+        "county_name": "Kaffrine",
+        "subCounties": [
+          {
+            "id": 5517,
+            "subcounty_name": "Birkilane"
+          },
+          {
+            "id": 5518,
+            "subcounty_name": "Kaffrine"
+          },
+          {
+            "id": 5519,
+            "subcounty_name": "Koungheul"
+          },
+          {
+            "id": 5520,
+            "subcounty_name": "Mal\u00e8meHodar"
+          }
+        ]
+      },
+      {
+        "id": 1140,
+        "county_name": "Kaolack",
+        "subCounties": [
+          {
+            "id": 5521,
+            "subcounty_name": "Guinguin\u00e9o"
+          },
+          {
+            "id": 5522,
+            "subcounty_name": "Kaolack"
+          },
+          {
+            "id": 5523,
+            "subcounty_name": "NioroduRip"
+          }
+        ]
+      },
+      {
+        "id": 1141,
+        "county_name": "K\u00e9dougou",
+        "subCounties": [
+          {
+            "id": 5524,
+            "subcounty_name": "K\u00e9dougou"
+          },
+          {
+            "id": 5525,
+            "subcounty_name": "Sal\u00e9mata"
+          },
+          {
+            "id": 5526,
+            "subcounty_name": "Saraya"
+          }
+        ]
+      },
+      {
+        "id": 1142,
+        "county_name": "Kolda",
+        "subCounties": [
+          {
+            "id": 5527,
+            "subcounty_name": "Kolda"
+          },
+          {
+            "id": 5528,
+            "subcounty_name": "M\u00e9dinaYoroFoula"
+          },
+          {
+            "id": 5529,
+            "subcounty_name": "V\u00e9lingara"
+          }
+        ]
+      },
+      {
+        "id": 1143,
+        "county_name": "Louga",
+        "subCounties": [
+          {
+            "id": 5530,
+            "subcounty_name": "K\u00e9b\u00e9mer"
+          },
+          {
+            "id": 5531,
+            "subcounty_name": "Lingu\u00e8re"
+          },
+          {
+            "id": 5532,
+            "subcounty_name": "Louga"
+          }
+        ]
+      },
+      {
+        "id": 1144,
+        "county_name": "Matam",
+        "subCounties": [
+          {
+            "id": 5533,
+            "subcounty_name": "Kanel"
+          },
+          {
+            "id": 5534,
+            "subcounty_name": "Matam"
+          },
+          {
+            "id": 5535,
+            "subcounty_name": "Ran\u00e9rouFerlo"
+          }
+        ]
+      },
+      {
+        "id": 1145,
+        "county_name": "Saint-Louis",
+        "subCounties": [
+          {
+            "id": 5536,
+            "subcounty_name": "Dagana"
+          },
+          {
+            "id": 5537,
+            "subcounty_name": "Podor"
+          },
+          {
+            "id": 5538,
+            "subcounty_name": "Saint-Louis"
+          }
+        ]
+      },
+      {
+        "id": 1146,
+        "county_name": "S\u00e9dhiou",
+        "subCounties": [
+          {
+            "id": 5539,
+            "subcounty_name": "Bounkiling"
+          },
+          {
+            "id": 5540,
+            "subcounty_name": "Goudomp"
+          },
+          {
+            "id": 5541,
+            "subcounty_name": "S\u00e9dhiou"
+          }
+        ]
+      },
+      {
+        "id": 1147,
+        "county_name": "Tambacounda",
+        "subCounties": [
+          {
+            "id": 5542,
+            "subcounty_name": "Bakel"
+          },
+          {
+            "id": 5543,
+            "subcounty_name": "Goudiry"
+          },
+          {
+            "id": 5544,
+            "subcounty_name": "Koupentoum"
+          },
+          {
+            "id": 5545,
+            "subcounty_name": "Tambacounda"
+          }
+        ]
+      },
+      {
+        "id": 1148,
+        "county_name": "Thi\u00e8s",
+        "subCounties": [
+          {
+            "id": 5546,
+            "subcounty_name": "Mbour"
+          },
+          {
+            "id": 5547,
+            "subcounty_name": "Thi\u00e8s"
+          },
+          {
+            "id": 5548,
+            "subcounty_name": "Tivaouane"
+          }
+        ]
+      },
+      {
+        "id": 1149,
+        "county_name": "Ziguinchor",
+        "subCounties": [
+          {
+            "id": 5549,
+            "subcounty_name": "Bignona"
+          },
+          {
+            "id": 5550,
+            "subcounty_name": "Oussouye"
+          },
+          {
+            "id": 5551,
+            "subcounty_name": "Ziguinchor"
+          }
+        ]
+      }
+    ]
+  }
+]
