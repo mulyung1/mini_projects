@@ -1,0 +1,10 @@
+fastapi_venv/
+.env
+.obsidian
+blog.md
+models.py
+main2.py
+__pycache__/
+users.db
+docs_venv/
+.env2
