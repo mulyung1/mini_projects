@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geofenced Content</title>
+    <style>
+        #content { display: none; }
+        #map { height: 300px; width: 100%; }
+        .denied { color: #cc0000; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div id="location-prompt">
+        <h2>Location Access Required</h2>
+        <p>Please allow location access to view this content</p>
+    </div>
+
+    <div id="content">
+        <h1>Welcome to the Geofenced Area</h1>
+        <p>This content is only accessible within the designated geofence.</p>
+        <p>Enjoy your stay!</p>
+    </div>
+
+    <div id="denied" class="denied" style="display:none;">
+        <h2>Access Restricted</h2>
+        <p>You must be within the designated zone to view this content.</p>
+        <p>Your location: <span id="user-coords"></span></p>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([36.85744, -1.2615], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(map);
+
+        // Draw geofence zones (for visualization only)
+        const zones = [
+            {lat: -1.2615, lng: 36.85744, radius: 100},
+            {lat: 34.0522, lng: -1.2437, radius: 500},
+            {lat: 40.7128, lng: 0.0060, radius: 200}
+        ];
+        
+        zones.forEach(zone => {
+            L.circle([zone.lat, zone.lng], {
+                color: 'red',
+                fillColor: '#30f',
+                fillOpacity: 0.2,
+                radius: zone.radius
+            }).addTo(map);
+        });
+
+        function handleLocation(position) {
+            const userLat = position.coords.latitude;
+            const userLon = position.coords.longitude;
+            const accuracy = position.coords.accuracy;
+            
+            // Show user location on map
+            const userMarker = L.marker([userLat, userLon]).addTo(map)
+                .bindPopup(`You are here (±${Math.round(accuracy)}m)`).openPopup();
+            map.setView([userLat, userLon]);
+            
+            // Display coordinates
+            document.getElementById('user-coords').textContent = 
+                `${userLat.toFixed(6)}, ${userLon.toFixed(6)} ±${Math.round(accuracy)}m`;
+            
+            // Verify location with backend
+            fetch('/verify-location', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    latitude: userLat,
+                    longitude: userLon
+
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('location-prompt').style.display = 'none';
+                if (data.access_granted) {
+                    document.getElementById('content').style.display = 'block';
+                } else {
+                    document.getElementById('denied').style.display = 'block';
+                }
+            });
+        }
+
+        function handleError(error) {
+            console.error('Geolocation error:', error);
+            document.getElementById('location-prompt').innerHTML = `
+                <h2 class="denied">Location Access Denied</h2>
+                <p>You must enable location services to access this content.</p>
+                <p>Error: ${error.message}</p>
+            `;
+        }
+
+        // Initiate location request
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                handleLocation,
+                handleError,
+                {
+                    enableHighAccuracy: true,  // Request GPS when available
+                    timeout: 1000000,
+                    maximumAge: 0
+                }
+            );
+        } else {
+            document.getElementById('location-prompt').innerHTML = 
+                "<p class='denied'>Geolocation is not supported by your browser</p>";
+        }
+    </script>
+</body>
+</html>
