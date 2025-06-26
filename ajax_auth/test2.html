@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">Login to SOC pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="login-container">
+        <img src="public/logos/CIFOR-ICRAF_TC_logo.png" alt="Patners Logos">
+        <h2>A Dashboard on SOC sequestration Pathways in African Rangelands</h2>
+        <h3>Login to Access Dashboard</h3>
+        
+        <form id="form">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter username" required>
+            
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" placeholder="Enter password" required>
+
+            <div class="wrap">
+                <button type="button" id="submit">Access Dashboard</button>
+            </div>
+            
+            <div id="message" class="message"></div>
+            <div id="example"></div>
+        </form>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        // Handle login button click
+        $("#submit").click(function() {
+            const credentials = {
+                uname: $("#uname").val(),
+                pass: $("#pass").val()
+            };
+
+            // Use proxy to bypass CORS
+            const proxyUrl = "https://corsproxy.io/?"; // Public proxy service
+            const targetUrl = "https://radrs.icraf.org/respi/user/login";
+
+            $.ajax({
+                url: proxyUrl + encodeURIComponent(targetUrl),
+                type: "POST",
+                //contentType: "application/json",
+                contentType: "application/x-www-form-urlencoded",
+                data: JSON.stringify(credentials),
+                success: function(response) {
+                    $("#example").html("Login successful!");
+                    console.log("Response:", response);
+                    // Handle successful login (e.g., redirect)
+                },
+                error: function(xhr) {
+                    $("#message").html(`<p class="error">Error: ${xhr.statusText || "Unknown error"}</p>`);
+                    console.error("CORS Error:", xhr.statusText);
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

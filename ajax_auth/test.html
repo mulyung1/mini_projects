@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">Login to SOC pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="public/logos/CIFOR-ICRAF_TC_logo.png" alt="Patners Logos">
+        <h2>A Dashboard on SOC sequestration Pathways in African Rangelands</h1>
+        <h3>Login to Access Dashboard</h3>
+            
+        <form id="form" action = "">
+            <label for ="uname">Username:</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter your username" required> 
+        
+            <label for="pass">Password:</label>
+            <input type="password" id ="pass" name="pass" placeholder="Enter your password" required>
+
+            <div class="wrap">
+               
+                <button type="button" onclick="sendRecords()">Access Dashboard</button>
+
+            </div>
+
+            <!-- Message container for feedback -->
+            <div id="message" class="message"></div>
+
+            <div id="example"></div>
+        </form>
+
+    </div>
+
+<script>
+    
+    //https://www.tutorialspoint.com/ajax/ajax_send_post_requests.htm
+    function sendRecords() {
+        // Clear previous messages
+        const messageDiv = document.getElementById("message");
+        messageDiv.innerHTML = "";
+        messageDiv.className = "message";
+
+        // Creating XMLHttpRequest object
+        var zhttp = new XMLHttpRequest();
+
+        // JSON document
+        const yuza_data = {
+            uname: document.querySelector('#uname').value,
+            pass: document.querySelector('#pass').value,
+            //body: document.querySelector('#Ubody').value
+        }
+
+        console.log("Parameters to be sent: ", yuza_data);
+        // Creating call back function
+        zhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("message").innerHTML = this.responseText;
+            throw new Message
+            console.log("Data Posted Successfully with status code: " + this.status);
+        } else if (this.readyState == 4) {
+            throw new Error("Error in data posting with status code: " + this.status);
+        }
+        };
+        // Post/Add JSON document on the given API
+        //zhttp.open("POST", "https://radrs.icraf.org/respi/user/login", true);
+        zhttp.open("POST", "https://cors-anywhere.herokuapp.com/https://radrs.icraf.org/respi/user/login", true);
+
+        // Setting HTTP request header 
+        zhttp.setRequestHeader('Content-type', 'application/json')
+    
+        // Sending the request to the server
+        zhttp.send(JSON.stringify(yuza_data));
+    }
+
+
+</script>
+</body>
+</html>
