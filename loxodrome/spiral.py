@@ -8,25 +8,19 @@ geod = Geod(ellps="WGS84")
 class SpiralGenerator:
     def __init__(self):
         self.params = {
-            'spiral_stepping': 400,
-            'spiral_ratio': 0.618,
-            'density': 0.01,
-            'cut_off_points': 0.03,
-            'min_point_distance': 0.09
+            'spiral_stepping': 200,       # Number of spiral segments
+            'spiral_ratio': 0.618,         # Growth factor (Golden Ratio)
+            'density': 0.1,                # Point density along spiral
+            'cut_off_points': 0.5,         # Antipode proximity threshold (degrees)
+            'min_point_distance': 0.9      # Minimum distance between points (km)
         }
 
     def get_antipode(self, lon, lat):
-        """
-        Returns the antipodal point (latitude, longitude) for given latitude and longitude.
-        Inputs/outputs are in decimal degrees.
-        """
+        """Calculate antipodal point with normalization"""
         lat_a = -lat
-        if lon <= 0:
-            lon_a = lon + 180
-        else:
-            lon_a = lon - 180
-
-        # Normalize longitude to range [-180, +180]
+        lon_a = lon + 180 if lon <= 0 else lon - 180
+        
+        # Normalize longitude
         if lon_a > 180:
             lon_a -= 360
         elif lon_a < -180:
@@ -35,52 +29,60 @@ class SpiralGenerator:
         return lon_a, lat_a
 
     def generate_spiral_points(self, start_lon, start_lat, azimuth, is_cw):
-        """Generate spiral points from start to antipode"""
+        """Generate optimized spiral points with parameter controls"""
         antipode_lon, antipode_lat = self.get_antipode(start_lon, start_lat)
         
-        print(antipode_lon, antipode_lat)
+        # Calculate total distance to antipode
+        _, _, total_dist_m = geod.inv(start_lon, start_lat, antipode_lon, antipode_lat)
+        total_dist_km = total_dist_m / 1000
         
-        # Spiral parameters
-        steps = int(self.params['spiral_stepping'])
-        log_step = math.log(geod.inv(start_lon, start_lat, antipode_lon, antipode_lat)[2] / 1000)
-        bearings = []
-        distances = []
+        # Calculate growth parameters
+        growth_factor = math.log(1 / self.params['spiral_ratio'])
+        rotations = 10 * self.params['density']  # Adjust rotations by density
         
-        # Generate spiral path
-        for i in range(steps):
-            t = i / float(steps)
-            angle = (azimuth + 360 * 10 * t) % 360
+        points = [QgsPointXY(start_lon, start_lat)]
+        prev_lon, prev_lat = start_lon, start_lat
+        min_dist_m = self.params['min_point_distance'] * 1000  # Convert to meters
+        
+        for i in range(1, self.params['spiral_stepping']):
+            t = i / self.params['spiral_stepping']
+            
+            # Calculate angle with rotation control
+            angle = (azimuth + rotations * 360 * t) % 360
             if not is_cw:
                 angle = (360 - angle) % 360
-            bearings.append(angle)
-            distances.append(math.exp(t * log_step) * 1000)  # Exponential distance scaling
-        
-        # Create points along spiral
-        points = [QgsPointXY(start_lon, start_lat)]
-        for dist, bearing in zip(distances, bearings):
-            lon, lat, _ = geod.fwd(start_lon, start_lat, bearing, dist)
-            points.append(QgsPointXY(lon, lat))
             
-            # Stop when reaching antipode vicinity
-            if abs(lon - antipode_lon) < 0.1 and abs(lat - antipode_lat) < 0.1:
+            # Exponential distance calculation with growth factor
+            dist_km = total_dist_km * (math.exp(t * growth_factor) - 1) / (math.exp(growth_factor) - 1)
+            lon, lat, _ = geod.fwd(start_lon, start_lat, angle, dist_km * 1000)
+            
+            # Check antipode proximity
+            if (abs(lon - antipode_lon) < self.params['cut_off_points'] and 
+                abs(lat - antipode_lat) < self.params['cut_off_points']):
                 break
                 
+            # Skip points closer than minimum distance
+            _, _, dist_to_prev = geod.inv(prev_lon, prev_lat, lon, lat)
+            if dist_to_prev < min_dist_m:
+                continue
+                
+            points.append(QgsPointXY(lon, lat))
+            prev_lon, prev_lat = lon, lat
+
         return QgsLineString(points)
 
     def create_spiral_layer(self, center_lon, center_lat):
-        """Create QGIS layer with spiral lines"""
-        # Create memory layer
-        layer = QgsVectorLayer("LineString?crs=EPSG:4326", "Logarithmic Spirals", "memory")
+        """Create spiral layer with optimized parameters"""
+        layer = QgsVectorLayer("LineString?crs=EPSG:4326", "Optimized Spirals", "memory")
         provider = layer.dataProvider()
         provider.addAttributes([QgsField("direction", QVariant.String)])
         layer.updateFields()
         
-        # Generate spirals
         features = []
         for direction in ["Right", "Left"]:
             is_cw = (direction == "Right")
             for i in range(10):
-                azimuth = i * 36  # 0°, 36°, 72°, ... 324°
+                azimuth = i * 36
                 line = self.generate_spiral_points(center_lon, center_lat, azimuth, is_cw)
                 
                 feature = QgsFeature()
@@ -88,19 +90,9 @@ class SpiralGenerator:
                 feature.setAttributes([f"{direction} {azimuth}°"])
                 features.append(feature)
         
-        # Add features to layer
         provider.addFeatures(features)
         QgsProject.instance().addMapLayer(layer)
 
-# Example usage:
-
+# Example usage
 generator = SpiralGenerator()
-    
-# Set your starting coordinates here (e.g., New York City)
-#start_longitude = -74.0060
-#start_latitude = 40.7128
-
-#start_longitude = -167.5806 
-#start_latitude = -32.7749
-    
-generator.create_spiral_layer(start_longitude, start_latitude)
+generator.create_spiral_layer(-74.0060, 40.7128)  # New York City coordinates
