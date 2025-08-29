@@ -32,6 +32,7 @@ from qgis.gui import QgsMapToolEmitPoint
 from qgis.utils import iface
 from pyproj import Geod
 from qgis import processing
+from qgis.PyQt.QtCore import Qt
 
 
 # Initialize Qt resources from file resources.py
@@ -217,13 +218,14 @@ class SpiralGenerator:
                              self.dlg.checkBox_6, self.dlg.checkBox_7, self.dlg.checkBox_8, self.dlg.checkBox_9, self.dlg.checkBox_10]
             self.ccw_checks = [self.dlg.checkBox_11, self.dlg.checkBox_12, self.dlg.checkBox_13, self.dlg.checkBox_14, self.dlg.checkBox_15,
                               self.dlg.checkBox_16, self.dlg.checkBox_17, self.dlg.checkBox_18, self.dlg.checkBox_19, self.dlg.checkBox_20]
-            # Co
-
+                    # Co
+        self.dlg.setWindowModality(Qt.NonModal)
+        self.dlg.setAttribute(Qt.WA_DeleteOnClose, True)
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
         self.dlg.pick_center_btn.clicked.connect(self.set_map_tool)
-        self.dlg.exec_()
+        #self.dlg.exec_()
         # See if OK was pressed
         #if result:
             # Do something useful here - delete the line containing pass and
