@@ -32,9 +32,9 @@ if __name__ == '__main__':
 
     #insert a new provider and product
     try:
-        new_provider = Provider(name='Provider1', email='eBt3l@example.com', location='location1')
-        new_product = Products(name='Product1', price=100, provider_id=1)
-        session.add(new_provider)
+        new_provider = Provider(name='Shell Ruaraka', email='shellruaraka@gmail.com',latitude=-1.24386, longitude=36.88005, location_name='location1')
+        new_product = Products(name='Kerosene', price=169, provider_id=1)
+        #session.add(new_provider)
         session.add(new_product)
         session.commit()
         ic('Inserted new provider and product')
