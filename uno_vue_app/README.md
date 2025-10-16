@@ -41,5 +41,22 @@ npm run dev
 npm run build
 ```
 
+# development
+
+## 1.  project setup
+### initialise a vue.js project
+
+```bash
+npm install -g @vue/cli  #install vue cli globally if not installed
+
+npm create vue@latest  #create a new vue project and choose extras.
+
+cd project_name
+
+npm install
+```
+
+
+
 ref:
 - https://clouddevs.com/vue/single-page-application/
