@@ -1,0 +1,230 @@
+[
+    {
+        "id": 1,
+        "date_collected": "2025-11-03",
+        "enumeratorId": 1,
+        "projectId": 1,
+        "plotId": 1,
+        "moduleId": 6,
+        "rangeModuleId": 1,
+        "currentStep": "DONE",
+        "farmingEntityId": 1,
+        "is_revisit": false,
+        "completed": true,
+        "boma": [],
+        "cgrazing": [],
+        "econtrol": [],
+        "enumerator": {
+            "id": 1,
+            "first_name": "Victor",
+            "last_name": "SonofMartin",
+            "gender": "Male",
+            "age_category": "25 - 34",
+            "phone_number": "0713137504",
+            "email": "victorsonofmartin@gmail.com",
+            "country": "Kenya",
+            "organization": "CIFOR-ICRAF",
+            "username": "victor",
+            "type": "ENUMERATOR"
+        },
+        "farmingEntity": {
+            "id": 1,
+            "first_name": "Cifor",
+            "middle_name": "Cifor",
+            "last_name": "Cifor",
+            "organization": "INSTITUTION"
+        },
+        "iremoval": [],
+        "microcatchment": [
+            {
+                "id": 1,
+                "microcatchment_type": "Halfmoons",
+                "total_microcatchments": 20,
+                "length": 3.0,
+                "width": 2.0,
+                "depth": 50.0,
+                "vertical_spacing": 1.0,
+                "horizontal_spacing": 1.0,
+                "established_date": "2025-11",
+                "reseeded": true,
+                "quantity_seeds_sown": 20.0,
+                "sow_unit": "KG",
+                "seed_sources": [
+                    "LOCAL_SEED_BANK"
+                ],
+                "local_seed_bank_name": "test local seebank",
+                "other_seed_sources": "",
+                "who_manages_microcatchment": [
+                    "YOUTH",
+                    "FEMALE"
+                ],
+                "other_who_manages": "",
+                "management_practices": [
+                    "ADJUSTMENT_EXPANSION",
+                    "STICKS_PROTECTION",
+                    "WEEDING",
+                    "INVASIVE_CONTROL"
+                ],
+                "other_managements": "",
+                "usages": [
+                    "FODDER_PRODUCTION",
+                    "REVEGETATION"
+                ],
+                "other_usages": "",
+                "rangeland_entry_id": 1,
+                "completed": true,
+                "currentStatus": [
+                    {
+                        "id": 1,
+                        "percentage_herbaceous_cover_in": "FOUR_FIFTEEN",
+                        "percentage_herbaceous_cover_between": "LESS_FOUR",
+                        "intact": true,
+                        "protected": true,
+                        "protection_type": [
+                            "STICKS"
+                        ],
+                        "other_protection_type": "",
+                        "visible_erosion": true,
+                        "erosion_type_inside": [
+                            "SHEET",
+                            "RILL"
+                        ],
+                        "other_erosion_type_inside": "",
+                        "erosion_type_outside": [
+                            "SHEET",
+                            "RILL"
+                        ],
+                        "other_erosion_type_outside": "",
+                        "longitude": 36.8188574,
+                        "latitude": -1.2358361,
+                        "altitude": 1683.4000244140625,
+                        "accuracy": 11.537,
+                        "photo_url": "JPEG_0c0a5f65-44dc-4ec8-8435-9385dc670d7a_6496684040712364961.jpg",
+                        "comments": "Done",
+                        "microcatchment_id": 1,
+                        "grassCurrentStatus": [
+                            {
+                                "id": 2,
+                                "local_name": "grass",
+                                "scientific_name": "test",
+                                "microcatchment_status_id": 1
+                            }
+                        ],
+                        "treeCurrentStatus": [
+                            {
+                                "id": 3,
+                                "local_name": "mukau",
+                                "scientific_name": "Melianthus comosus",
+                                "microcatchment_status_id": 1
+                            }
+                        ]
+                    }
+                ],
+                "grassEstablishment": [
+                    {
+                        "id": 1,
+                        "plant_type": "Grass",
+                        "local_name": "grass",
+                        "scientific_name": "test",
+                        "microcatchment_id": 1
+                    }
+                ],
+                "treeEstablishment": [
+                    {
+                        "id": 1,
+                        "local_name": "mukau",
+                        "scientific_name": "Melianthus comosus",
+                        "microcatchment_id": 1
+                    },
+                    {
+                        "id": 2,
+                        "local_name": "mukau",
+                        "scientific_name": "Melianthus comosus",
+                        "microcatchment_id": 1
+                    }
+                ]
+            }
+        ],
+        "plot": {
+            "id": 1,
+            "name": "00ba5890-b7e7-4ac7-bb13-17723032a728",
+            "farmingEntityId": 1,
+            "has_crops": false,
+            "fenced": true,
+            "fence_type": [
+                "LIVE"
+            ],
+            "other_fence_type": "",
+            "plot_ownership_type": [
+                "INDIVIDUAL"
+            ],
+            "calculated_size": 1.321044921875E-4,
+            "other_ownership_type": "",
+            "livestock_allowed": false,
+            "conservation_area": true,
+            "photo_url": "JPEG_ccd2ea1a-d558-48df-a7e7-9df68e6a8c92_4845230927440536637.jpg",
+            "subCountyId": 4285,
+            "crops": [],
+            "points": [
+                {
+                    "id": 1,
+                    "plotId": 1,
+                    "longitude": 36.8188702,
+                    "latitude": -1.2358239,
+                    "altitude": 1683.4000244140625,
+                    "accuracy": 11.476
+                },
+                {
+                    "id": 2,
+                    "plotId": 1,
+                    "longitude": 36.8188509,
+                    "latitude": -1.2358406,
+                    "altitude": 1683.4000244140625,
+                    "accuracy": 4.502
+                },
+                {
+                    "id": 3,
+                    "plotId": 1,
+                    "longitude": 36.818805,
+                    "latitude": -1.2358674,
+                    "altitude": 1683.4000244140625,
+                    "accuracy": 4.073
+                },
+                {
+                    "id": 4,
+                    "plotId": 1,
+                    "longitude": 36.8187257,
+                    "latitude": -1.2359274,
+                    "altitude": 1683.4000244140625,
+                    "accuracy": 7.289
+                }
+            ],
+            "subCounty": {
+                "id": 4285,
+                "subcounty_name": "Westlands",
+                "countyId": 1718,
+                "county": {
+                    "id": 1718,
+                    "county_name": "Nairobi",
+                    "countryId": 105,
+                    "country": {
+                        "id": 105,
+                        "country_name": "Kenya",
+                        "currency": "",
+                        "code": "",
+                        "phoneCode": "",
+                        "counties": []
+                    },
+                    "subCounties": []
+                }
+            }
+        },
+        "project": {
+            "id": 0,
+            "project_name": "Test"
+        },
+        "seedbank": [],
+        "seeding": [],
+        "waterpoint": []
+    }
+]
