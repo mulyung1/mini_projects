@@ -1,0 +1,14 @@
+{
+    "basic_info-date": "date_collected",
+    "basic_info-organisation_name": ["farmingEntity.first_name","farmingEntity.middle_name","farmingEntity.last_name"],
+    "land_use_selection-intervention":"microcatchment.microcatchment_type", 
+    "halfmoons-halfmoon_details-total_halfmoons":"microcatchment.total_microcatchments",
+    "halfmoons-halfmoon_details-length_decimal":"microcatchment.length",
+    "halfmoons-halfmoon_details-width_decimal":"microcatchment.width",
+    "halfmoons-halfmoon_details-depth_decimal":"microcatchment.depth",
+    "halfmoons-halfmoon_details_2-vertical_space":"microcatchment.vertical_spacing",
+    "halfmoons-halfmoon_details_2-horizontal_space":"microcatchment.horizontal_spacing",
+    "halfmoons-halfmoon_details-date": "microcatchment.established_date",
+    "halfmoon_grasses-kg_grass_seeds":"microcatchment.quantity_seeds_sown"
+
+}
