@@ -1,0 +1,12 @@
+{
+  "person": {
+    "name": "test",
+    "age": 45,
+    "address": {
+      "city": "Juja"
+    },
+    "sex": "",
+    "education": "tertiary"
+  }
+}
+

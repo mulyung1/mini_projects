@@ -1,0 +1,6 @@
+{
+  "Name": "person.name",
+  "Age": "person.age",
+  "City": "person.address.city"
+}
+
