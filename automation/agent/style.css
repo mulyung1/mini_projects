@@ -1,0 +1,51 @@
+/* Basic reset + page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Inter", sans-serif;
+  background-color: #F9F9F9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background: #4A90E2;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* Ensure the chat widget sits nicely */
+}
+button.start-chat {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  /*transition: background 0.3s;*/
+}
+button.start-chat:hover {
+  background-color: #357ABD;
+}
+
+
+:root {
+  --chat--window--width: 600px;
+}
