@@ -14,19 +14,19 @@
     // "boma": [],
     // "cgrazing": [],
     // "econtrol": [],
-    // "enumerator": {  from db --remain untouched
-    //   "id": 1,
-    //   "first_name": "Benard",
-    //   "last_name": "Benard",
-    //   "gender": "Male",
-    //   "age_category": "35-40",
-    //   "phone_number": "0726343457",
-    //   "email": "bbenard42@gmail.com",
-    //   "country": "Malaysia",
-    //   "organization": "Icraf",
-    //   "username": "benards",
-    //   "type": "ENUMERATOR"
-    // },
+    // "enumerator": {  from db --remain untouched 
+      "id": 1,
+      "first_name": "Benard",
+      "last_name": "Benard",
+      "gender": "Male",
+      "age_category": "35-40",
+      "phone_number": "0726343457",
+      "email": "bbenard42@gmail.com",
+      "country": "Malaysia",
+      "organization": "Icraf",
+      "username": "benards",
+      "type": "ENUMERATOR"
+    },
     "farmingEntity": {
       //"id": 1, int, incremental SIC, update general info key
       //"basic_info-organisation_name":"farmingEntity.first_name"
@@ -194,10 +194,9 @@
     ],
     "plot": {
       //"id": 1, int >> incremental >> SIC
-      //"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
+      💯//"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
       //"farmingEntityId": 1, assign from farmingEntitiy clause
-      "has_crops": true, missing
-      "fenced": true, missing
+      //"crops_present":"plot.has_crops" plus other if any      "fenced": true, missing
       "fence_type": [ missing
         "LIVE",
         "BARBED"
@@ -207,11 +206,12 @@
         "CHURCH_OR_MOSQUE",
         "INDIVIDUAL"
       ],
-      //"area_ha":"plot.calculated_size"
+      💯//"area_ha":"plot.calculated_size"
       "other_ownership_type": "", missing
       "livestock_allowed": true, missing
       "conservation_area": true, missing
-      //"plot_details-photo":"plot.photo_url" 
+      💯//"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
+      💯//"plot_details-photo":"plot.photo_url" 
       //"subCountyId": 4080, assign from subCounty clause
       "crops": [ based on has_crops which is missing... use land-use column??
         "Tesr"
@@ -252,9 +252,9 @@
       ],
       "subCounty": { questions on what is reffered as subCounty, county
         "id": 4080,
-        "subcounty_name": "Baringo Central",
+        "subcounty_name": "Baringo Central", -- region name
         "countyId": 1689,
-        "county": {
+        "county": { --state name (comments - district + community name)
           "id": 1689,
           "county_name": "Baringo",
           "countryId": 105,
