@@ -1,0 +1,280 @@
+
+{
+    //"id", incremental, set in code(SIC)
+    //"basic_info-date": "date_collected",
+    //"enumeratorId", taken from db >> SIC
+    //"projectId": assign 
+    //"plotId": int >> incrimental >> SIC,
+    //"moduleId": 6, constant >>  SIC
+    //"rangeModuleId": 1,constant
+    //"currentStep": "DONE", constant
+    //"farmingEntityId": assign
+    //"is_revisit": false, constant 
+    //"completed": true, constant
+    // "boma": [],
+    // "cgrazing": [],
+    // "econtrol": [],
+    // "enumerator": {  from db --remain untouched
+    //   "id": 1,
+    //   "first_name": "Benard",
+    //   "last_name": "Benard",
+    //   "gender": "Male",
+    //   "age_category": "35-40",
+    //   "phone_number": "0726343457",
+    //   "email": "bbenard42@gmail.com",
+    //   "country": "Malaysia",
+    //   "organization": "Icraf",
+    //   "username": "benards",
+    //   "type": "ENUMERATOR"
+    // },
+    "farmingEntity": {
+      //"id": 1, int, incremental SIC, update general info key
+      //"basic_info-organisation_name":"farmingEntity.first_name"
+      //"basic_info-organisation_name":"farmingEntity.middle_name",
+      //"basic_info-organisation_name":"farmingEntity.last_name",
+      "organization": "GROUP" is it group or instituition
+    },
+    //"iremoval": [],
+    "microcatchment": [
+      {
+        //"id": 1, int incremental?
+        //"land_use_selection-intervention":"microcatchment.microcatchment_type" 
+        //"halfmoons-halfmoon_details-total_halfmoons":"microcatchment.total_microcatchments"
+        //"halfmoons-halfmoon_details-length_decimal":"microcatchment.length"
+        //"halfmoons-halfmoon_details-width_decimal":"microcatchment.width"
+        //"halfmoons-halfmoon_details-depth_decimal":"microcatchment.depth"
+        //"halfmoons-halfmoon_details_2-vertical_space":"microcatchment.vertical_spacing"
+        //"halfmoons-halfmoon_details_2-horizontal_space":"microcatchment.horizontal_spacing"
+        //"halfmoons-halfmoon_details-date": "microcatchment.established_date"
+        "reseeded": true, missing
+        "quantity_seeds_sown": 2, missing
+        "sow_unit": "KG", missing
+        "seed_sources": [ missing
+          "LOCAL_NURSERY"
+        ],
+        "local_seed_bank_name": "", missing
+        "other_seed_sources": "", missing
+        //"halfmoons-halfmoon_details_2-manages":"microcatchment.who_manages_microcatchment"
+          //"FEMALE"
+        ],
+        //"halfmoons-halfmoon_details_2-youth_manages":"microcatchment.other_who_manages" if yes, youth else blank
+        "management_practices": [
+          "STICKS_PROTECTION",
+          "WEEDING"
+        ],
+        "other_managements": "",
+        "usages": [
+          "SOIL_CONSERVATION",
+          "REVEGETATION"
+        ],
+        "other_usages": "", missing
+        //"rangeland_entry_id": 1, SIC
+        //"completed": true, constant
+        "currentStatus": [ missing 
+          {
+            "id": 1,
+            "percentage_herbaceous_cover_in": "LESS_FOUR",
+            "percentage_herbaceous_cover_between": "LESS_FOUR",
+            "intact": false,
+            "protected": false,
+            "protection_type": [],
+            "other_protection_type": "",
+            "visible_erosion": true,
+            "erosion_type_inside": [
+              "RILL",
+              "Other",
+              "GULLY"
+            ],
+            "other_erosion_type_inside": "testing",
+            "erosion_type_outside": [
+              "RILL",
+              "Other"
+            ],
+            "other_erosion_type_outside": "test",
+            "longitude": 36.782093,
+            "latitude": -1.271342,
+            "altitude": 0,
+            "accuracy": 0,
+            "photo_url": "JPEG_7e57935c-f174-4d67-b794-fd89b77d9f69_7311047686419782133.jpg",
+            "comments": "Halfmoon1",
+            "microcatchment_id": 1,
+            "grassCurrentStatus": [
+              {
+                "id": 2,
+                "local_name": "testing",
+                "scientific_name": "",
+                "microcatchment_status_id": 1
+              }
+            ],
+            "treeCurrentStatus": [
+              {
+                "id": 4,
+                "local_name": "testing",
+                "scientific_name": "",
+                "microcatchment_status_id": 1
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "percentage_herbaceous_cover_in": "ABSENT",
+            "percentage_herbaceous_cover_between": "LESS_FOUR",
+            "intact": true,
+            "protected": true,
+            "protection_type": [
+              "STICKS"
+            ],
+            "other_protection_type": "",
+            "visible_erosion": true,
+            "erosion_type_inside": [
+              "RILL",
+              "SHEET"
+            ],
+            "other_erosion_type_inside": "",
+            "erosion_type_outside": [
+              "RILL",
+              "GULLY"
+            ],
+            "other_erosion_type_outside": "",
+            "longitude": 36.782093,
+            "latitude": -1.271342,
+            "altitude": 0,
+            "accuracy": 0,
+            "photo_url": "JPEG_4a17f98b-79df-4ace-ae6f-bd80b28247b2_9094673703452706810.jpg",
+            "comments": "Testing",
+            "microcatchment_id": 1,
+            "grassCurrentStatus": [
+              {
+                "id": 3,
+                "local_name": "test2",
+                "scientific_name": "",
+                "microcatchment_status_id": 2
+              }
+            ],
+            "treeCurrentStatus": [
+              {
+                "id": 5,
+                "local_name": "test2",
+                "scientific_name": "",
+                "microcatchment_status_id": 2
+              }
+            ]
+          }
+        ],
+        "grassEstablishment": [ missing
+          {
+            "id": 1,
+            "plant_type": "Grass",
+            "local_name": "test",
+            "scientific_name": "",
+            "microcatchment_id": 1
+          }
+        ],
+        "treeEstablishment": [ missing
+          {
+            "id": 1,
+            "local_name": "test",
+            "scientific_name": "",
+            "microcatchment_id": 1
+          },
+          {
+            "id": 2,
+            "local_name": "test",
+            "scientific_name": "",
+            "microcatchment_id": 1
+          },
+          {
+            "id": 3,
+            "local_name": "test",
+            "scientific_name": "",
+            "microcatchment_id": 1
+          }
+        ]
+      }
+    ],
+    "plot": {
+      //"id": 1, int >> incremental >> SIC
+      //"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
+      //"farmingEntityId": 1, assign from farmingEntitiy clause
+      "has_crops": true, missing
+      "fenced": true, missing
+      "fence_type": [ missing
+        "LIVE",
+        "BARBED"
+      ],
+      "other_fence_type": "", missing
+      "plot_ownership_type": [ missing
+        "CHURCH_OR_MOSQUE",
+        "INDIVIDUAL"
+      ],
+      //"area_ha":"plot.calculated_size"
+      "other_ownership_type": "", missing
+      "livestock_allowed": true, missing
+      "conservation_area": true, missing
+      //"plot_details-photo":"plot.photo_url" 
+      //"subCountyId": 4080, assign from subCounty clause
+      "crops": [ based on has_crops which is missing... use land-use column??
+        "Tesr"
+      ],
+      //"points": [ iterate from geoshape
+        {
+          "id": 1,
+          "plotId": 1,
+          "longitude": 36.7781943,
+          "latitude": -1.270913,
+          "altitude": 0,
+          "accuracy": 0
+        },
+        {
+          "id": 2,
+          "plotId": 1,
+          "longitude": 36.780426,
+          "latitude": -1.272264,
+          "altitude": 0,
+          "accuracy": 0
+        },
+        {
+          "id": 3,
+          "plotId": 1,
+          "longitude": 36.783444,
+          "latitude": -1.271793,
+          "altitude": 0,
+          "accuracy": 0
+        },
+        {
+          "id": 4,
+          "plotId": 1,
+          "longitude": 36.783509,
+          "latitude": -1.270677,
+          "altitude": 0,
+          "accuracy": 0
+        }
+      ],
+      "subCounty": { questions on what is reffered as subCounty, county
+        "id": 4080,
+        "subcounty_name": "Baringo Central",
+        "countyId": 1689,
+        "county": {
+          "id": 1689,
+          "county_name": "Baringo",
+          "countryId": 105,
+          "country": {
+            "id": 105,
+            "country_name": "Kenya",
+            "currency": "",
+            "code": "",
+            "phoneCode": "",
+            "counties": []
+          },
+          "subCounties": []
+        }
+      }
+    },
+    //"project": {
+      //"id": 0, incremental >> SIC
+      //"land_use_selection-project_name":"project.project_name"
+    },
+    //"seedbank": [],
+    //"seeding": [],
+    //"waterpoint": []
+}
