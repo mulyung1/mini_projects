@@ -1,280 +1,205 @@
 
 {
-    //"id", incremental, set in code(SIC)
-    //"basic_info-date": "date_collected",
-    //"enumeratorId", taken from db >> SIC
-    //"projectId": assign 
-    //"plotId": int >> incrimental >> SIC,
-    //"moduleId": 6, constant >>  SIC
-    //"rangeModuleId": 1,constant
-    //"currentStep": "DONE", constant
-    //"farmingEntityId": assign
-    //"is_revisit": false, constant 
-    //"completed": true, constant
-    // "boma": [],
-    // "cgrazing": [],
-    // "econtrol": [],
-    // "enumerator": {  from db --remain untouched 
-      "id": 1,
-      "first_name": "Benard",
-      "last_name": "Benard",
-      "gender": "Male",
-      "age_category": "35-40",
-      "phone_number": "0726343457",
-      "email": "bbenard42@gmail.com",
-      "country": "Malaysia",
-      "organization": "Icraf",
-      "username": "benards",
-      "type": "ENUMERATOR"
+    "id": 4,
+    "date_collected": "2025-01-31",
+    "enumeratorId": 3726,
+    "projectId": 93,
+    "plotId": 4,
+    "moduleId": 6,
+    "rangeModuleId": 1,
+    "currentStep": "DONE",
+    "farmingEntityId": 5,
+    "is_revisit": false,
+    "completed": true,
+    "boma": [], 🎯
+    "cgrazing": [], 🎯
+    "econtrol": [], 🎯
+    "enumerator": { 🎯
+        "id": 3726,
+        "first_name": "Abdiaziz Adan",
+        "last_name": "Hassan",
+        "gender": "Male",
+        "age_category": "18 - 35",
+        "phone_number": "0615704046",
+        "email": "abdulazizadan02@gmail.com",
+        "country": "Somalia",
+        "organization": "GREDO",
+        "username": "guudow",
+        "type": "ENUMERATOR"
     },
-    "farmingEntity": {
-      //"id": 1, int, incremental SIC, update general info key
-      //"basic_info-organisation_name":"farmingEntity.first_name"
-      //"basic_info-organisation_name":"farmingEntity.middle_name",
-      //"basic_info-organisation_name":"farmingEntity.last_name",
-      "organization": "GROUP" is it group or instituition
+    "farmingEntity": { 🎯
+        "id": 5,
+        "first_name": "Gredo",
+        "middle_name": "Gredo",
+        "last_name": "Gredo",
+        "organization": "INSTITUTION"
     },
-    //"iremoval": [],
+    "iremoval": [], 🎯
     "microcatchment": [
-      {
-        //"id": 1, int incremental?
-        //"land_use_selection-intervention":"microcatchment.microcatchment_type" 
-        //"halfmoons-halfmoon_details-total_halfmoons":"microcatchment.total_microcatchments"
-        //"halfmoons-halfmoon_details-length_decimal":"microcatchment.length"
-        //"halfmoons-halfmoon_details-width_decimal":"microcatchment.width"
-        //"halfmoons-halfmoon_details-depth_decimal":"microcatchment.depth"
-        //"halfmoons-halfmoon_details_2-vertical_space":"microcatchment.vertical_spacing"
-        //"halfmoons-halfmoon_details_2-horizontal_space":"microcatchment.horizontal_spacing"
-        //"halfmoons-halfmoon_details-date": "microcatchment.established_date"
-        "reseeded": true, missing
-        "quantity_seeds_sown": 2, missing
-        "sow_unit": "KG", missing
-        "seed_sources": [ missing
-          "LOCAL_NURSERY"
-        ],
-        "local_seed_bank_name": "", missing
-        "other_seed_sources": "", missing
-        //"halfmoons-halfmoon_details_2-manages":"microcatchment.who_manages_microcatchment"
-          //"FEMALE"
-        ],
-        //"halfmoons-halfmoon_details_2-youth_manages":"microcatchment.other_who_manages" if yes, youth else blank
-        "management_practices": [
-          "STICKS_PROTECTION",
-          "WEEDING"
-        ],
-        "other_managements": "",
-        "usages": [
-          "SOIL_CONSERVATION",
-          "REVEGETATION"
-        ],
-        "other_usages": "", missing
-        //"rangeland_entry_id": 1, SIC
-        //"completed": true, constant
-        "currentStatus": [ missing 
-          {
-            "id": 1,
-            "percentage_herbaceous_cover_in": "LESS_FOUR",
-            "percentage_herbaceous_cover_between": "LESS_FOUR",
-            "intact": false,
-            "protected": false,
-            "protection_type": [],
-            "other_protection_type": "",
-            "visible_erosion": true,
-            "erosion_type_inside": [
-              "RILL",
-              "Other",
-              "GULLY"
+        {
+            "id": 4,
+            "microcatchment_type": "Halfmoons",
+            "total_microcatchments": 16,
+            "length": 10.0,
+            "width": 90.0,
+            "depth": 70.0,
+            "vertical_spacing": 3.0,
+            "horizontal_spacing": 6.0,
+            "established_date": "2024-09",
+            "reseeded": false,
+            "quantity_seeds_sown": 0.0,
+            "seed_sources": [],
+            "local_seed_bank_name": "",
+            "other_seed_sources": "",
+            "who_manages_microcatchment": [
+                "FEMALE",
+                "MALE"
             ],
-            "other_erosion_type_inside": "testing",
-            "erosion_type_outside": [
-              "RILL",
-              "Other"
+            "other_who_manages": "",
+            "management_practices": [
+                "WEEDING"
             ],
-            "other_erosion_type_outside": "test",
-            "longitude": 36.782093,
-            "latitude": -1.271342,
-            "altitude": 0,
-            "accuracy": 0,
-            "photo_url": "JPEG_7e57935c-f174-4d67-b794-fd89b77d9f69_7311047686419782133.jpg",
-            "comments": "Halfmoon1",
-            "microcatchment_id": 1,
-            "grassCurrentStatus": [
-              {
-                "id": 2,
-                "local_name": "testing",
-                "scientific_name": "",
-                "microcatchment_status_id": 1
-              }
+            "other_managements": "",
+            "usages": [
+                "OTHER"
             ],
-            "treeCurrentStatus": [
-              {
-                "id": 4,
-                "local_name": "testing",
-                "scientific_name": "",
-                "microcatchment_status_id": 1
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "percentage_herbaceous_cover_in": "ABSENT",
-            "percentage_herbaceous_cover_between": "LESS_FOUR",
-            "intact": true,
-            "protected": true,
-            "protection_type": [
-              "STICKS"
+            "other_usages": "qsn not in odk",
+            "rangeland_entry_id": 4,
+            "completed": true,
+            "currentStatus": [
+                {
+                    "id": 2,
+                    "percentage_herbaceous_cover_in": "LESS_FOUR",
+                    "percentage_herbaceous_cover_between": "LESS_FOUR",
+                    "intact": false,
+                    "protected": false,
+                    "protection_type": [],
+                    "other_protection_type": "",
+                    "visible_erosion": false,
+                    "erosion_type_inside": [],
+                    "other_erosion_type_inside": "",
+                    "erosion_type_outside": [],
+                    "other_erosion_type_outside": "",
+                    "longitude": 43.4613334,
+                    "latitude": 3.1823714,
+                    "altitude": 446,
+                    "accuracy": 4.933,
+                    "photo_url": "1737801957462.jpg",
+                    "comments": "Statename Southwest Communityname Irinta Yarey Newhalfmoon Demilune agriculture",
+                    "microcatchment_id": 4,
+                    "grassCurrentStatus": [],
+                    "treeCurrentStatus": []
+                }
             ],
-            "other_protection_type": "",
-            "visible_erosion": true,
-            "erosion_type_inside": [
-              "RILL",
-              "SHEET"
-            ],
-            "other_erosion_type_inside": "",
-            "erosion_type_outside": [
-              "RILL",
-              "GULLY"
-            ],
-            "other_erosion_type_outside": "",
-            "longitude": 36.782093,
-            "latitude": -1.271342,
-            "altitude": 0,
-            "accuracy": 0,
-            "photo_url": "JPEG_4a17f98b-79df-4ace-ae6f-bd80b28247b2_9094673703452706810.jpg",
-            "comments": "Testing",
-            "microcatchment_id": 1,
-            "grassCurrentStatus": [
-              {
-                "id": 3,
-                "local_name": "test2",
-                "scientific_name": "",
-                "microcatchment_status_id": 2
-              }
-            ],
-            "treeCurrentStatus": [
-              {
-                "id": 5,
-                "local_name": "test2",
-                "scientific_name": "",
-                "microcatchment_status_id": 2
-              }
-            ]
-          }
-        ],
-        "grassEstablishment": [ missing
-          {
-            "id": 1,
-            "plant_type": "Grass",
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          }
-        ],
-        "treeEstablishment": [ missing
-          {
-            "id": 1,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          },
-          {
-            "id": 2,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          },
-          {
-            "id": 3,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          }
-        ]
-      }
+            "grassEstablishment": [],
+            "treeEstablishment": []
+        }
     ],
     "plot": {
-      //"id": 1, int >> incremental >> SIC
-      💯//"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
-      //"farmingEntityId": 1, assign from farmingEntitiy clause
-      //"crops_present":"plot.has_crops" plus other if any      "fenced": true, missing
-      "fence_type": [ missing
-        "LIVE",
-        "BARBED"
-      ],
-      "other_fence_type": "", missing
-      "plot_ownership_type": [ missing
-        "CHURCH_OR_MOSQUE",
-        "INDIVIDUAL"
-      ],
-      💯//"area_ha":"plot.calculated_size"
-      "other_ownership_type": "", missing
-      "livestock_allowed": true, missing
-      "conservation_area": true, missing
-      💯//"name": "a23cc7d7-8614-4701-aa03-dce503ebba4c", >> uuid SIC
-      💯//"plot_details-photo":"plot.photo_url" 
-      //"subCountyId": 4080, assign from subCounty clause
-      "crops": [ based on has_crops which is missing... use land-use column??
-        "Tesr"
-      ],
-      //"points": [ iterate from geoshape
-        {
-          "id": 1,
-          "plotId": 1,
-          "longitude": 36.7781943,
-          "latitude": -1.270913,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 2,
-          "plotId": 1,
-          "longitude": 36.780426,
-          "latitude": -1.272264,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 3,
-          "plotId": 1,
-          "longitude": 36.783444,
-          "latitude": -1.271793,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 4,
-          "plotId": 1,
-          "longitude": 36.783509,
-          "latitude": -1.270677,
-          "altitude": 0,
-          "accuracy": 0
+        "id": 4,
+        "name": "d018eebd-01fa-4cf0-8449-19b37fc50ef9", 🎯
+        "farmingEntityId": 5, 🎯
+        "has_crops": true, repeat
+        "fenced": false, as is 🎯
+        "fence_type": [], as is 🎯
+        "other_fence_type": "", as is 🎯
+        "plot_ownership_type": [ as is 🎯
+            "Migrated Not Known"
+        ],
+        "calculated_size": 0.003115652, 🎯
+        "other_ownership_type": "Migrated: Not known", as is 🎯
+        "livestock_allowed": false, 🎯
+        "conservation_area": false, 🎯\
+        "photo_url": "1737800379520.jpg", 🎯
+        "subCountyId": 5001,
+        "crops": [ repeat
+            "Beans",
+            "Sorghum",
+            "Orange"
+        ],
+        "points": [
+            {
+                "id": 10,
+                "plotId": 4,
+                "longitude": 43.4571934,
+                "latitude": 3.1870065,
+                "altitude": 372.8,
+                "accuracy": 2.812
+            },
+            {
+                "id": 11,
+                "plotId": 4,
+                "longitude": 43.4571933,
+                "latitude": 3.1870086,
+                "altitude": 374.0,
+                "accuracy": 1.883
+            },
+            {
+                "id": 12,
+                "plotId": 4,
+                "longitude": 43.4571982,
+                "latitude": 3.1870217,
+                "altitude": 375.3,
+                "accuracy": 1.716
+            },
+            {
+                "id": 13,
+                "plotId": 4,
+                "longitude": 43.4571958,
+                "latitude": 3.1870381,
+                "altitude": 376.8,
+                "accuracy": 1.65
+            },
+            {
+                "id": 14,
+                "plotId": 4,
+                "longitude": 43.457266464829445,
+                "latitude": 3.187078916748798,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            },
+            {
+                "id": 15,
+                "plotId": 4,
+                "longitude": 43.4571958,
+                "latitude": 3.1870381,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            },
+            {
+                "id": 16,
+                "plotId": 4,
+                "longitude": 43.4571934,
+                "latitude": 3.1870065,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            }
+        ],
+        "subCounty": {
+            "id": 5001,
+            "subcounty_name": "Baidoa",
+            "countyId": 3018,
+            "county": {
+                "id": 3018,
+                "county_name": "Bay",
+                "countryId": 181,
+                "country": {
+                    "id": 181,
+                    "country_name": "Somalia",
+                    "currency": "",
+                    "code": "",
+                    "phoneCode": "",
+                    "counties": []
+                },
+                "subCounties": []
+            }
         }
-      ],
-      "subCounty": { questions on what is reffered as subCounty, county
-        "id": 4080,
-        "subcounty_name": "Baringo Central", -- region name
-        "countyId": 1689,
-        "county": { --state name (comments - district + community name)
-          "id": 1689,
-          "county_name": "Baringo",
-          "countryId": 105,
-          "country": {
-            "id": 105,
-            "country_name": "Kenya",
-            "currency": "",
-            "code": "",
-            "phoneCode": "",
-            "counties": []
-          },
-          "subCounties": []
-        }
-      }
     },
-    //"project": {
-      //"id": 0, incremental >> SIC
-      //"land_use_selection-project_name":"project.project_name"
+    "project": { 🎯
+        "id": 93,
+        "project_name": "BRCiS III"
     },
-    //"seedbank": [],
-    //"seeding": [],
-    //"waterpoint": []
+    "seedbank": [], 🎯
+    "seeding": [], 🎯
+    "waterpoint": [] 🎯
 }
