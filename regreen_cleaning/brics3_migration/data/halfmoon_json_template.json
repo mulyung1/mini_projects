@@ -1,281 +1,204 @@
-[
-  {
-    "id": 1,
-    "date_collected": "2025-07-30",
-    "enumeratorId": 1,
-    "projectId": 1,
-    "plotId": 1,
+{
+    "id": 4,
+    "date_collected": "2025-01-31",
+    "enumeratorId": 3726,
+    "projectId": 93,
+    "plotId": 4,
     "moduleId": 6,
     "rangeModuleId": 1,
     "currentStep": "DONE",
-    "farmingEntityId": 1,
+    "farmingEntityId": 5,
     "is_revisit": false,
     "completed": true,
     "boma": [],
     "cgrazing": [],
     "econtrol": [],
     "enumerator": {
-      "id": 1,
-      "first_name": "Benard",
-      "last_name": "Benard",
-      "gender": "Male",
-      "age_category": "35-40",
-      "phone_number": "0726343457",
-      "email": "bbenard42@gmail.com",
-      "country": "Malaysia",
-      "organization": "Icraf",
-      "username": "benards",
-      "type": "ENUMERATOR"
+        "id": 3726,
+        "first_name": "Abdiaziz Adan",
+        "last_name": "Hassan",
+        "gender": "Male",
+        "age_category": "18 - 35",
+        "phone_number": "0615704046",
+        "email": "abdulazizadan02@gmail.com",
+        "country": "Somalia",
+        "organization": "GREDO",
+        "username": "guudow",
+        "type": "ENUMERATOR"
     },
     "farmingEntity": {
-      "id": 1,
-      "first_name": "Test",
-      "middle_name": "Test",
-      "last_name": "Test",
-      "organization": "GROUP"
+        "id": 5,
+        "first_name": "Gredo",
+        "middle_name": "Gredo",
+        "last_name": "Gredo",
+        "organization": "INSTITUTION"
     },
     "iremoval": [],
     "microcatchment": [
-      {
-        "id": 1,
-        "microcatchment_type": "Halfmoons",
-        "total_microcatchments": 2,
-        "length": 3,
-        "width": 2,
-        "depth": 2,
-        "vertical_spacing": 2,
-        "horizontal_spacing": 2,
-        "established_date": "2025-07",
-        "reseeded": true,
-        "quantity_seeds_sown": 2,
-        "sow_unit": "KG",
-        "seed_sources": [
-          "LOCAL_NURSERY"
-        ],
-        "local_seed_bank_name": "",
-        "other_seed_sources": "",
-        "who_manages_microcatchment": [
-          "FEMALE"
-        ],
-        "other_who_manages": "",
-        "management_practices": [
-          "STICKS_PROTECTION",
-          "WEEDING"
-        ],
-        "other_managements": "",
-        "usages": [
-          "SOIL_CONSERVATION",
-          "REVEGETATION"
-        ],
-        "other_usages": "",
-        "rangeland_entry_id": 1,
-        "completed": true,
-        "currentStatus": [
-          {
-            "id": 1,
-            "percentage_herbaceous_cover_in": "LESS_FOUR",
-            "percentage_herbaceous_cover_between": "LESS_FOUR",
-            "intact": false,
-            "protected": false,
-            "protection_type": [],
-            "other_protection_type": "",
-            "visible_erosion": true,
-            "erosion_type_inside": [
-              "RILL",
-              "Other",
-              "GULLY"
+        {
+            "id": 4,
+            "microcatchment_type": "Halfmoons",
+            "total_microcatchments": 16,
+            "length": 10.0,
+            "width": 90.0,
+            "depth": 70.0,
+            "vertical_spacing": 3.0,
+            "horizontal_spacing": 6.0,
+            "established_date": "2024-09",
+            "reseeded": false,
+            "quantity_seeds_sown": 0.0,
+            "seed_sources": [],
+            "local_seed_bank_name": "",
+            "other_seed_sources": "",
+            "who_manages_microcatchment": [
+                "FEMALE",
+                "MALE"
             ],
-            "other_erosion_type_inside": "testing",
-            "erosion_type_outside": [
-              "RILL",
-              "Other"
+            "other_who_manages": "",
+            "management_practices": [
+                "WEEDING"
             ],
-            "other_erosion_type_outside": "test",
-            "longitude": 36.782093,
-            "latitude": -1.271342,
-            "altitude": 0,
-            "accuracy": 0,
-            "photo_url": "JPEG_7e57935c-f174-4d67-b794-fd89b77d9f69_7311047686419782133.jpg",
-            "comments": "Halfmoon1",
-            "microcatchment_id": 1,
-            "grassCurrentStatus": [
-              {
-                "id": 2,
-                "local_name": "testing",
-                "scientific_name": "",
-                "microcatchment_status_id": 1
-              }
+            "other_managements": "",
+            "usages": [
+                "OTHER"
             ],
-            "treeCurrentStatus": [
-              {
-                "id": 4,
-                "local_name": "testing",
-                "scientific_name": "",
-                "microcatchment_status_id": 1
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "percentage_herbaceous_cover_in": "ABSENT",
-            "percentage_herbaceous_cover_between": "LESS_FOUR",
-            "intact": true,
-            "protected": true,
-            "protection_type": [
-              "STICKS"
+            "other_usages": "qsn not in odk",
+            "rangeland_entry_id": 4,
+            "completed": true,
+            "currentStatus": [
+                {
+                    "id": 2,
+                    "percentage_herbaceous_cover_in": "LESS_FOUR",
+                    "percentage_herbaceous_cover_between": "LESS_FOUR",
+                    "intact": false,
+                    "protected": false,
+                    "protection_type": [],
+                    "other_protection_type": "",
+                    "visible_erosion": false,
+                    "erosion_type_inside": [],
+                    "other_erosion_type_inside": "",
+                    "erosion_type_outside": [],
+                    "other_erosion_type_outside": "",
+                    "longitude": 43.4613334,
+                    "latitude": 3.1823714,
+                    "altitude": 446,
+                    "accuracy": 4.933,
+                    "photo_url": "1737801957462.jpg",
+                    "comments": "Statename Southwest Communityname Irinta Yarey Newhalfmoon Demilune agriculture",
+                    "microcatchment_id": 4,
+                    "grassCurrentStatus": [],
+                    "treeCurrentStatus": []
+                }
             ],
-            "other_protection_type": "",
-            "visible_erosion": true,
-            "erosion_type_inside": [
-              "RILL",
-              "SHEET"
-            ],
-            "other_erosion_type_inside": "",
-            "erosion_type_outside": [
-              "RILL",
-              "GULLY"
-            ],
-            "other_erosion_type_outside": "",
-            "longitude": 36.782093,
-            "latitude": -1.271342,
-            "altitude": 0,
-            "accuracy": 0,
-            "photo_url": "JPEG_4a17f98b-79df-4ace-ae6f-bd80b28247b2_9094673703452706810.jpg",
-            "comments": "Testing",
-            "microcatchment_id": 1,
-            "grassCurrentStatus": [
-              {
-                "id": 3,
-                "local_name": "test2",
-                "scientific_name": "",
-                "microcatchment_status_id": 2
-              }
-            ],
-            "treeCurrentStatus": [
-              {
-                "id": 5,
-                "local_name": "test2",
-                "scientific_name": "",
-                "microcatchment_status_id": 2
-              }
-            ]
-          }
-        ],
-        "grassEstablishment": [
-          {
-            "id": 1,
-            "plant_type": "Grass",
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          }
-        ],
-        "treeEstablishment": [
-          {
-            "id": 1,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          },
-          {
-            "id": 2,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          },
-          {
-            "id": 3,
-            "local_name": "test",
-            "scientific_name": "",
-            "microcatchment_id": 1
-          }
-        ]
-      }
+            "grassEstablishment": [],
+            "treeEstablishment": []
+        }
     ],
     "plot": {
-      "id": 1,
-      "name": "a23cc7d7-8614-4701-aa03-dce503ebba4c",
-      "farmingEntityId": 1,
-      "has_crops": true,
-      "fenced": true,
-      "fence_type": [
-        "LIVE",
-        "BARBED"
-      ],
-      "other_fence_type": "",
-      "plot_ownership_type": [
-        "CHURCH_OR_MOSQUE",
-        "INDIVIDUAL"
-      ],
-      "calculated_size": 6.844758142089844,
-      "other_ownership_type": "",
-      "livestock_allowed": true,
-      "conservation_area": true,
-      "photo_url": "JPEG_35d014d1-235a-4966-9dd4-5584d95f3004_7199934648757013806.jpg",
-      "subCountyId": 4080,
-      "crops": [
-        "Tesr"
-      ],
-      "points": [
-        {
-          "id": 1,
-          "plotId": 1,
-          "longitude": 36.7781943,
-          "latitude": -1.270913,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 2,
-          "plotId": 1,
-          "longitude": 36.780426,
-          "latitude": -1.272264,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 3,
-          "plotId": 1,
-          "longitude": 36.783444,
-          "latitude": -1.271793,
-          "altitude": 0,
-          "accuracy": 0
-        },
-        {
-          "id": 4,
-          "plotId": 1,
-          "longitude": 36.783509,
-          "latitude": -1.270677,
-          "altitude": 0,
-          "accuracy": 0
+        "id": 4,
+        "name": "d018eebd-01fa-4cf0-8449-19b37fc50ef9",
+        "farmingEntityId": 5,
+        "has_crops": true,
+        "fenced": false,
+        "fence_type": [],
+        "other_fence_type": "",
+        "plot_ownership_type": [
+            "OTHER"
+        ],
+        "calculated_size": 0.003115652,
+        "other_ownership_type": "To be specified",
+        "livestock_allowed": false,
+        "conservation_area": false,
+        "photo_url": "1737800379520.jpg",
+        "subCountyId": 5001,
+        "crops": [
+            "Beans",
+            "Sorghum",
+            "Orange"
+        ],
+        "points": [
+            {
+                "id": 10,
+                "plotId": 4,
+                "longitude": 43.4571934,
+                "latitude": 3.1870065,
+                "altitude": 372.8,
+                "accuracy": 2.812
+            },
+            {
+                "id": 11,
+                "plotId": 4,
+                "longitude": 43.4571933,
+                "latitude": 3.1870086,
+                "altitude": 374.0,
+                "accuracy": 1.883
+            },
+            {
+                "id": 12,
+                "plotId": 4,
+                "longitude": 43.4571982,
+                "latitude": 3.1870217,
+                "altitude": 375.3,
+                "accuracy": 1.716
+            },
+            {
+                "id": 13,
+                "plotId": 4,
+                "longitude": 43.4571958,
+                "latitude": 3.1870381,
+                "altitude": 376.8,
+                "accuracy": 1.65
+            },
+            {
+                "id": 14,
+                "plotId": 4,
+                "longitude": 43.457266464829445,
+                "latitude": 3.187078916748798,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            },
+            {
+                "id": 15,
+                "plotId": 4,
+                "longitude": 43.4571958,
+                "latitude": 3.1870381,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            },
+            {
+                "id": 16,
+                "plotId": 4,
+                "longitude": 43.4571934,
+                "latitude": 3.1870065,
+                "altitude": 0.0,
+                "accuracy": 0.0
+            }
+        ],
+        "subCounty": {
+            "id": 5001,
+            "subcounty_name": "Baidoa",
+            "countyId": 3018,
+            "county": {
+                "id": 3018,
+                "county_name": "Bay",
+                "countryId": 181,
+                "country": {
+                    "id": 181,
+                    "country_name": "Somalia",
+                    "currency": "",
+                    "code": "",
+                    "phoneCode": "",
+                    "counties": []
+                },
+                "subCounties": []
+            }
         }
-      ],
-      "subCounty": {
-        "id": 4080,
-        "subcounty_name": "Baringo Central",
-        "countyId": 1689,
-        "county": {
-          "id": 1689,
-          "county_name": "Baringo",
-          "countryId": 105,
-          "country": {
-            "id": 105,
-            "country_name": "Kenya",
-            "currency": "",
-            "code": "",
-            "phoneCode": "",
-            "counties": []
-          },
-          "subCounties": []
-        }
-      }
     },
     "project": {
-      "id": 0,
-      "project_name": "Test"
+        "id": 93,
+        "project_name": "BRCiS III"
     },
     "seedbank": [],
     "seeding": [],
     "waterpoint": []
-  }
-]
+}
