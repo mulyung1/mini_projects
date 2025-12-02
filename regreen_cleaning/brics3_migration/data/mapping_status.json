@@ -37,41 +37,54 @@
     "iremoval": [], 🎯
     "microcatchment": [
         {
-            "id": 4,
+            "id": 7,🎯
             "microcatchment_type": "Halfmoons",
-            "total_microcatchments": 16,
-            "length": 10.0,
-            "width": 90.0,
-            "depth": 70.0,
-            "vertical_spacing": 3.0,
-            "horizontal_spacing": 6.0,
-            "established_date": "2024-09",
-            "reseeded": false,
-            "quantity_seeds_sown": 0.0,
-            "seed_sources": [],
-            "local_seed_bank_name": "",
-            "other_seed_sources": "",
-            "who_manages_microcatchment": [
+            "total_microcatchments": 50,🎯
+            "length": 6.0,🎯
+            "width": 3.0,🎯
+            "depth": 40.0,🎯
+            "vertical_spacing": 3.0,🎯
+            "horizontal_spacing": 6.0,🎯
+            "established_date": "2024-12",🎯
+            "reseeded": true, not present, we move to grass establishment details??()
+            "quantity_seeds_sown": 2.0, not present, we move to grass establishment details??(halfmoon_grasses-kg_grass_seeds)
+            "sow_unit": "KG",
+            "seed_sources": [ not in odk
+                "LOCAL_NURSERY"
+            ],
+            "local_seed_bank_name": "", not in odk
+            "other_seed_sources": "", not in odk
+            "who_manages_microcatchment": [ 🎯
                 "FEMALE",
+                "YOUTH",
                 "MALE"
             ],
-            "other_who_manages": "",
-            "management_practices": [
-                "WEEDING"
+            "other_who_manages": "", 🎯
+            "management_practices": [ 🎯
+                "OTHER",
+                "INVASIVE_CONTROL", 
+                "ADJUSTMENT_EXPANSION",
+                "WEEDING", 
+                "STICKS_PROTECTION", 
+                "FENCING",
+                "DEBRIS_REMOVAL", 
+                "SEEDING", 
+                "PLANTING_ANNUAL_PERENNIAL_CROPS", 
+                "WATERING" 
             ],
-            "other_managements": "",
-            "usages": [
-                "OTHER"
+            "other_managements": "",🎯
+            "usages": [🎯
+                ""
             ],
-            "other_usages": "qsn not in odk",
-            "rangeland_entry_id": 4,
-            "completed": true,
+            "other_usages": "column not in odk", 🎯
+            "rangeland_entry_id": 7,
+            "completed": true, 🎯
             "currentStatus": [
                 {
-                    "id": 2,
+                    "id": 5,
                     "percentage_herbaceous_cover_in": "LESS_FOUR",
                     "percentage_herbaceous_cover_between": "LESS_FOUR",
-                    "intact": false,
+                    "intact": true,
                     "protected": false,
                     "protection_type": [],
                     "other_protection_type": "",
@@ -80,26 +93,182 @@
                     "other_erosion_type_inside": "",
                     "erosion_type_outside": [],
                     "other_erosion_type_outside": "",
-                    "longitude": 43.4613334,
-                    "latitude": 3.1823714,
-                    "altitude": 446,
-                    "accuracy": 4.933,
-                    "photo_url": "1737801957462.jpg",
-                    "comments": "Statename Southwest Communityname Irinta Yarey Newhalfmoon Demilune agriculture",
-                    "microcatchment_id": 4,
-                    "grassCurrentStatus": [],
-                    "treeCurrentStatus": []
+                    "longitude": 36.8188532,
+                    "latitude": -1.2358131,
+                    "altitude": 1683.699951171875,
+                    "accuracy": 13.737,
+                    "microcatchment_id": 7,
+                    "grassCurrentStatus": [
+                        {
+                            "id": 23,
+                            "local_name": "local",
+                            "scientific_name": "scientific test",
+                            "microcatchment_status_id": 5
+                        }
+                    ],
+                    "treeCurrentStatus": [
+                        {
+                            "id": 28,
+                            "local_name": "gumar",
+                            "scientific_name": "Acacia nilotica",
+                            "microcatchment_status_id": 5
+                        },
+                        {
+                            "id": 29,
+                            "local_name": "maygaag",
+                            "scientific_name": "Acacia mellifera",
+                            "microcatchment_status_id": 5
+                        }
+                    ]
                 }
             ],
-            "grassEstablishment": [],
-            "treeEstablishment": []
+            "grassEstablishment": [
+                {
+                    "id": 22,
+                    "plant_type": "Grass",
+                    "local_name": "local",
+                    "scientific_name": "test grass",
+                    "microcatchment_id": 7
+                }
+            ],
+            "treeEstablishment": [
+                {
+                    "id": 25,
+                    "local_name": "maygaag",
+                    "scientific_name": "Acacia mellifera",
+                    "microcatchment_id": 7
+                },
+                {
+                    "id": 26,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 7
+                },
+                {
+                    "id": 27,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 7
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "microcatchment_type": "Halfmoons",
+            "total_microcatchments": 60,
+            "length": 3.0,
+            "width": 6.0,
+            "depth": 40.0,
+            "vertical_spacing": 3.0,
+            "horizontal_spacing": 2.0,
+            "established_date": "2024-12",
+            "reseeded": true,
+            "quantity_seeds_sown": 2.0,
+            "sow_unit": "KG",
+            "seed_sources": [
+                "LOCAL_NURSERY"
+            ],
+            "local_seed_bank_name": "",
+            "other_seed_sources": "",
+            "who_manages_microcatchment": [
+                "FEMALE",
+                "YOUTH",
+                "MALE"
+            ],
+            "other_who_manages": "",
+            "management_practices": [
+                "WEEDING",
+                "WATERING",
+                "OTHER"
+            ],
+            "other_managements": "direct sowing plus another",
+            "usages": [
+                "OTHER"
+            ],
+            "other_usages": "not in odk",
+            "rangeland_entry_id": 7,
+            "completed": true,
+            "currentStatus": [
+                {
+                    "id": 6,
+                    "percentage_herbaceous_cover_in": "LESS_FOUR",
+                    "percentage_herbaceous_cover_between": "LESS_FOUR",
+                    "intact": true,
+                    "protected": false,
+                    "protection_type": [],
+                    "other_protection_type": "",
+                    "visible_erosion": false,
+                    "erosion_type_inside": [],
+                    "other_erosion_type_inside": "",
+                    "erosion_type_outside": [],
+                    "other_erosion_type_outside": "",
+                    "longitude": 36.8188518,
+                    "latitude": -1.2358276,
+                    "altitude": 1683.5999755859375,
+                    "accuracy": 11.589,
+                    "photo_url": "JPEG_073a52d1-6610-4fb7-94b3-0973563a497b_6261663179858086959.jpg",
+                    "comments": "All And Any Comments Go In Here",
+                    "microcatchment_id": 8,
+                    "grassCurrentStatus": [
+                        {
+                            "id": 25,
+                            "local_name": "loval",
+                            "scientific_name": "test name",
+                            "microcatchment_status_id": 6
+                        }
+                    ],
+                    "treeCurrentStatus": [
+                        {
+                            "id": 33,
+                            "local_name": "maygaag",
+                            "scientific_name": "Acacia mellifera",
+                            "microcatchment_status_id": 6
+                        },
+                        {
+                            "id": 34,
+                            "local_name": "gumar",
+                            "scientific_name": "Acacia nilotica",
+                            "microcatchment_status_id": 6
+                        }
+                    ]
+                }
+            ],
+            "grassEstablishment": [
+                {
+                    "id": 24,
+                    "plant_type": "Grass",
+                    "local_name": "local",
+                    "scientific_name": "scientific test",
+                    "microcatchment_id": 8
+                }
+            ],
+            "treeEstablishment": [
+                {
+                    "id": 30,
+                    "local_name": "maygaag",
+                    "scientific_name": "Acacia mellifera",
+                    "microcatchment_id": 8
+                },
+                {
+                    "id": 31,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 8
+                },
+                {
+                    "id": 32,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 8
+                }
+            ]
         }
     ],
     "plot": {
         "id": 4,
         "name": "d018eebd-01fa-4cf0-8449-19b37fc50ef9", 🎯
         "farmingEntityId": 5, 🎯
-        "has_crops": true, repeat
+        "has_crops": true, repeat  🎯
         "fenced": false, as is 🎯
         "fence_type": [], as is 🎯
         "other_fence_type": "", as is 🎯
@@ -116,7 +285,7 @@
             "Beans",
             "Sorghum",
             "Orange"
-        ],
+        ], 🎯
         "points": [
             {
                 "id": 10,
@@ -174,7 +343,7 @@
                 "altitude": 0.0,
                 "accuracy": 0.0
             }
-        ],
+        ],🎯
         "subCounty": {
             "id": 5001,
             "subcounty_name": "Baidoa",
@@ -193,8 +362,8 @@
                 },
                 "subCounties": []
             }
-        }
-    },
+        }🎯
+    },🎯
     "project": { 🎯
         "id": 93,
         "project_name": "BRCiS III"
