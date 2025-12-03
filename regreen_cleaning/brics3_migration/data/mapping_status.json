@@ -46,9 +46,9 @@
             "vertical_spacing": 3.0,🎯
             "horizontal_spacing": 6.0,🎯
             "established_date": "2024-12",🎯
-            "reseeded": true, not present, we move to grass establishment details??()
-            "quantity_seeds_sown": 2.0, not present, we move to grass establishment details??(halfmoon_grasses-kg_grass_seeds)
-            "sow_unit": "KG",
+            "reseeded": true, 🎯
+            "quantity_seeds_sown": 2.0, 🎯
+            "sow_unit": "KG", 🎯
             "seed_sources": [ not in odk
                 "LOCAL_NURSERY"
             ],
@@ -81,23 +81,23 @@
             "completed": true, 🎯
             "currentStatus": [
                 {
-                    "id": 5,
-                    "percentage_herbaceous_cover_in": "LESS_FOUR",
-                    "percentage_herbaceous_cover_between": "LESS_FOUR",
-                    "intact": true,
-                    "protected": false,
-                    "protection_type": [],
-                    "other_protection_type": "",
-                    "visible_erosion": false,
-                    "erosion_type_inside": [],
-                    "other_erosion_type_inside": "",
-                    "erosion_type_outside": [],
-                    "other_erosion_type_outside": "",
-                    "longitude": 36.8188532,
-                    "latitude": -1.2358131,
-                    "altitude": 1683.699951171875,
-                    "accuracy": 13.737,
-                    "microcatchment_id": 7,
+                    "id": 5,🎯
+                    "percentage_herbaceous_cover_in": "LESS_FOUR",🎯
+                    "percentage_herbaceous_cover_between": "LESS_FOUR",🎯
+                    "intact": true,🎯
+                    "protected": false,🎯
+                    "protection_type": [],🎯
+                    "other_protection_type": "",🎯
+                    "visible_erosion": false,🎯
+                    "erosion_type_inside": [],🎯
+                    "other_erosion_type_inside": "",🎯
+                    "erosion_type_outside": [],🎯
+                    "other_erosion_type_outside": "",🎯
+                    "longitude": 36.8188532,🎯
+                    "latitude": -1.2358131,🎯
+                    "altitude": 1683.699951171875,🎯
+                    "accuracy": 13.737,🎯
+                    "microcatchment_id": 7,🎯
                     "grassCurrentStatus": [
                         {
                             "id": 23,
