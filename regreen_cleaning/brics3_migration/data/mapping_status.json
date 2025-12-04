@@ -98,7 +98,7 @@
                     "altitude": 1683.699951171875,🎯
                     "accuracy": 13.737,🎯
                     "microcatchment_id": 7,🎯
-                    "grassCurrentStatus": [
+                    "grassCurrentStatus": [🎯
                         {
                             "id": 23,
                             "local_name": "local",
@@ -122,7 +122,7 @@
                     ]
                 }
             ],
-            "grassEstablishment": [
+            "grassEstablishment": [🎯
                 {
                     "id": 22,
                     "plant_type": "Grass",
