@@ -111,7 +111,7 @@
         },
         "plot": {
             "id": 1,
-            "name": "d0b6cca2782247989121356f48631a1f",
+            "name": "8884e12e7f9e4f8aa3ab83760f27525b",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -401,7 +401,7 @@
         },
         "plot": {
             "id": 2,
-            "name": "ed3d0c0b42d14d4a837cebaf514701aa",
+            "name": "2e426fd2ef214e3f824053206b8d9f1d",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -626,7 +626,7 @@
         },
         "plot": {
             "id": 3,
-            "name": "3014c37a81354b8cb8eacbac2dd3e0bb",
+            "name": "d0c123ed64544c46ad581dc5594cadc7",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -1254,7 +1254,7 @@
         },
         "plot": {
             "id": 4,
-            "name": "8d2e351bcd744f2c82eeab97f00431c8",
+            "name": "e6903c9d06194405951513f69947655c",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -1270,12 +1270,13 @@
             "photo_url": "1745225420733.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sugarcane",
                 "maize",
-                "beans",
-                "banana",
+                "sugarcane",
+                "Guava",
+                "date",
                 "coconut",
-                "date"
+                "beans",
+                "banana"
             ],
             "points": [
                 {
@@ -2504,7 +2505,7 @@
         },
         "plot": {
             "id": 5,
-            "name": "f7390693943b4893a3d1d46021a0324d",
+            "name": "20a0e7c88e884f27b4f6fba02710f25c",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -3995,7 +3996,7 @@
         },
         "plot": {
             "id": 6,
-            "name": "f2a92913f347461e849f37801fd536a5",
+            "name": "4bd76f8afb7d429b86537f048588115a",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -4011,22 +4012,21 @@
             "photo_url": "1745307502997.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sugarcane",
                 "maize",
-                "sorghum",
                 "cassava",
-                "beans",
-                "banana",
+                "sorghum",
                 "tomato",
-                "coconut",
-                "orange",
-                "date",
+                "sugarcane",
                 "Guava",
                 "soursap(anuuni)",
-                "Tamarindo",
                 "lemon",
-                "vegetable",
-                "crops"
+                "vegetable crops",
+                "Tamarindo",
+                "coconut",
+                "date",
+                "orange",
+                "beans",
+                "banana"
             ],
             "points": [
                 {
@@ -4190,7 +4190,7 @@
         },
         "plot": {
             "id": 7,
-            "name": "d496c5632b80450b8a13f70aed390c79",
+            "name": "84df44a7526c4ad999a6e5db0c7a553f",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -4848,7 +4848,7 @@
         },
         "plot": {
             "id": 8,
-            "name": "0750ee8d16b64fe09aa9fedb19f88dab",
+            "name": "4459cc098e21405780f24e783f95f4df",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -4866,8 +4866,9 @@
             "crops": [
                 "maize",
                 "sorghum",
-                "beans",
-                "tomato"
+                "tomato",
+                "sugarcane",
+                "beans"
             ],
             "points": [
                 {
@@ -6658,7 +6659,7 @@
         },
         "plot": {
             "id": 9,
-            "name": "535fd46574dd4ab4911324eeecb8e10c",
+            "name": "044168fa875d46f6bd556cd131518413",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -8046,7 +8047,7 @@
         },
         "plot": {
             "id": 10,
-            "name": "90f1f538ebc7457d81fd40344c8f0d68",
+            "name": "6babd059f8464ac78c8e89e18f9f5529",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -8921,7 +8922,7 @@
         },
         "plot": {
             "id": 11,
-            "name": "eb075b0c4e7449fba686b5f9619b418d",
+            "name": "64989f7ce7d34a6a85e0285d2b46a2db",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -9616,7 +9617,7 @@
         },
         "plot": {
             "id": 12,
-            "name": "8eef98b096f44f5b8b3d0025f5a23d65",
+            "name": "c630fa1424c045ccb6a6424753107996",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -11155,7 +11156,7 @@
         },
         "plot": {
             "id": 13,
-            "name": "166f6567625844ea8922be7c04104a8d",
+            "name": "39d096b6e79e4b3e899ce04106fe2735",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -11463,7 +11464,7 @@
         },
         "plot": {
             "id": 14,
-            "name": "fc02a8efa2e04284829595d183051d64",
+            "name": "f2d242bf75734ec58135f9ca4fbbcc27",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -11923,7 +11924,7 @@
         },
         "plot": {
             "id": 15,
-            "name": "98187c2fa8754386840f6781616e2dc1",
+            "name": "1e2a2a0963b041c485262fb8beaecf2c",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -12066,8 +12067,8 @@
                 "PLANTING_ANNUAL_PERENNIAL_CROPS"
             ],
             "other_managements": [
-                "DIRECT_SOWING",
-                "REDUCED_TILLAGE"
+                "REDUCED_TILLAGE",
+                "DIRECT_SOWING"
             ],
             "usages": [],
             "other_usages": "",
@@ -12744,7 +12745,7 @@
         },
         "plot": {
             "id": 16,
-            "name": "94ce9b4691f54f0c88b6666a4224f6b9",
+            "name": "7734689a480441a3b94fdff7ab378c08",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -12762,17 +12763,21 @@
             "crops": [
                 "maize",
                 "sorghum",
+                "mango",
+                "tomato",
+                "graps",
+                "ruman",
+                "Guava",
+                "Spandius",
+                "permegnut",
+                "coconut",
+                "date",
+                "orange",
+                "spandius",
                 "beans",
                 "banana",
-                "coconut",
-                "orange",
-                "date",
-                "Guava",
                 "neem",
-                "mango",
-                "spandius",
-                "ruman",
-                ""
+                "guava"
             ],
             "points": [
                 {
@@ -13132,7 +13137,7 @@
         },
         "plot": {
             "id": 17,
-            "name": "5eb0af1d746341b9a2b18fb9da3c31ef",
+            "name": "0bd0ec01645e4d37a8ce324ef572b5dd",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -13374,7 +13379,7 @@
         },
         "plot": {
             "id": 18,
-            "name": "67c8d8ade1ad4db289b498e56db0063d",
+            "name": "5867c6fb60f84b0b80c95724bf0d612b",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -13778,7 +13783,7 @@
         },
         "plot": {
             "id": 19,
-            "name": "28fc7b7bb37c421e890168250016c1b6",
+            "name": "0ddb303710c3481abefca5040de0afff",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -14130,7 +14135,7 @@
         },
         "plot": {
             "id": 20,
-            "name": "03739b52615742bb8741b31c59c5f89b",
+            "name": "e4b87aed62f14b5cb11b4b735dd68d3d",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -14487,7 +14492,7 @@
         },
         "plot": {
             "id": 21,
-            "name": "52c72c054168426fa247a3d2cbcd3669",
+            "name": "68ae91df329447568b408358d9ec6b69",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -14823,7 +14828,7 @@
         },
         "plot": {
             "id": 22,
-            "name": "0662b006b4094808a97d5496ebeec9b0",
+            "name": "8657d570a66e4e89807af406f55d5c11",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -15110,7 +15115,7 @@
         },
         "plot": {
             "id": 23,
-            "name": "05592698eaca4e35bd9c4ac8bf45d05f",
+            "name": "c19f75dccccc4a9d91c5cced9398abcd",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -15332,7 +15337,7 @@
         },
         "plot": {
             "id": 24,
-            "name": "d12a8c97804c470da0218910501ee13f",
+            "name": "d0672f150aa047d2b28341aebad6b277",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -15348,10 +15353,10 @@
             "photo_url": "1736668317481.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
+                "watermelons",
                 "beans",
-                "Cucumber",
-                "watermelons"
+                "sorghum",
+                "Cucumber"
             ],
             "points": [
                 {
@@ -15607,7 +15612,7 @@
         },
         "plot": {
             "id": 25,
-            "name": "cce84373c433410b885ebcb301378626",
+            "name": "9df4d79c0830404099fc2bfef2e51ebc",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -15623,19 +15628,19 @@
             "photo_url": "1736676424790.jpg",
             "subCountyId": 5001,
             "crops": [
+                "Watermelons",
                 "maize",
                 "sorghum",
+                "tomato",
+                "ladyfingers",
+                "lady fingers",
+                "peanuts",
+                "date",
+                "onions",
                 "beans",
                 "banana",
-                "tomato",
-                "date",
-                "Watermelons",
-                "peanuts",
-                "sesame",
                 "Papaya",
-                "onions",
-                "lady",
-                "fingers"
+                "sesame"
             ],
             "points": [
                 {
@@ -16066,7 +16071,7 @@
         },
         "plot": {
             "id": 26,
-            "name": "d905f3f50b8e4f7d9f64ab5e6c569186",
+            "name": "54f1f8ed2f72489f9eecb5d59f9ee6d1",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -16438,7 +16443,7 @@
         },
         "plot": {
             "id": 27,
-            "name": "3ee6bbebc3ac465fba4ae2741abe6e9e",
+            "name": "b68f0fe7f52c47ab8d9cd96648cab9c3",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -16787,7 +16792,7 @@
         },
         "plot": {
             "id": 28,
-            "name": "6fef9ef6a4fe4314be4aa47c639142d0",
+            "name": "2d23e202fdcf46e9802aa404211499af",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -17049,7 +17054,7 @@
         },
         "plot": {
             "id": 29,
-            "name": "de33a55024cc4d2c8393972c2ce393ec",
+            "name": "d3b2f7de974d49f4b5480d6b941fbb96",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -17470,7 +17475,7 @@
         },
         "plot": {
             "id": 30,
-            "name": "5a15578b203d420d907355d1a2b96707",
+            "name": "f6ca8d02294e409b87bb195fb0365855",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -17487,8 +17492,11 @@
             "subCountyId": 5001,
             "crops": [
                 "maize",
+                "sorghum",
+                "Pappaw",
                 "orange",
-                "sorghum"
+                "Pawpaw",
+                "beans"
             ],
             "points": [
                 {
@@ -17655,7 +17663,7 @@
         },
         "plot": {
             "id": 31,
-            "name": "ee31bd54dfe84b4693dee0a210140567",
+            "name": "8e7ec1dd04534460a59d564fa893fe61",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -17673,12 +17681,12 @@
             "crops": [
                 "maize",
                 "sorghum",
-                "beans",
-                "tomato",
-                "Batata",
                 "batiiq",
+                "tomato",
+                "salmama",
                 "qara",
-                "salmama"
+                "Batata",
+                "beans"
             ],
             "points": [
                 {
@@ -17949,7 +17957,7 @@
         },
         "plot": {
             "id": 32,
-            "name": "ff0bb48e573b46b9814e4cabf2d87b6e",
+            "name": "ff0077c24a114e2a95a9b76eab97b79a",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -17965,8 +17973,8 @@
             "photo_url": "1737618696152.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -18249,7 +18257,7 @@
         },
         "plot": {
             "id": 33,
-            "name": "5555c558a6554c659244306731b1ab1c",
+            "name": "a8d1ffa1cffd4cfb9c4c785627e8e698",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -18265,8 +18273,8 @@
             "photo_url": "1737619968664.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -18522,7 +18530,7 @@
         },
         "plot": {
             "id": 34,
-            "name": "13ca027fa5504a5b8bea037fbce9e089",
+            "name": "4629ce43937a470a8455f701e6be9ebd",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -18790,7 +18798,7 @@
         },
         "plot": {
             "id": 35,
-            "name": "34557d0d1b72480b963e74e0b523cf43",
+            "name": "52329f41153c4e279e76c562aecc1022",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -18806,8 +18814,8 @@
             "photo_url": "1737795869330.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -19100,7 +19108,7 @@
         },
         "plot": {
             "id": 36,
-            "name": "ac9bcd0d997b47e58ef17cc160e400d9",
+            "name": "201102e8dab54d3ba7b9a938a9942467",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -19116,9 +19124,9 @@
             "photo_url": "1737797573444.jpg",
             "subCountyId": 5001,
             "crops": [
+                "beans",
                 "maize",
-                "sorghum",
-                "beans"
+                "sorghum"
             ],
             "points": [
                 {
@@ -19371,7 +19379,7 @@
         },
         "plot": {
             "id": 37,
-            "name": "e2ed62a0052a4939b5a64f0cb14705b0",
+            "name": "28d172d6d3bc4d4f8d3334d87d80d390",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -19387,9 +19395,9 @@
             "photo_url": "1737799001374.jpg",
             "subCountyId": 5001,
             "crops": [
+                "beans",
                 "maize",
-                "sorghum",
-                "beans"
+                "sorghum"
             ],
             "points": [
                 {
@@ -19642,7 +19650,7 @@
         },
         "plot": {
             "id": 38,
-            "name": "f1395e429dc8417d8f4a9bf7ae717f0b",
+            "name": "0a71ca70d9db4fc7b043e8d27f335411",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -19889,7 +19897,7 @@
         },
         "plot": {
             "id": 39,
-            "name": "b142be58b6674a68b7bbae29d684d0d5",
+            "name": "abb1b573493a436eb4a197ee7da8645f",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -19905,8 +19913,8 @@
             "photo_url": "1737802052465.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -20191,7 +20199,7 @@
         },
         "plot": {
             "id": 40,
-            "name": "5e42ff3047374b9babb3ccd624403f96",
+            "name": "c1dc7b26ec4c45bc90e2cc6b6abcd33c",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -20207,8 +20215,8 @@
             "photo_url": "1737802423491.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -20469,7 +20477,7 @@
         },
         "plot": {
             "id": 41,
-            "name": "432632fd07384a84ae055be5b5a9e170",
+            "name": "b7e5e48f435f4059ad4ce3743322f5e9",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -20707,7 +20715,7 @@
         },
         "plot": {
             "id": 42,
-            "name": "016c8f95c33c4b589fb42307ff9f604a",
+            "name": "f1d088a7839545c48bd7c3f4c340df4b",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -20723,8 +20731,8 @@
             "photo_url": "1737871105117.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -20975,7 +20983,7 @@
         },
         "plot": {
             "id": 43,
-            "name": "2047f3032c554c09a2fdb82102d69677",
+            "name": "80862c312d804daead3e60134a5c1eb8",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -20991,8 +20999,8 @@
             "photo_url": "1737871970637.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -21269,7 +21277,7 @@
         },
         "plot": {
             "id": 44,
-            "name": "215198a25de54b48a18e2960e2a223b3",
+            "name": "9de98d7cb09943fab7c8a9c363714210",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -21593,7 +21601,7 @@
         },
         "plot": {
             "id": 45,
-            "name": "19e0f16fe1ff4a66bbc19045b965d9da",
+            "name": "ab9e9eddd65a4e2da6a94044c9218aa0",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -21609,8 +21617,8 @@
             "photo_url": "1737873050909.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -21901,7 +21909,7 @@
         },
         "plot": {
             "id": 46,
-            "name": "cad1d05370ca4e95b795cf4c196da6e9",
+            "name": "57248a2eb06e4209a25bf7e76955ebe5",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -21917,9 +21925,9 @@
             "photo_url": "1737876042339.jpg",
             "subCountyId": 5001,
             "crops": [
+                "beans",
                 "maize",
-                "sorghum",
-                "beans"
+                "sorghum"
             ],
             "points": [
                 {
@@ -22204,7 +22212,7 @@
         },
         "plot": {
             "id": 47,
-            "name": "b39b0e66881d44ec887846b889e10114",
+            "name": "2679dcf35d7a49feaa88129c72ba2ad0",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -22222,8 +22230,7 @@
             "crops": [
                 "beans",
                 "sorghum",
-                "Gabal",
-                "dey"
+                "Gabal dey"
             ],
             "points": [
                 {
@@ -22591,7 +22598,7 @@
         },
         "plot": {
             "id": 48,
-            "name": "5d34993addb2487994a9ee8b7129fec0",
+            "name": "a2a0f12e43d44f90a969372d67a6630c",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -22890,7 +22897,7 @@
         },
         "plot": {
             "id": 49,
-            "name": "bc0a4e35a9d648ca8f3f50f7820f9420",
+            "name": "f609d2cbd1df41cfb0bc962e80fe46cd",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -23258,7 +23265,7 @@
         },
         "plot": {
             "id": 50,
-            "name": "5bcf47e193de4f2f8187ec6434fd9902",
+            "name": "b7e9a9c4017f4fcfa976e43a7a55b406",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -23274,8 +23281,8 @@
             "photo_url": "1737886195315.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sorghum",
-                "beans"
+                "beans",
+                "sorghum"
             ],
             "points": [
                 {
@@ -23531,7 +23538,7 @@
         },
         "plot": {
             "id": 51,
-            "name": "0f0ec045203e49baac519443769ee5b8",
+            "name": "124066904d3f4bfcb0067d42d1bb88e8",
             "farmingEntityId": 55,
             "has_crops": true,
             "fenced": false,
@@ -23547,8 +23554,8 @@
             "photo_url": "1737887293467.jpg",
             "subCountyId": 5001,
             "crops": [
-                "sugarcane",
-                "beans"
+                "beans",
+                "sugarcane"
             ],
             "points": [
                 {
@@ -23934,7 +23941,7 @@
         },
         "plot": {
             "id": 52,
-            "name": "df69d18206f242c1955de044dea291d8",
+            "name": "3b36bee14c8a4c6896e47da5a5b5e6f8",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -24421,7 +24428,7 @@
         },
         "plot": {
             "id": 53,
-            "name": "dc3c674812494e81b30c74dd6361d69b",
+            "name": "88cffa282ecd4622855df814aebf047d",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -24715,7 +24722,7 @@
         },
         "plot": {
             "id": 54,
-            "name": "a49f3a8d70ea4d278cb5150c4b021454",
+            "name": "d501b17a69be4a9b80acf182f2cfcc3c",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
@@ -24985,7 +24992,7 @@
         },
         "plot": {
             "id": 55,
-            "name": "ff7baa54c5ff475a997093edef5cf601",
+            "name": "1b7c92e00e5842f6919de7a8f10dd8c7",
             "farmingEntityId": 55,
             "has_crops": false,
             "fenced": false,
