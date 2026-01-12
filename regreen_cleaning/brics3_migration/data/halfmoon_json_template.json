@@ -1,4 +1,5 @@
-{
+[
+  {
     "id": 4,
     "date_collected": "2025-01-31",
     "enumeratorId": 3726,
@@ -12,7 +13,105 @@
     "completed": true,
     "boma": [],
     "cgrazing": [],
-    "econtrol": [],
+    "econtrol": [
+        {
+            "id": 1,
+            "erosion_control_type": "Bunds",
+            "established_date": "2026-01",
+            "material_used": [
+                "Stones",
+                "OTHER",
+                "Soil"
+            ],
+            "other_material_used": "otherrs",
+            "who_established": [
+                "OTHER",
+                "COMMUNITY",
+                "YOUTH"
+            ],
+            "other_who_established": "otheeers",
+            "total_interventions": 20,
+            "length": 25.0,
+            "width": 3.0,
+            "depth": 6.0,
+            "vertical_spacing": 2.0,
+            "horizontal_spacing": 3.0,
+            "labor_payment": "Paid",
+            "has_grass": true,
+            "total_number_grasses_planted": 3,
+            "kg_grass_seeds_planted": 20.0,
+            "has_trees": true,
+            "total_number_different_trees_planted": 3,
+            "total_number_trees_planted": 60,
+            "total_number_trees_survived": 60,
+            "management_practices": [
+                "WEEDING",
+                "OTHER",
+                "STICKS_PROTECTION"
+            ],
+            "other_managements": "others",
+            "usages": [
+                "OTHER",
+                "SOIL_CONSERVATION",
+                "EROSION_CONTROL"
+            ],
+            "other_usages": "anoth3er one",
+            "rangelandEntryId": 1,
+            "currentStatus": {
+                "id": 1,
+                "herbaceous_cover": "less than 4",
+                "visible_erosion": true,
+                "erosion_type": [
+                    "SHEET",
+                    "RILL",
+                    "Other"
+                ],
+                "other_erosion_type": "see others",
+                "is_intervention_effective": false,
+                "longitude": 36.8188643,
+                "latitude": -1.2358021,
+                "altitude": 1684.4000244140625,
+                "accuracy": 11.485,
+                "photo_url": "JPEG_05956817-3775-447a-a5ad-1b2a1acb5c50_879860974608818259.jpg",
+                "comments": "Commen5s Here",
+                "econtrolId": 1,
+                "grassCurrentStatus": [
+                    {
+                        "id": 4,
+                        "plant_type": "Grass",
+                        "local_name": "local",
+                        "scientific_name": "scientific",
+                        "econtrol_status_id": 1
+                    }
+                ],
+                "treeCurrentStatus": [
+                    {
+                        "id": 5,
+                        "local_name": "muembe",
+                        "scientific_name": "Mangifera indica",
+                        "econtrol_status_id": 1
+                    }
+                ]
+            },
+            "grassEstablishment": [
+                {
+                    "id": 3,
+                    "plant_type": "Grass",
+                    "local_name": "grass local",
+                    "scientific_name": "scientific",
+                    "econtrol_id": 1
+                }
+            ],
+            "treeEstablishment": [
+                {
+                    "id": 4,
+                    "local_name": "mukau",
+                    "scientific_name": "Melianthus comosus",
+                    "econtrol_id": 1
+                }
+            ]
+        }
+    ],
     "enumerator": {
         "id": 3726,
         "first_name": "Abdiaziz Adan",
@@ -33,44 +132,81 @@
         "last_name": "Gredo",
         "organization": "INSTITUTION"
     },
-    "iremoval": [],
+    "iremoval": [
+        {
+            "id": 2,
+            "removal_date": "2026-01",
+            "removal_methods": [
+                "Mechanical",
+                "Manual",
+                "Chemical",
+                "Other"
+            ],
+            "other_removal_methods": "others",
+            "photo_url": "JPEG_5cc8d00f-cbd5-41a2-a868-374783263033_3612000906371608906.jpg",
+            "comments": "Doooone",
+            "rangelandEntryId": 8,
+            "grassCurrentStatus": [
+                {
+                    "id": 31,
+                    "local_name": "loval",
+                    "scientific_name": "scientific",
+                    "iremoval_id": 31
+                }
+            ],
+            "treeCurrentStatus": [
+                {
+                    "id": 47,
+                    "local_name": "muembe",
+                    "scientific_name": "Mangifera indica",
+                    "iremoval_id": 47
+                }
+            ]
+        }
+    ],
     "microcatchment": [
         {
-            "id": 4,
+            "id": 7,
             "microcatchment_type": "Halfmoons",
-            "total_microcatchments": 16,
-            "length": 10.0,
-            "width": 90.0,
-            "depth": 70.0,
+            "total_microcatchments": 50,
+            "length": 6.0,
+            "width": 3.0,
+            "depth": 40.0,
             "vertical_spacing": 3.0,
             "horizontal_spacing": 6.0,
-            "established_date": "2024-09",
-            "reseeded": false,
-            "quantity_seeds_sown": 0.0,
-            "seed_sources": [],
+            "established_date": "2024-12",
+            "reseeded": true,
+            "quantity_seeds_sown": 2.0,
+            "sow_unit": "KG",
+            "seed_sources": [
+                "LOCAL_NURSERY"
+            ],
             "local_seed_bank_name": "",
             "other_seed_sources": "",
             "who_manages_microcatchment": [
                 "FEMALE",
+                "YOUTH",
                 "MALE"
             ],
             "other_who_manages": "",
             "management_practices": [
-                "WEEDING"
+                "OTHER",
+                "WEEDING",
+                "WATERING"
             ],
             "other_managements": "",
             "usages": [
-                "OTHER"
+                ""
             ],
-            "other_usages": "qsn not in odk",
-            "rangeland_entry_id": 4,
+            "other_usages": "",
+            "rangeland_entry_id": 7,
             "completed": true,
             "currentStatus": [
                 {
-                    "id": 2,
+                    "id": 5,
                     "percentage_herbaceous_cover_in": "LESS_FOUR",
                     "percentage_herbaceous_cover_between": "LESS_FOUR",
-                    "intact": false,
+                    "intact": true,
                     "protected": false,
                     "protection_type": [],
                     "other_protection_type": "",
@@ -79,26 +215,182 @@
                     "other_erosion_type_inside": "",
                     "erosion_type_outside": [],
                     "other_erosion_type_outside": "",
-                    "longitude": 43.4613334,
-                    "latitude": 3.1823714,
-                    "altitude": 446,
-                    "accuracy": 4.933,
-                    "photo_url": "1737801957462.jpg",
-                    "comments": "Statename Southwest Communityname Irinta Yarey Newhalfmoon Demilune agriculture",
-                    "microcatchment_id": 4,
-                    "grassCurrentStatus": [],
-                    "treeCurrentStatus": []
+                    "longitude": 36.8188532,
+                    "latitude": -1.2358131,
+                    "altitude": 1683.699951171875,
+                    "accuracy": 13.737,
+                    "microcatchment_id": 7,
+                    "grassCurrentStatus": [
+                        {
+                            "id": 23,
+                            "local_name": "local",
+                            "scientific_name": "scientific test",
+                            "microcatchment_status_id": 5
+                        }
+                    ],
+                    "treeCurrentStatus": [
+                        {
+                            "id": 28,
+                            "local_name": "gumar",
+                            "scientific_name": "Acacia nilotica",
+                            "microcatchment_status_id": 5
+                        },
+                        {
+                            "id": 29,
+                            "local_name": "maygaag",
+                            "scientific_name": "Acacia mellifera",
+                            "microcatchment_status_id": 5
+                        }
+                    ]
                 }
             ],
-            "grassEstablishment": [],
-            "treeEstablishment": []
+            "grassEstablishment": [
+                {
+                    "id": 22,
+                    "plant_type": "Grass",
+                    "local_name": "local",
+                    "scientific_name": "test grass",
+                    "microcatchment_id": 7
+                }
+            ],
+            "treeEstablishment": [
+                {
+                    "id": 25,
+                    "local_name": "maygaag",
+                    "scientific_name": "Acacia mellifera",
+                    "microcatchment_id": 7
+                },
+                {
+                    "id": 26,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 7
+                },
+                {
+                    "id": 27,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 7
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "microcatchment_type": "Halfmoons",
+            "total_microcatchments": 60,
+            "length": 3.0,
+            "width": 6.0,
+            "depth": 40.0,
+            "vertical_spacing": 3.0,
+            "horizontal_spacing": 2.0,
+            "established_date": "2024-12",
+            "reseeded": true,
+            "quantity_seeds_sown": 2.0,
+            "sow_unit": "KG",
+            "seed_sources": [
+                "LOCAL_NURSERY"
+            ],
+            "local_seed_bank_name": "",
+            "other_seed_sources": "",
+            "who_manages_microcatchment": [
+                "FEMALE",
+                "YOUTH",
+                "MALE"
+            ],
+            "other_who_manages": "",
+            "management_practices": [
+                "WEEDING",
+                "WATERING",
+                "OTHER"
+            ],
+            "other_managements": "direct sowing plus another",
+            "usages": [
+                "OTHER"
+            ],
+            "other_usages": "not in odk",
+            "rangeland_entry_id": 7,
+            "completed": true,
+            "currentStatus": [
+                {
+                    "id": 6,
+                    "percentage_herbaceous_cover_in": "LESS_FOUR",
+                    "percentage_herbaceous_cover_between": "LESS_FOUR",
+                    "intact": true,
+                    "protected": false,
+                    "protection_type": [],
+                    "other_protection_type": "",
+                    "visible_erosion": false,
+                    "erosion_type_inside": [],
+                    "other_erosion_type_inside": "",
+                    "erosion_type_outside": [],
+                    "other_erosion_type_outside": "",
+                    "longitude": 36.8188518,
+                    "latitude": -1.2358276,
+                    "altitude": 1683.5999755859375,
+                    "accuracy": 11.589,
+                    "photo_url": "JPEG_073a52d1-6610-4fb7-94b3-0973563a497b_6261663179858086959.jpg",
+                    "comments": "All And Any Comments Go In Here",
+                    "microcatchment_id": 8,
+                    "grassCurrentStatus": [
+                        {
+                            "id": 25,
+                            "local_name": "loval",
+                            "scientific_name": "test name",
+                            "microcatchment_status_id": 6
+                        }
+                    ],
+                    "treeCurrentStatus": [
+                        {
+                            "id": 33,
+                            "local_name": "maygaag",
+                            "scientific_name": "Acacia mellifera",
+                            "microcatchment_status_id": 6
+                        },
+                        {
+                            "id": 34,
+                            "local_name": "gumar",
+                            "scientific_name": "Acacia nilotica",
+                            "microcatchment_status_id": 6
+                        }
+                    ]
+                }
+            ],
+            "grassEstablishment": [
+                {
+                    "id": 24,
+                    "plant_type": "Grass",
+                    "local_name": "local",
+                    "scientific_name": "scientific test",
+                    "microcatchment_id": 8
+                }
+            ],
+            "treeEstablishment": [
+                {
+                    "id": 30,
+                    "local_name": "maygaag",
+                    "scientific_name": "Acacia mellifera",
+                    "microcatchment_id": 8
+                },
+                {
+                    "id": 31,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 8
+                },
+                {
+                    "id": 32,
+                    "local_name": "gumar",
+                    "scientific_name": "Acacia nilotica",
+                    "microcatchment_id": 8
+                }
+            ]
         }
     ],
     "plot": {
         "id": 4,
-        "name": "d018eebd-01fa-4cf0-8449-19b37fc50ef9",
+        "name": "d018eebd-01fa-4cf0-8449-19b37fc50ef9", 
         "farmingEntityId": 5,
-        "has_crops": true,
+        "has_crops": "",
         "fenced": false,
         "fence_type": [],
         "other_fence_type": "",
@@ -106,15 +398,13 @@
             "OTHER"
         ],
         "calculated_size": 0.003115652,
-        "other_ownership_type": "To be specified",
+        "other_ownership_type": "Migrated not known",
         "livestock_allowed": false,
         "conservation_area": false,
         "photo_url": "1737800379520.jpg",
         "subCountyId": 5001,
         "crops": [
-            "Beans",
-            "Sorghum",
-            "Orange"
+            
         ],
         "points": [
             {
@@ -200,5 +490,56 @@
     },
     "seedbank": [],
     "seeding": [],
-    "waterpoint": []
+    "waterpoint": [
+        {
+            "id": 1,
+            "water_point_type": "Borehole",
+            "water_usage": [
+                "Agricultural",
+                "None",
+                "Livestock",
+                "Drinking"
+            ],
+            "water_condition": [
+                "Functional"
+            ],
+            "water_facilities": [
+                "Other",
+                "Storage_tanks",
+                "Pumps",
+                "Water_traps"
+            ],
+            "other_facility": "others",
+            "average_distance": [
+                "one_to_five_km",
+                "within_one_km",
+                "five_to_ten_km"
+            ],
+            "water_point_season": [
+                "All_year",
+                "Dry_season"
+            ],
+            "contamination_sources": [
+                "Agriculture_runoff",
+                "Latrines_nearby",
+                "Factories",
+                "Not_known",
+                "None"
+            ],
+            "water_point_protection": [
+                "none",
+                "protection_well_covers",
+                "protection_fence"
+            ],
+            "photo_url": "JPEG_ff6ddafe-96b9-473a-85b6-5f6a66e1936f_5798537656745438196.jpg",
+            "longitude": 36.8188513,
+            "latitude": -1.2358133,
+            "altitude": 1684.4000244140625,
+            "accuracy": 11.42,
+            "comments": "Comments",
+            "rangelandEntryId": 2
+        }        
+    ]
 }
+
+]
