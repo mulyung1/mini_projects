@@ -1,0 +1,116 @@
+Tree Scientific Name,Tree Local Name,Total Trees Planted,Total Trees Survived,Tree Usage,Other Tree Usages,has_fruits
+Senna siamea,mjohoro,1500,1500,SHADE ,,False
+Vangueriopsis lanciflora,mgelevia,5,2,FIREWOOD SOIL_FERTILITY SHADE CONSTRUCTION ,,False
+Citrus sinensis,Kisungwa,50,30,FRUITS SHADE ,,True
+Persea americana,Kivakato,10,2,FRUITS SHADE ,,True
+Asimina triloba,Kivavai,20,7,FRUITS ,,True
+Mangifera indica,Yiembe,300,240,FIREWOOD FRUITS SHADE SOIL_FERTILITY ,,True
+Syzygium cordatum,Musu,20,20,OTHER ,harvest butterflies lavae,False
+,Msuruwache,9,9,OTHER ,none,False
+Croton megalocarpus,,30,9,SHADE FIREWOOD ,,False
+Melia volkensii,,300,200,FIREWOOD CONSTRUCTION FODDER ,,False
+Azadirachta indica,muarubaini,200,100,SHADE CONSTRUCTION FIREWOOD MEDICINAL FODDER ,,False
+Combretum acutum,mutithi,100,86,CONSTRUCTION SHADE FIREWOOD ,,False
+Commiphora africana,itula,10,9,SHADE FIREWOOD ,,False
+Lannea rivae,kyusya,10,6,SHADE ,,False
+Terminalia brownii,muuku,50,39,SHADE MEDICINAL FIREWOOD ,,False
+Grevillea robusta,Mukima,100,70,SHADE FODDER FIREWOOD CONSTRUCTION ,,False
+Roystonea regia,royal palm,20,15,SHADE SOIL_FERTILITY ,flower,False
+Ricinus communis,Masungwa,150,120,SHADE FRUITS FIREWOOD SOIL_FERTILITY ,,True
+Musa sapientum,Iiyu,500,500,SOIL_FERTILITY FRUITS SHADE FODDER ,,True
+Carica papaya,kivavai,100,70,FRUITS ,,True
+Passiflora edulis,makundi,1000,700,SOIL_FERTILITY FRUITS ,,True
+Monoon longifolium,Ashok,1200,1150,SHADE ,,False
+Annona cherimola,kitomoko,10,3,FRUITS FIREWOOD ,,True
+Jacaranda mimosifolia,Jacarada,20,10,SOIL_FERTILITY CONSTRUCTION FIREWOOD ,,False
+Leucaena diversifolia,leucaena,25,25,CONSTRUCTION FIREWOOD ,,False
+Melia azedarach,mpenda bure,10,10,CONSTRUCTION FIREWOOD ,,False
+Artocarpus heterophyllus,mfenesi,8,3,FRUITS ,,True
+Psidium guajava,kipera,5,2,FRUITS ,,True
+Terminalia catappa,Mkungu,25,23,SHADE FRUITS ,,True
+Leucaena,lucena,20,20,FODDER SOIL_FERTILITY ,seed collection,False
+Senna singueana,Muchola,100,70,SOIL_FERTILITY FODDER SHADE CONSTRUCTION FIREWOOD ,,False
+Balanites rotundifolia,Ashok,100,50,SOIL_FERTILITY SHADE ,,False
+Senna spectabilis,senna,45,22,CONSTRUCTION FIREWOOD ,,False
+Syzygium,kisambalau,3,1,FRUITS ,,True
+Prunus africana,mngima,20,4,MEDICINAL SHADE FIREWOOD CONSTRUCTION SOIL_FERTILITY ,,False
+Citrus limon,mutimu,80,68,FRUITS SHADE MEDICINAL ,,True
+Delonix regia,mkrismas,40,32,SHADE ,,False
+Dracaena steudneri,kitae,20,4,FRUITS FIREWOOD ,,True
+Citrus reticulata,Mchenza,13,11,FRUITS ,,True
+Acacia mellifera,Kikwata,3,3,SHADE FRUITS SOIL_FERTILITY ,,True
+Anacardium occidentale,mkorosho,150,145,NUTS ,,False
+Citrus paradisi,pixi,50,43,FRUITS SHADE ,,True
+Buddleja polystachya,pine,200,0,FIREWOOD ,,False
+Cocos nucifera,mnazi,150,150,NUTS CONSTRUCTION ,,False
+Tamarindus indica,mkwaju,1,1,SHADE FRUITS ,,True
+Eucalyptus globulus,eucalyptus,20,16,CONSTRUCTION SOIL_FERTILITY SHADE FIREWOOD ,,False
+Hymenaea verrucosa,gum tree,50,40,FIREWOOD SHADE CONSTRUCTION ,,False
+Dalbergia melanoxylon,Mlingoswe,1,1,SHADE FRUITS ,,True
+Moringa oleifera,moringa,150,80,MEDICINAL ,,False
+Casuarina equisetifolia,Casorina Tree,34,32,SHADE ,,False
+Eucalyptus,eucalyptus,400,250,SHADE CONSTRUCTION FIREWOOD ,,False
+Annona squamosa,Matomoko,50,29,SHADE FRUITS ,,True
+Leucaena leucocephala,lucina,30,30,SHADE ,,False
+Euclea divinorum,Mkode,18,11,SHADE ,,False
+Cupressus lusitanica,cypress,10,4,CONSTRUCTION FIREWOOD SHADE ,,False
+Rhus natalensis,Kitai,100,70,FODDER FRUITS FIREWOOD SOIL_FERTILITY SHADE ,,True
+Lannea schweinfurthii,Mumbaume,5,3,FIREWOOD SOIL_FERTILITY MEDICINAL SHADE ,,False
+Callistemon citrinus,Bottle brush,200,180,FIREWOOD SOIL_FERTILITY SHADE ,,False
+Khaya senegalensis,kaya,50,45,SHADE ,,False
+Cassia arereh,Mwela ndathe,20,10,CONSTRUCTION FIREWOOD SHADE SOIL_FERTILITY MEDICINAL ,,False
+Vitis vinifera,Zabibu,40,13,SHADE FRUITS ,,True
+Acacia elatior,,20,11,SHADE ,,False
+Eriobotrya japonica,kitundu,20,15,CONSTRUCTION SHADE FIREWOOD ,,False
+Cordyla africana,cordia,30,15,CONSTRUCTION FIREWOOD FODDER ,,False
+Boswellia neglecta,mtundu,40,40,CONSTRUCTION FIREWOOD SOIL_FERTILITY MEDICINAL ,,False
+Acacia tortilis,Mwaa,50,30,SOIL_FERTILITY SHADE FODDER FIREWOOD CONSTRUCTION ,,False
+Erythrina abyssinica,Matithi,20,18,FODDER FIREWOOD CONSTRUCTION SHADE SOIL_FERTILITY ,,False
+Cascabela thevetia,Yellow Elder,30,30,SHADE ,,False
+Citrus,Blood orange,100,95,FODDER FIREWOOD FRUITS SHADE SOIL_FERTILITY ,,True
+Acacia nilotica,musemei,20,19,FIREWOOD CONSTRUCTION FODDER ,,False
+Umbrella,umbrella tree,30,30,SHADE ,beautification,False
+Balanites aegyptiaca,Ndului,20,18,FODDER FIREWOOD CONSTRUCTION FRUITS SHADE SOIL_FERTILITY ,,True
+Gliricidia sepium,gricedia,7,7,FIREWOOD SHADE SOIL_FERTILITY FODDER ,,False
+Dovyalis caffra,kayava,100,50,OTHER ,as live fence,False
+Sterculia africana,African Star Chestnut,5,5,MEDICINAL CONSTRUCTION NUTS SHADE OTHER ,fibre,False
+Calliandra,kalila,50,41,MEDICINAL FIREWOOD SHADE ,,False
+Adansonia digitata,Baobab,2,2,MEDICINAL NUTS FRUITS SHADE ,,True
+Oxytenanthera abyssinica,Bamboo,200,200,SOIL_FERTILITY ,,False
+Annona muricata,Mastafeli,15,7,SHADE FRUITS ,,True
+Terminalia mantaly,umbrella tree,1,1,SHADE CONSTRUCTION ,,False
+Trichilia emetica,ever green,2,2,SHADE ,,False
+Delonix elata,,1,1,MEDICINAL ,,False
+Markhamia lutea,Makhamia,50,50,CONSTRUCTION SHADE ,,False
+Osyris lanceolata,muchora mwiu,70,50,CONSTRUCTION OTHER FODDER ,for curvings,False
+Elaeis guineensis,Palm,200,200,SHADE ,,False
+Acacia,Acacia,1000,1000,SOIL_FERTILITY SHADE ,,False
+Ficus sycomorus,Mkuyu,2300,1577,SOIL_FERTILITY SHADE ,,False
+Macadamia tetraphylla,Macadamia,10,6,NUTS ,,False
+Juniperus procera,cider,50,40,CONSTRUCTION ,,False
+Aleurites moluccanus,Candlenutt,8,8,MEDICINAL NUTS OTHER ,conservation,False
+Ocotea usambarensis,Mkongo,2,1,SHADE ,,False
+Vachellia,muriga,30,25,LEAF_VEGETABLES SHADE MEDICINAL ,,False
+Faidherbia albida,,3,3,FIREWOOD SHADE ,,False
+Grewia bicolor,Kikalawa,10,8,SHADE FIREWOOD FRUITS SOIL_FERTILITY ,,True
+Olea europaea,mkimbi,540,530,MEDICINAL ,,False
+Afrocarpus falcatus,podo,100,97,OTHER FODDER ,,False
+Ficus sur,Mkuu,1,1,FIREWOOD SHADE SOIL_FERTILITY FODDER ,,False
+Ficus cyathistipula,Ficus,5,2,SHADE ,,False
+Macadamia,macadamia,50,30,FIREWOOD NUTS FRUITS SHADE SOIL_FERTILITY FODDER ,,True
+Pouteria adolfi-friederici,munina,600,200,SOIL_FERTILITY FODDER ,land restoration,False
+Neoboutonia macrocalyx,kithona,10,8,NUTS FIREWOOD FRUITS SHADE ,,True
+Sesbania sesban,sesbania,100,56,SOIL_FERTILITY CONSTRUCTION FIREWOOD ,,False
+Cupressus,msumbesu,50,30,SOIL_FERTILITY FIREWOOD SHADE CONSTRUCTION ,,False
+Prosopis africana,mngima,4,3,FIREWOOD CONSTRUCTION MEDICINAL SOIL_FERTILITY FODDER ,,False
+Eucalyptus camaldulensis,musanduku,80,72,FIREWOOD CONSTRUCTION ,,False
+Manihot glaziovii,yanga,38,35,FRUITS ,,True
+Croton macrostachyus,mutundu,5,3,SHADE FIREWOOD ,,False
+Syzygium cumini,Mzabarau,150,140,FRUITS MEDICINAL SHADE ,,True
+Rauvolfia caffra,Mutuluku,20,10,SHADE SOIL_FERTILITY ,,False
+Melia azadirachta,Mpenda bure,30,20,SHADE CONSTRUCTION ,,False
+Jatropha curcas,kyowa,20,9,FIREWOOD SHADE ,,False
+Euphorbia tirucalli,ndau,10,8,SHADE FIREWOOD ,,False
+Commiphora baluensis,itula,5,3,SHADE FIREWOOD CONSTRUCTION ,,False
+Acacia polyacantha,munina,10,6,FODDER SHADE FIREWOOD ,,False
+Syzygium guineense,muvengele,80,75,CONSTRUCTION SHADE FIREWOOD ,,False
