@@ -1,0 +1,757 @@
+[
+    {
+        "farmingEntity": {
+            "id": 1,
+            "first_name": "irc",
+            "middle_name": "irc",
+            "last_name": "irc",
+            "organization": "INSTITUTION"
+        },
+        "iremoval": [
+            {
+                "id": 0,
+                "removal_date": "2025-05",
+                "removal_methods": [
+                    "manual"
+                ],
+                "other_removal_methods": "",
+                "photo_url": "",
+                "comments": "Invasive_species NONE, iremoval_severity LESS_25",
+                "rangelandEntryId": 8,
+                "grassCurrentStatus": [],
+                "treeCurrentStatus": []
+            }
+        ],
+        "plot": {
+            "id": 1,
+            "name": "uuid:067d64de-e69d-4f4b-bb9f-0ad8ce828677",
+            "farmingEntityId": 1,
+            "has_crops": false,
+            "fenced": false,
+            "fence_type": [],
+            "other_fence_type": "",
+            "plot_ownership_type": [
+                "OTHER"
+            ],
+            "calculated_size": 17.87931647,
+            "other_ownership_type": "Migrated not known",
+            "livestock_allowed": true,
+            "conservation_area": false,
+            "photo_url": "1746532634991.jpg",
+            "subCountyId": 5001,
+            "crops": [],
+            "points": [
+                {
+                    "id": 1,
+                    "plotId": 1,
+                    "longitude": 46.9264623,
+                    "latitude": 6.6514281,
+                    "altitude": 309.0,
+                    "accuracy": 7.833
+                },
+                {
+                    "id": 2,
+                    "plotId": 1,
+                    "longitude": 46.926457,
+                    "latitude": 6.6514948,
+                    "altitude": 316.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 3,
+                    "plotId": 1,
+                    "longitude": 46.926446,
+                    "latitude": 6.6516772,
+                    "altitude": 318.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 4,
+                    "plotId": 1,
+                    "longitude": 46.9264377,
+                    "latitude": 6.651778,
+                    "altitude": 317.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 5,
+                    "plotId": 1,
+                    "longitude": 46.9264147,
+                    "latitude": 6.651948,
+                    "altitude": 319.0,
+                    "accuracy": 2.28
+                },
+                {
+                    "id": 6,
+                    "plotId": 1,
+                    "longitude": 46.9263863,
+                    "latitude": 6.6521508,
+                    "altitude": 321.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 7,
+                    "plotId": 1,
+                    "longitude": 46.9263628,
+                    "latitude": 6.6523469,
+                    "altitude": 321.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 8,
+                    "plotId": 1,
+                    "longitude": 46.9263556,
+                    "latitude": 6.6524931,
+                    "altitude": 320.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 9,
+                    "plotId": 1,
+                    "longitude": 46.9263277,
+                    "latitude": 6.6526859,
+                    "altitude": 321.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 10,
+                    "plotId": 1,
+                    "longitude": 46.9263071,
+                    "latitude": 6.6528936,
+                    "altitude": 321.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 11,
+                    "plotId": 1,
+                    "longitude": 46.9262831,
+                    "latitude": 6.6530636,
+                    "altitude": 322.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 12,
+                    "plotId": 1,
+                    "longitude": 46.9262469,
+                    "latitude": 6.6532716,
+                    "altitude": 321.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 13,
+                    "plotId": 1,
+                    "longitude": 46.9262218,
+                    "latitude": 6.6534731,
+                    "altitude": 321.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 14,
+                    "plotId": 1,
+                    "longitude": 46.9261973,
+                    "latitude": 6.653641,
+                    "altitude": 321.0,
+                    "accuracy": 2.08
+                },
+                {
+                    "id": 15,
+                    "plotId": 1,
+                    "longitude": 46.9261723,
+                    "latitude": 6.6538445,
+                    "altitude": 319.0,
+                    "accuracy": 2.28
+                },
+                {
+                    "id": 16,
+                    "plotId": 1,
+                    "longitude": 46.9261441,
+                    "latitude": 6.6540471,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 17,
+                    "plotId": 1,
+                    "longitude": 46.9261217,
+                    "latitude": 6.6542244,
+                    "altitude": 318.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 18,
+                    "plotId": 1,
+                    "longitude": 46.9260928,
+                    "latitude": 6.6544386,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 19,
+                    "plotId": 1,
+                    "longitude": 46.9260635,
+                    "latitude": 6.6546394,
+                    "altitude": 319.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 20,
+                    "plotId": 1,
+                    "longitude": 46.9260321,
+                    "latitude": 6.6548222,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 21,
+                    "plotId": 1,
+                    "longitude": 46.926028,
+                    "latitude": 6.6550299,
+                    "altitude": 318.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 22,
+                    "plotId": 1,
+                    "longitude": 46.9259801,
+                    "latitude": 6.6552391,
+                    "altitude": 318.0,
+                    "accuracy": 2.233
+                },
+                {
+                    "id": 23,
+                    "plotId": 1,
+                    "longitude": 46.925953,
+                    "latitude": 6.6554134,
+                    "altitude": 317.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 24,
+                    "plotId": 1,
+                    "longitude": 46.9260398,
+                    "latitude": 6.6554412,
+                    "altitude": 319.0,
+                    "accuracy": 2.233
+                },
+                {
+                    "id": 25,
+                    "plotId": 1,
+                    "longitude": 46.9262381,
+                    "latitude": 6.6553898,
+                    "altitude": 319.0,
+                    "accuracy": 2.28
+                },
+                {
+                    "id": 26,
+                    "plotId": 1,
+                    "longitude": 46.9264254,
+                    "latitude": 6.655322,
+                    "altitude": 317.0,
+                    "accuracy": 2.233
+                },
+                {
+                    "id": 27,
+                    "plotId": 1,
+                    "longitude": 46.9266383,
+                    "latitude": 6.6552517,
+                    "altitude": 318.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 28,
+                    "plotId": 1,
+                    "longitude": 46.9268638,
+                    "latitude": 6.6551833,
+                    "altitude": 318.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 29,
+                    "plotId": 1,
+                    "longitude": 46.9270228,
+                    "latitude": 6.655136,
+                    "altitude": 318.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 30,
+                    "plotId": 1,
+                    "longitude": 46.9272242,
+                    "latitude": 6.655067,
+                    "altitude": 317.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 31,
+                    "plotId": 1,
+                    "longitude": 46.9274451,
+                    "latitude": 6.6549976,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 32,
+                    "plotId": 1,
+                    "longitude": 46.9276165,
+                    "latitude": 6.6549363,
+                    "altitude": 319.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 33,
+                    "plotId": 1,
+                    "longitude": 46.9278145,
+                    "latitude": 6.6548893,
+                    "altitude": 316.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 34,
+                    "plotId": 1,
+                    "longitude": 46.9280362,
+                    "latitude": 6.6548116,
+                    "altitude": 320.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 35,
+                    "plotId": 1,
+                    "longitude": 46.9282121,
+                    "latitude": 6.654754,
+                    "altitude": 320.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 36,
+                    "plotId": 1,
+                    "longitude": 46.9284176,
+                    "latitude": 6.6546913,
+                    "altitude": 320.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 37,
+                    "plotId": 1,
+                    "longitude": 46.9286403,
+                    "latitude": 6.6546241,
+                    "altitude": 318.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 38,
+                    "plotId": 1,
+                    "longitude": 46.9288123,
+                    "latitude": 6.6545522,
+                    "altitude": 317.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 39,
+                    "plotId": 1,
+                    "longitude": 46.9290094,
+                    "latitude": 6.6544989,
+                    "altitude": 318.0,
+                    "accuracy": 2.28
+                },
+                {
+                    "id": 40,
+                    "plotId": 1,
+                    "longitude": 46.9292385,
+                    "latitude": 6.6544346,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 41,
+                    "plotId": 1,
+                    "longitude": 46.9294198,
+                    "latitude": 6.6543793,
+                    "altitude": 319.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 42,
+                    "plotId": 1,
+                    "longitude": 46.9296249,
+                    "latitude": 6.6543027,
+                    "altitude": 321.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 43,
+                    "plotId": 1,
+                    "longitude": 46.929833,
+                    "latitude": 6.6542379,
+                    "altitude": 318.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 44,
+                    "plotId": 1,
+                    "longitude": 46.9300203,
+                    "latitude": 6.6541789,
+                    "altitude": 318.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 45,
+                    "plotId": 1,
+                    "longitude": 46.930237,
+                    "latitude": 6.6541202,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 46,
+                    "plotId": 1,
+                    "longitude": 46.9302464,
+                    "latitude": 6.6539189,
+                    "altitude": 319.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 47,
+                    "plotId": 1,
+                    "longitude": 46.9302672,
+                    "latitude": 6.6537363,
+                    "altitude": 317.0,
+                    "accuracy": 2.733
+                },
+                {
+                    "id": 48,
+                    "plotId": 1,
+                    "longitude": 46.9302754,
+                    "latitude": 6.6535117,
+                    "altitude": 318.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 49,
+                    "plotId": 1,
+                    "longitude": 46.9302979,
+                    "latitude": 6.6532929,
+                    "altitude": 319.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 50,
+                    "plotId": 1,
+                    "longitude": 46.9303248,
+                    "latitude": 6.6530978,
+                    "altitude": 319.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 51,
+                    "plotId": 1,
+                    "longitude": 46.9303271,
+                    "latitude": 6.6528721,
+                    "altitude": 317.0,
+                    "accuracy": 2.733
+                },
+                {
+                    "id": 52,
+                    "plotId": 1,
+                    "longitude": 46.9303451,
+                    "latitude": 6.652645,
+                    "altitude": 318.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 53,
+                    "plotId": 1,
+                    "longitude": 46.9303626,
+                    "latitude": 6.6524576,
+                    "altitude": 318.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 54,
+                    "plotId": 1,
+                    "longitude": 46.9303823,
+                    "latitude": 6.6522191,
+                    "altitude": 319.0,
+                    "accuracy": 2.733
+                },
+                {
+                    "id": 55,
+                    "plotId": 1,
+                    "longitude": 46.9304073,
+                    "latitude": 6.6520094,
+                    "altitude": 317.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 56,
+                    "plotId": 1,
+                    "longitude": 46.9304262,
+                    "latitude": 6.6518235,
+                    "altitude": 317.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 57,
+                    "plotId": 1,
+                    "longitude": 46.9304429,
+                    "latitude": 6.6516077,
+                    "altitude": 318.0,
+                    "accuracy": 2.733
+                },
+                {
+                    "id": 58,
+                    "plotId": 1,
+                    "longitude": 46.9304697,
+                    "latitude": 6.6513881,
+                    "altitude": 318.0,
+                    "accuracy": 2.65
+                },
+                {
+                    "id": 59,
+                    "plotId": 1,
+                    "longitude": 46.9304925,
+                    "latitude": 6.6512308,
+                    "altitude": 319.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 60,
+                    "plotId": 1,
+                    "longitude": 46.9304942,
+                    "latitude": 6.6510301,
+                    "altitude": 318.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 61,
+                    "plotId": 1,
+                    "longitude": 46.930411,
+                    "latitude": 6.650963,
+                    "altitude": 318.0,
+                    "accuracy": 2.58
+                },
+                {
+                    "id": 62,
+                    "plotId": 1,
+                    "longitude": 46.9302173,
+                    "latitude": 6.6509798,
+                    "altitude": 316.0,
+                    "accuracy": 2.733
+                },
+                {
+                    "id": 63,
+                    "plotId": 1,
+                    "longitude": 46.9300074,
+                    "latitude": 6.6510106,
+                    "altitude": 317.0,
+                    "accuracy": 2.65
+                },
+                {
+                    "id": 64,
+                    "plotId": 1,
+                    "longitude": 46.9297914,
+                    "latitude": 6.651034,
+                    "altitude": 316.0,
+                    "accuracy": 2.58
+                },
+                {
+                    "id": 65,
+                    "plotId": 1,
+                    "longitude": 46.9295958,
+                    "latitude": 6.6510501,
+                    "altitude": 317.0,
+                    "accuracy": 2.65
+                },
+                {
+                    "id": 66,
+                    "plotId": 1,
+                    "longitude": 46.9293731,
+                    "latitude": 6.6510631,
+                    "altitude": 317.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 67,
+                    "plotId": 1,
+                    "longitude": 46.9291515,
+                    "latitude": 6.6510889,
+                    "altitude": 316.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 68,
+                    "plotId": 1,
+                    "longitude": 46.9289602,
+                    "latitude": 6.6511172,
+                    "altitude": 317.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 69,
+                    "plotId": 1,
+                    "longitude": 46.9287553,
+                    "latitude": 6.6511594,
+                    "altitude": 317.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 70,
+                    "plotId": 1,
+                    "longitude": 46.9285451,
+                    "latitude": 6.6511601,
+                    "altitude": 317.0,
+                    "accuracy": 2.68
+                },
+                {
+                    "id": 71,
+                    "plotId": 1,
+                    "longitude": 46.9283637,
+                    "latitude": 6.6511741,
+                    "altitude": 316.0,
+                    "accuracy": 2.566
+                },
+                {
+                    "id": 72,
+                    "plotId": 1,
+                    "longitude": 46.9281431,
+                    "latitude": 6.6512048,
+                    "altitude": 316.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 73,
+                    "plotId": 1,
+                    "longitude": 46.9279393,
+                    "latitude": 6.6512314,
+                    "altitude": 315.0,
+                    "accuracy": 2.566
+                },
+                {
+                    "id": 74,
+                    "plotId": 1,
+                    "longitude": 46.9277531,
+                    "latitude": 6.65125,
+                    "altitude": 315.0,
+                    "accuracy": 2.48
+                },
+                {
+                    "id": 75,
+                    "plotId": 1,
+                    "longitude": 46.9275354,
+                    "latitude": 6.6512776,
+                    "altitude": 315.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 76,
+                    "plotId": 1,
+                    "longitude": 46.9273273,
+                    "latitude": 6.6513084,
+                    "altitude": 316.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 77,
+                    "plotId": 1,
+                    "longitude": 46.9271505,
+                    "latitude": 6.6513229,
+                    "altitude": 316.0,
+                    "accuracy": 2.316
+                },
+                {
+                    "id": 78,
+                    "plotId": 1,
+                    "longitude": 46.926924,
+                    "latitude": 6.6513635,
+                    "altitude": 316.0,
+                    "accuracy": 2.65
+                },
+                {
+                    "id": 79,
+                    "plotId": 1,
+                    "longitude": 46.9267427,
+                    "latitude": 6.6513941,
+                    "altitude": 315.0,
+                    "accuracy": 2.65
+                },
+                {
+                    "id": 80,
+                    "plotId": 1,
+                    "longitude": 46.9265612,
+                    "latitude": 6.6513974,
+                    "altitude": 317.0,
+                    "accuracy": 2.78
+                },
+                {
+                    "id": 81,
+                    "plotId": 1,
+                    "longitude": 46.9264782,
+                    "latitude": 6.6514098,
+                    "altitude": 316.0,
+                    "accuracy": 2.38
+                },
+                {
+                    "id": 82,
+                    "plotId": 1,
+                    "longitude": 46.9264623,
+                    "latitude": 6.6514281,
+                    "altitude": 309.0,
+                    "accuracy": 7.833
+                }
+            ],
+            "subCounty": {
+                "id": 5001,
+                "subcounty_name": "galkacyo",
+                "countyId": 3018,
+                "county": {
+                    "id": 3018,
+                    "county_name": "mudug",
+                    "countryId": 181,
+                    "country": {
+                        "id": 181,
+                        "country_name": "Somalia",
+                        "currency": "",
+                        "code": "",
+                        "phoneCode": "",
+                        "counties": []
+                    },
+                    "subCounties": []
+                }
+            }
+        },
+        "project": {
+            "id": 93,
+            "project_name": "BRCiS III"
+        },
+        "enumerator": {
+            "id": 3726,
+            "first_name": "First",
+            "last_name": "Last",
+            "gender": "Male",
+            "age_category": "18 - 35",
+            "phone_number": "0e15704046",
+            "email": "test_mail@gmail.com",
+            "country": "test",
+            "organization": "Test",
+            "username": "AhmedOmar",
+            "type": "ENUMERATOR"
+        },
+        "boma": [],
+        "cgrazing": [],
+        "microcatchment": [],
+        "seedbank": [],
+        "seeding": [],
+        "econtrol": [],
+        "waterpoint": [],
+        "completed": true,
+        "rangeModuleId": 1,
+        "currentStep": "DONE",
+        "moduleId": 6,
+        "is_revisit": false,
+        "date_collected": "2025-05-06",
+        "projectId": 93,
+        "plotId": 1,
+        "farmingEntityId": 1,
+        "enumeratorId": 3726,
+        "id": 1
+    }
+]

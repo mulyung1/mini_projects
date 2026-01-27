@@ -1,0 +1,216 @@
+[
+    {
+        "farmingEntity": {
+            "id": 1,
+            "first_name": "nrc",
+            "middle_name": "nrc",
+            "last_name": "nrc",
+            "organization": "INSTITUTION"
+        },
+        "econtrol": [
+            {
+                "id": 1,
+                "erosion_control_type": "rock_dams",
+                "established_date": "2025-03",
+                "material_used": [
+                    "Rocks"
+                ],
+                "other_material_used": "",
+                "who_established": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "other_who_established": "YOUTH",
+                "total_interventions": 1.0,
+                "length": 55.0,
+                "width": 42.0,
+                "depth": 4.0,
+                "vertical_spacing": 0,
+                "horizontal_spacing": 0,
+                "labor_payment": "paid",
+                "has_grass": false,
+                "total_number_grasses_planted": 0,
+                "kg_grass_seeds_planted": 0,
+                "has_trees": false,
+                "total_number_different_trees_planted": 0,
+                "total_number_trees_planted": 0,
+                "total_number_trees_survived": 0,
+                "management_practices": [],
+                "other_managements": " ",
+                "usages": [
+                    "MIGRATED_NOT_KNOWN"
+                ],
+                "other_usages": "",
+                "rangelandEntryId": 2,
+                "currentStatus": {
+                    "id": 1,
+                    "herbaceous_cover": "Absent",
+                    "visible_erosion": true,
+                    "erosion_type": [
+                        "OTHER"
+                    ],
+                    "other_erosion_type": "NONE",
+                    "is_intervention_effective": true,
+                    "longitude": 43.5803052,
+                    "latitude": 3.1625144,
+                    "altitude": 458.0,
+                    "accuracy": 5.0,
+                    "photo_url": "1745395146158.jpg",
+                    "comments": "state southwest community rebay",
+                    "econtrolId": 1,
+                    "grassCurrentStatus": [],
+                    "treeCurrentStatus": []
+                },
+                "grassEstablishment": [],
+                "treeEstablishment": []
+            }
+        ],
+        "plot": {
+            "id": 1,
+            "name": "fbad898a87704c61a5aa2422b9cc2bd5",
+            "farmingEntityId": 1,
+            "has_crops": false,
+            "fenced": false,
+            "fence_type": [],
+            "other_fence_type": "",
+            "plot_ownership_type": [
+                "OTHER"
+            ],
+            "calculated_size": 9.484464127,
+            "other_ownership_type": "Migrated not known",
+            "livestock_allowed": false,
+            "conservation_area": false,
+            "photo_url": "1745393186912.jpg",
+            "subCountyId": 5001,
+            "crops": [],
+            "points": [
+                {
+                    "id": 1,
+                    "plotId": 1,
+                    "longitude": 43.5813256,
+                    "latitude": 3.1658482,
+                    "altitude": 460.0,
+                    "accuracy": 3.0
+                },
+                {
+                    "id": 2,
+                    "plotId": 1,
+                    "longitude": 43.5812884,
+                    "latitude": 3.1658527,
+                    "altitude": 460.0,
+                    "accuracy": 2.0
+                },
+                {
+                    "id": 3,
+                    "plotId": 1,
+                    "longitude": 43.5804971,
+                    "latitude": 3.165539,
+                    "altitude": 460.0,
+                    "accuracy": 4.549
+                },
+                {
+                    "id": 4,
+                    "plotId": 1,
+                    "longitude": 43.5802945,
+                    "latitude": 3.1655428,
+                    "altitude": 460.0,
+                    "accuracy": 3.0
+                },
+                {
+                    "id": 5,
+                    "plotId": 1,
+                    "longitude": 43.5782396,
+                    "latitude": 3.1652369,
+                    "altitude": 462.0,
+                    "accuracy": 7.0
+                },
+                {
+                    "id": 6,
+                    "plotId": 1,
+                    "longitude": 43.577922,
+                    "latitude": 3.1636072,
+                    "altitude": 459.0,
+                    "accuracy": 4.25
+                },
+                {
+                    "id": 7,
+                    "plotId": 1,
+                    "longitude": 43.580396,
+                    "latitude": 3.1622298,
+                    "altitude": 467.0,
+                    "accuracy": 8.5
+                },
+                {
+                    "id": 8,
+                    "plotId": 1,
+                    "longitude": 43.5810986,
+                    "latitude": 3.1642025,
+                    "altitude": 462.0,
+                    "accuracy": 4.573
+                },
+                {
+                    "id": 9,
+                    "plotId": 1,
+                    "longitude": 43.5813256,
+                    "latitude": 3.1658482,
+                    "altitude": 460.0,
+                    "accuracy": 3.0
+                }
+            ],
+            "subCounty": {
+                "id": 5001,
+                "subcounty_name": "baidoa.",
+                "countyId": 3018,
+                "county": {
+                    "id": 3018,
+                    "county_name": "bay.",
+                    "countryId": 181,
+                    "country": {
+                        "id": 181,
+                        "country_name": "Somalia",
+                        "currency": "",
+                        "code": "",
+                        "phoneCode": "",
+                        "counties": []
+                    },
+                    "subCounties": []
+                }
+            }
+        },
+        "project": {
+            "id": 93,
+            "project_name": "BRCiS III"
+        },
+        "enumerator": {
+            "id": 3726,
+            "first_name": "First",
+            "last_name": "Last",
+            "gender": "Male",
+            "age_category": "18 - 35",
+            "phone_number": "0e15704046",
+            "email": "test_mail@gmail.com",
+            "country": "test",
+            "organization": "Test",
+            "username": "Ahil",
+            "type": "ENUMERATOR"
+        },
+        "boma": [],
+        "cgrazing": [],
+        "microcatchment": [],
+        "seedbank": [],
+        "seeding": [],
+        "iremoval": [],
+        "waterpoint": [],
+        "completed": true,
+        "rangeModuleId": 1,
+        "currentStep": "DONE",
+        "moduleId": 6,
+        "is_revisit": false,
+        "date_collected": "2025-04-23",
+        "projectId": 93,
+        "plotId": 1,
+        "farmingEntityId": 1,
+        "enumeratorId": 3726,
+        "id": 1
+    }
+]
