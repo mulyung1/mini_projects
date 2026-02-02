@@ -279,6 +279,7 @@ def extract_contours_details(c, contours_df, idx):
     k = 0
     if contours_child_list:
         ic(f"For {c["KEY"]}, number of contour records = {len(contours_child_list)}")
+        #add all child records
         contours_econtrol.append(
             {
                 "econtrol": contours_child_list,
@@ -286,11 +287,7 @@ def extract_contours_details(c, contours_df, idx):
             }
         )
 
-    contours_econtrol.extend([{
-        "econtrol": [i], 
-        #"key" :i["key"]
-        } 
-        for i in contours_no_children])
+    contours_econtrol.extend([{"econtrol": [i], "key" :i["key"]} for i in contours_no_children])
             
     return contours_econtrol
 
@@ -477,7 +474,7 @@ def extract_halfmoon_details(c, halfmoon_df, idx):
                                 "scientific_name": "",
                                 "microcatchment_status_id": 5
                             })
-                        grass_status_list.append(grass_current_status_1)
+                            grass_status_list.append(grass_current_status_1)
 
                     continue
                 
@@ -632,7 +629,7 @@ def extract_halfmoon_details(c, halfmoon_df, idx):
 
     microcatchment_info = {
         "microcatchment":[mcm_details], 
-        #'key':j['PARENT_KEY']
+        'key':j['PARENT_KEY']
     }
     #ic(j['PARENT_KEY'])
     microcatchment_list.append(microcatchment_info)
@@ -675,10 +672,8 @@ def extract_wp_details(c, idx):
     waterpoint_list.append(wps_details)
     
 
-    wps_list = [{
-        "waterpoint": [i], 
-        #"key" :i["key"]
-        } for i in waterpoint_list]
+    wps_list = [{ "waterpoint": [i],  "key" :i["key"]} for i in waterpoint_list]
+    #ic(wps_list)
     return wps_list
 
 
@@ -748,10 +743,7 @@ def extract_rockdam_details(c, idx):
     rock_dams_list.append(rock_dams_details)
     
     #construct the correct json structure
-    rdams_econtrol = [{
-        "econtrol": [i], 
-        #"key" :i["key"]
-        } for i in rock_dams_list]
+    rdams_econtrol = [{"econtrol": [i],  "key" :i["key"]} for i in rock_dams_list]
     return rdams_econtrol
 
 
@@ -869,7 +861,7 @@ def extract_swales_details(c, swales_df, idx):
         return [
             {
                 "econtrol": [swales_no_child_details],
-                #"key": c["KEY"]
+                "key": c["KEY"]
             }
         ]
 
@@ -1099,14 +1091,12 @@ def extract_swales_details(c, swales_df, idx):
         swales_econtrol.append(
             {
                 "econtrol": swales_child_list,
-                #"key": c['KEY']
+                "key": c['KEY']
             }
         )
 
-    swales_econtrol.extend([{
-        "econtrol": [i], 
-        #"key" :i["key"]
-        } for i in swales_no_children])
+    swales_econtrol.extend([{"econtrol": [i],"key" :i["key"] } for i in swales_no_children])
+    #ic(swales_econtrol)
     return swales_econtrol
 
 
@@ -1172,10 +1162,7 @@ def extract_terraces_details(c, idx):
     }
 
     terraces_list.append(terraces_details)
-    terraces_econtrol = [{
-        "econtrol": [i], 
-       #"key" :i["key"]
-        } for i in terraces_list]
+    terraces_econtrol = [{ "econtrol": [i], "key" :i["key"]} for i in terraces_list]
 
     return terraces_econtrol
 
@@ -1209,10 +1196,7 @@ def extract_iremoval_details(c, idx):
     
 
     ic(invasivs_list)
-    iremoval_list = [{
-        "iremoval": [i], 
-        #"key" :i["key"]
-        } for i in invasivs_list]
+    iremoval_list = [{"iremoval": [i], "key" :i["key"]} for i in invasivs_list]
 
     return iremoval_list
 
@@ -1433,11 +1417,7 @@ def extract_gabions_details(c, gabions_df, idx):
             }
         )
 
-    gabions_econtrol.extend([{
-        "econtrol": [i], 
-        #"key" :i["key"]
-        } for i in gabions_no_children])
-
+    gabions_econtrol.extend([{"econtrol": [i],  "key" :i["key"]} for i in gabions_no_children])
     return gabions_econtrol
 
 
@@ -1645,17 +1625,13 @@ def extract_bunds_details(c, bunds_df, idx):
         bunds_child_list.append(bunds_child_details)
     
     if bunds_child_list:
-        ic(f"for {c["KEY"]}, no of child records = {len(bunds_child_list)}")
+        #ic(f"for {c["KEY"]}, no of child records = {len(bunds_child_list)}")
         bunds_econtrol.append(
             {
-                "econtrol": bunds_child_list,
-                "key": c['KEY']
+                "econtrol": bunds_child_list,  "key": c['KEY']
             }
         )
     
-    bunds_econtrol.extend([{
-        "econtrol": [i], 
-        #"key" :i["key"]
-        } for i in bunds_no_children])
+    bunds_econtrol.extend([{"econtrol": [i],  "key" :i["key"]} for i in bunds_no_children])
     return bunds_econtrol
 
