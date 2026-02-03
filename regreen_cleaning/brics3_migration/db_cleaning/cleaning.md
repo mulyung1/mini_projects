@@ -509,8 +509,8 @@ END $$;
 
 ```
 
-
-## soil bunds
+## econtrol
+### soil bunds
 ### get the records of interest based on plot name
 ```sql
 regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in ('uuid:2ca2ab31-bd46-4e9a-ab60-f5302fc183e9', 'uuid:41bbf3d3-c52d-4762-9891-1c0f741004df', 'uuid:df558d01-226f-4386-8489-6d93fc5bd57c', 'uuid:3e4fc751-d450-48f6-9381-4776f84813b3', 'uuid:678dc500-72ef-49ef-9466-45e835ed56c5', 'uuid:fb9ef9f3-f1c6-417c-aa89-c9df87a3bb71', 'uuid:8389e603-3c19-487b-891e-09be3216d068', 'uuid:c37c2898-5448-4fde-8f61-4b5f7574fec2', 'uuid:5c7ce128-3964-46a0-9d37-13199a1f8876', 'uuid:57a7e247-54e6-4250-871f-2f8332724077', 'uuid:eb1bef63-6909-4c81-9829-ec466c147c77', 'uuid:1e3fc6e8-4640-4f36-8a8c-d770e9c448d8'));
@@ -532,7 +532,7 @@ regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(sel
 ```
 
 
-### cleaning logic
+### econtrol cleaning logic
 1. drop rangeland trees - trees where `curr_id = current status id` & `est_id = establishment_id`(that is matched to a rent id).
 2. drop rangeland grasses - grasses where `curr_id = current status id` & `est_id = establishment_id`(that is matched to a rent id).
 3. drop erosion_control_current - has entries of interest(based on rent id). 
@@ -594,3 +594,443 @@ BEGIN
 END $$;
 
 ```
+
+
+### swales
+#### inspection
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in ('uuid:1331b5be-46d6-48e0-9214-20783c424198', 'uuid:87f62109-3378-4cf0-afab-a8b00d16c7a0', 'uuid:0d49cc6d-e895-4b7f-a552-0ea79857aa36', 'uuid:16e7dbfa-89ff-4c17-a937-378089985c66', 'uuid:3939d745-7ac3-4820-b988-7fb40649b22e', 'uuid:9c989ebe-ba11-4e2b-834e-dfe7615435c9', 'uuid:d2072d2d-97ca-4a83-834a-c27e99188b48', 'uuid:a4eae44f-b36c-4cae-8421-7378bc91914f', 'uuid:e5677b65-835c-46ce-b5cb-89f53918868f', 'uuid:db39d4f3-44d1-40d4-b9ad-eecc08f99689', 'uuid:c0a0a739-a9b7-45cd-a4f4-d5a6041bba7e', 'uuid:9bc08ead-66d6-416e-9cfd-73e634f31332', 'uuid:8996dbb6-0d60-4b2c-a1e9-f51b47f547e8', 'uuid:f48df7a1-f40a-4814-9d6f-9ba469b9492b', 'uuid:ea395672-2d6c-4b55-af83-05c2a08bf3f7', 'uuid:b97e5134-6f45-4e89-961d-da10eda03d8d', 'uuid:fc7b8211-9071-4fc9-94a9-cf230349b9cb', 'uuid:f1d66b19-ecf9-44ae-93c2-726d589d7507', 'uuid:99bd20e3-47c6-45b0-817f-1bdaaec5b772', 'uuid:ced5a8ec-c355-4e63-b78f-ceaf4adabfb5', 'uuid:e3d86805-1395-4ac0-82a0-5bed17b2c944', 'uuid:88700ace-dd82-4470-b4c4-8787180edfb4', 'uuid:13dbc9d1-0b45-471c-b590-e36b51780385', 'uuid:ad362004-5efb-4d98-a3cf-f8cf463d6fd7', 'uuid:11a82c12-e47a-44e5-bab7-18344ba4ad77', 'uuid:f13fe3b7-c5d3-4ced-bfa1-b23537e275b6', 'uuid:18957170-6ad1-437e-91d2-2e7eee65aae5', 'uuid:7a7df9e0-2c76-4842-a963-c513f14b3dce', 'uuid:d7f64eec-5435-4468-96cd-ca25834561b4', 'uuid:901943c9-a6e9-445a-aaf3-441397991c45', 'uuid:c8452e84-ab62-4002-93db-9fac83d8ae65', 'uuid:d3eb123b-3f83-4ba9-a834-407e8f313ed0', 'uuid:ce8e3710-14af-4b1c-90f4-1d7308d1a48d', 'uuid:13264977-558a-4501-803e-193a61ce7b93', 'uuid:ab40534c-e63e-4c6d-9079-58299b13b419', 'uuid:a23d76d2-a9fd-4a74-a414-d8b941f3b16e', 'uuid:ebaf8192-4369-430d-8965-f59f402e6246', 'uuid:e1d5f7d2-83af-4a3d-af33-9da6849add4f', 'uuid:3e7ca76a-7dd1-40b9-93d4-18a9f848dcfe', 'uuid:8624e7be-1d0c-4918-ba6f-94896ee7d1e0', 'uuid:b7d4c3bc-e83f-476b-b0bd-d8c3de6e2b0a', 'uuid:aba484fa-b677-4b57-8bae-d6182f94fe85', 'uuid:8c9152f4-c1e1-4d91-93ea-c7fc07806a94', 'uuid:fd451770-807d-468a-a30b-512f82e004af', 'uuid:c3b6a7b3-b381-4e96-b060-cabf49e7cec1'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 900 | 2026-01-26 10:33:15.511102+03 | 2024-12-27     |         4300 |   21571 |         93 | False
+ 901 | 2026-01-26 10:33:16.974124+03 | 2025-03-31     |          457 |   21572 |         93 | False
+ 902 | 2026-01-26 10:33:18.936534+03 | 2025-04-08     |         5113 |   21573 |         93 | False
+ 903 | 2026-01-26 10:33:20.276462+03 | 2025-04-21     |         2495 |   21574 |         93 | False
+ 904 | 2026-01-26 10:33:21.888702+03 | 2024-10-12     |         2495 |   21575 |         93 | False
+ 905 | 2026-01-26 10:33:23.35335+03  | 2025-04-23     |         5368 |   21576 |         93 | False
+ 906 | 2026-01-26 10:33:24.763575+03 | 2025-04-23     |         5368 |   21577 |         93 | False
+ 907 | 2026-01-26 10:33:26.19454+03  | 2025-07-21     |         5368 |   21578 |         93 | False
+ 908 | 2026-01-26 10:33:27.774113+03 | 2024-12-31     |         4300 |   21579 |         93 | False
+ 909 | 2026-01-26 10:33:29.418354+03 | 2025-09-02     |         5368 |   21580 |         93 | False
+ 910 | 2026-01-26 10:33:30.598196+03 | 2025-09-02     |         5368 |   21581 |         93 | False
+ 911 | 2026-01-26 10:33:31.823867+03 | 2025-09-02     |         5368 |   21582 |         93 | False
+ 912 | 2026-01-26 10:33:33.014498+03 | 2025-09-03     |         5368 |   21583 |         93 | False
+ 913 | 2026-01-26 15:07:33.284407+03 | 2025-01-11     |         4300 |   21600 |         93 | False
+ 914 | 2026-01-26 15:07:40.265976+03 | 2025-01-12     |         3228 |   21601 |         93 | False
+ 915 | 2026-01-26 15:07:45.922388+03 | 2025-01-12     |         5113 |   21602 |         93 | False
+ 916 | 2026-01-26 15:07:51.588678+03 | 2025-01-12     |         5113 |   21603 |         93 | False
+ 917 | 2026-01-26 15:07:57.236456+03 | 2025-01-16     |         4243 |   21604 |         93 | False
+ 918 | 2026-01-26 15:08:03.194112+03 | 2025-01-23     |         4548 |   21605 |         93 | False
+ 919 | 2026-01-26 15:08:07.143637+03 | 2025-01-23     |         4257 |   21606 |         93 | False
+ 920 | 2026-01-26 15:08:11.939372+03 | 2025-01-19     |         4257 |   21607 |         93 | False
+ 921 | 2026-01-26 15:08:17.021672+03 | 2025-01-23     |         4548 |   21608 |         93 | False
+ 922 | 2026-01-26 15:08:21.147713+03 | 2024-09-24     |         3726 |   21609 |         93 | False
+ 923 | 2026-01-26 15:08:25.063569+03 | 2025-01-25     |         4257 |   21610 |         93 | False
+ 924 | 2026-01-26 15:08:28.960096+03 | 2025-01-25     |         4257 |   21611 |         93 | False
+ 925 | 2026-01-26 15:08:32.839911+03 | 2024-09-24     |         3726 |   21612 |         93 | False
+ 926 | 2026-01-26 15:08:37.607999+03 | 2024-10-24     |         4257 |   21613 |         93 | False
+ 927 | 2026-01-26 15:08:41.759289+03 | 2025-01-25     |         4257 |   21614 |         93 | False
+ 928 | 2026-01-26 15:08:45.702825+03 | 2024-09-24     |         3726 |   21615 |         93 | False
+ 929 | 2026-01-26 15:08:50.382259+03 | 2024-09-24     |         3726 |   21616 |         93 | False
+ 930 | 2026-01-26 15:08:55.363803+03 | 2025-01-26     |         4257 |   21617 |         93 | False
+ 931 | 2026-01-26 15:08:59.469242+03 | 2024-09-24     |         3726 |   21618 |         93 | False
+ 932 | 2026-01-26 15:09:03.357142+03 | 2025-01-26     |         4257 |   21619 |         93 | False
+ 933 | 2026-01-26 15:09:07.255719+03 | 2024-09-24     |         4257 |   21620 |         93 | False
+ 934 | 2026-01-26 15:09:11.135483+03 | 2024-09-24     |         3726 |   21621 |         93 | False
+ 935 | 2026-01-26 15:09:15.195199+03 | 2025-01-26     |         4548 |   21622 |         93 | False
+ 936 | 2026-01-26 15:09:19.119889+03 | 2024-09-24     |         3726 |   21623 |         93 | False
+ 937 | 2026-01-26 15:09:23.833774+03 | 2025-01-26     |         4257 |   21624 |         93 | False
+ 938 | 2026-01-26 15:09:27.947178+03 | 2024-09-24     |         4548 |   21625 |         93 | False
+ 939 | 2026-01-26 15:09:31.760888+03 | 2025-02-28     |         4300 |   21626 |         93 | False
+ 940 | 2026-01-26 15:09:37.445232+03 | 2025-03-10     |         1839 |   21627 |         93 | False
+ 941 | 2026-01-26 15:09:42.412833+03 | 2025-03-26     |         3228 |   21628 |         93 | False
+ 942 | 2026-01-26 15:09:46.52647+03  | 2025-07-07     |         2226 |   21629 |         93 | False
+(43 rows)
+```
+
+
+#### delete
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            est.id  AS estab_id,
+            curr.id AS curr_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_erosion_control_establisment est
+            ON rent.id = est.rangleland_entry_id
+        LEFT JOIN respi_erosion_control_currnt curr
+            ON curr.rangleland_entry_id = rent.id
+        WHERE rent.id BETWEEN 900 AND 942
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE econtrol_curr_tree_id = r.curr_id OR econtrol_estab_tree_id = r.estab_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE econtrol_curr_grass_id = r.curr_id OR econtrol_estab_grass_id = r.estab_id;
+
+        --3 . microcatchment current
+        DELETE FROM respi_erosion_control_currnt WHERE rangleland_entry_id = r.rent_id;
+
+        --4. microcatchment establishment
+        DELETE FROM respi_erosion_control_establisment WHERE rangleland_entry_id = r.rent_id;
+
+        -- 5. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 6. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 7. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 8. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+
+```
+
+
+### contours
+#### inspection
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in
+('uuid:202ce50b-2bb7-46df-ae2f-fc5dbf488be7', 'uuid:194825bd-d88e-4e43-90a9-f543d748eb07', 'uuid:600f692e-6a5e-406d-80a2-d95f2d417080', 'uuid:de055a13-caa7-4b2d-8f12-92c9dc1fa663', 'uuid:e924c3c5-b9fe-43c3-abd3-19699d1b3670', 'uuid:2bfcd705-4db8-4e02-bc3b-ead0e28d7461', 'uuid:a0084932-3068-4f63-9cc1-4f59b4ac6fa9', 'uuid:0a0153cb-9abe-49ac-9f40-3caabdbaa6d7', 'uuid:e0813f39-0683-4fd6-ac2b-52b610471e55'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 952 | 2026-01-26 15:24:47.872011+03 | 2025-01-03     |         2226 |   21639 |         93 | False
+ 953 | 2026-01-26 15:24:55.625012+03 | 2025-04-23     |         5364 |   21640 |         93 | False
+ 954 | 2026-01-26 15:25:00.033374+03 | 2025-01-16     |         4243 |   21641 |         93 | False
+ 955 | 2026-01-26 15:25:06.494167+03 | 2025-03-25     |         1839 |   21642 |         93 | False
+
+```
+
+#### delete
+
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            est.id  AS estab_id,
+            curr.id AS curr_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_erosion_control_establisment est
+            ON rent.id = est.rangleland_entry_id
+        LEFT JOIN respi_erosion_control_currnt curr
+            ON curr.rangleland_entry_id = rent.id
+        WHERE rent.id BETWEEN 952 AND 955
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE econtrol_curr_tree_id = r.curr_id OR econtrol_estab_tree_id = r.estab_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE econtrol_curr_grass_id = r.curr_id OR econtrol_estab_grass_id = r.estab_id;
+
+        --3 . microcatchment current
+        DELETE FROM respi_erosion_control_currnt WHERE rangleland_entry_id = r.rent_id;
+
+        --4. microcatchment establishment
+        DELETE FROM respi_erosion_control_establisment WHERE rangleland_entry_id = r.rent_id;
+
+        -- 5. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 6. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 7. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 8. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+
+```
+
+### rock_dams
+
+#### inspection
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in
+('fbad898a87704c61a5aa2422b9cc2bd5'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 943 | 2026-01-26 15:16:52.708634+03 | 2025-04-23     |         5364 |   21630 |         93 | False
+(1 row)
+
+```
+#### delete
+
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            est.id  AS estab_id,
+            curr.id AS curr_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_erosion_control_establisment est
+            ON rent.id = est.rangleland_entry_id
+        LEFT JOIN respi_erosion_control_currnt curr
+            ON curr.rangleland_entry_id = rent.id
+        WHERE rent.id = 943
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE econtrol_curr_tree_id = r.curr_id OR econtrol_estab_tree_id = r.estab_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE econtrol_curr_grass_id = r.curr_id OR econtrol_estab_grass_id = r.estab_id;
+
+        --3 . microcatchment current
+        DELETE FROM respi_erosion_control_currnt WHERE rangleland_entry_id = r.rent_id;
+
+        --4. microcatchment establishment
+        DELETE FROM respi_erosion_control_establisment WHERE rangleland_entry_id = r.rent_id;
+
+        -- 5. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 6. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 7. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 8. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+```
+
+
+### gabions
+
+#### inspection
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in
+('4e05a03319874d9e8e6d6d93a98a8549', '28f5d92ab34f4e09997c70b9ac9c09b9', 'a2248eed0dcd4e30a3ff6127463d8cb7', '3ff55409a4d74ff580825c7cb24123c5', '4a7f1333762c4ab5a6c6a1df649bd5f7', '800cab0c32114810b522ac5106f397f6', '98cd5c6acf9f401982c5e7d37da33f59', 'd390d03baf254032b41860fadb72b950'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 944 | 2026-01-26 15:21:04.295347+03 | 2024-10-12     |         2495 |   21631 |         93 | False
+ 945 | 2026-01-26 15:21:10.832094+03 | 2025-05-17     |         1894 |   21632 |         93 | False
+ 946 | 2026-01-26 15:21:16.43199+03  | 2025-05-17     |         1894 |   21633 |         93 | False
+ 947 | 2026-01-26 15:21:22.41324+03  | 2025-01-13     |         1894 |   21634 |         93 | False
+ 948 | 2026-01-26 15:21:28.408845+03 | 2025-03-15     |         1894 |   21635 |         93 | False
+ 949 | 2026-01-26 15:21:34.417632+03 | 2025-03-16     |         1894 |   21636 |         93 | False
+ 950 | 2026-01-26 15:21:38.85438+03  | 2025-03-11     |         1839 |   21637 |         93 | False
+ 951 | 2026-01-26 15:21:42.82055+03  | 2025-05-17     |         1894 |   21638 |         93 | False
+(8 rows)
+```
+
+#### delete
+
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            est.id  AS estab_id,
+            curr.id AS curr_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_erosion_control_establisment est
+            ON rent.id = est.rangleland_entry_id
+        LEFT JOIN respi_erosion_control_currnt curr
+            ON curr.rangleland_entry_id = rent.id
+        WHERE rent.id BETWEEN 944 AND 951
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE econtrol_curr_tree_id = r.curr_id OR econtrol_estab_tree_id = r.estab_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE econtrol_curr_grass_id = r.curr_id OR econtrol_estab_grass_id = r.estab_id;
+
+        --3 . microcatchment current
+        DELETE FROM respi_erosion_control_currnt WHERE rangleland_entry_id = r.rent_id;
+
+        --4. microcatchment establishment
+        DELETE FROM respi_erosion_control_establisment WHERE rangleland_entry_id = r.rent_id;
+
+        -- 5. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 6. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 7. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 8. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+```
+
+### terraces
+
+#### inspection
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in
+('2c5e7bb635334f689694bb14eab49f27', 'b4ce1a6ab5374562a64a35af27cad3c4', 'f4d1dc15b03348f9acefbfe4dd5ed5f0'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 944 | 2026-01-26 15:21:04.295347+03 | 2024-10-12     |         2495 |   21631 |         93 | False
+ 945 | 2026-01-26 15:21:10.832094+03 | 2025-05-17     |         1894 |   21632 |         93 | False
+ 946 | 2026-01-26 15:21:16.43199+03  | 2025-05-17     |         1894 |   21633 |         93 | False
+ 947 | 2026-01-26 15:21:22.41324+03  | 2025-01-13     |         1894 |   21634 |         93 | False
+ 948 | 2026-01-26 15:21:28.408845+03 | 2025-03-15     |         1894 |   21635 |         93 | False
+ 949 | 2026-01-26 15:21:34.417632+03 | 2025-03-16     |         1894 |   21636 |         93 | False
+ 950 | 2026-01-26 15:21:38.85438+03  | 2025-03-11     |         1839 |   21637 |         93 | False
+ 951 | 2026-01-26 15:21:42.82055+03  | 2025-05-17     |         1894 |   21638 |         93 | False
+(8 rows)
+```
+
+#### delete
+
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            est.id  AS estab_id,
+            curr.id AS curr_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_erosion_control_establisment est
+            ON rent.id = est.rangleland_entry_id
+        LEFT JOIN respi_erosion_control_currnt curr
+            ON curr.rangleland_entry_id = rent.id
+        WHERE rent.id BETWEEN 897 AND 899
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE econtrol_curr_tree_id = r.curr_id OR econtrol_estab_tree_id = r.estab_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE econtrol_curr_grass_id = r.curr_id OR econtrol_estab_grass_id = r.estab_id;
+
+        --3 . microcatchment current
+        DELETE FROM respi_erosion_control_currnt WHERE rangleland_entry_id = r.rent_id;
+
+        --4. microcatchment establishment
+        DELETE FROM respi_erosion_control_establisment WHERE rangleland_entry_id = r.rent_id;
+
+        -- 5. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 6. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 7. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 8. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+```
+
+
+## iremoval
+
+### inspection
+
+```sql
+regreen_local_jan2026=# select * from respi_rangeland_entry where plot_id in(select id from respi_plots where name in('uuid:067d64de-e69d-4f4b-bb9f-0ad8ce828677'));
+ id  |         recorded_dte          | date_collected | collector_id | plot_id | project_id | is_revisit
+-----+-------------------------------+----------------+--------------+---------+------------+------------
+ 968 | 2026-01-26 15:43:56.510891+03 | 2025-05-06     |         5360 |   21655 |         93 | False
+(1 row)
+
+```
+
+#### cleaning logic
+1. drop rangeland trees - trees where `iremoval_grass_id` is matched to a rent id
+2. drop rangeland grasses - grasses where  `iremoval_treee_id` is matched to a rent id
+3. drop iremoval records - based on rangeland entry id
+5. drop plot points
+6. drop plot polygon
+7. drop plots
+8. drop rangeland_entry
+
+
+#### deletion
+
+```sql
+
+DO $$
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN
+        SELECT DISTINCT
+            rent.id AS rent_id,
+            rent.project_id  AS project_id,
+            rent.plot_id AS plot_id,
+            irm.id as iremoval_id
+        FROM respi_rangeland_entry rent
+        LEFT JOIN respi_invasive_species_removal irm
+            ON rent.id = irm.rangleland_entry_id
+        WHERE rent.id =968
+          AND rent.project_id in (93, 131) -- BRCiS III & TERRA respectively
+    LOOP
+        --1. rangeland current & established trees
+        DELETE FROM respi_rangeland_trees WHERE  invasive_species_removal_trees_id = r.iremoval_id;
+
+        --2. rangeland current & established grasses
+        DELETE FROM respi_rangeland_grasses WHERE invasive_species_removal_grass_id = r.iremoval_id;
+
+        --3 invasives
+        DELETE FROM respi_invasive_species_removal WHERE id = r.iremoval_id;
+
+        -- 3. plot points
+        DELETE FROM respi_plot_points WHERE plot_id = r.plot_id;
+
+        -- 4. plot polygon
+        DELETE FROM respi_plot_polygon WHERE plot_id = r.plot_id;
+
+        -- 5. plots
+        DELETE FROM respi_plots WHERE id = r.plot_id;
+
+        -- 6. rangeland entry
+        DELETE FROM respi_rangeland_entry WHERE id = r.rent_id;
+    END LOOP;
+END $$;
+```
+
