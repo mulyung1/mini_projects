@@ -1,4 +1,8 @@
-# Problem
+
+
+## Waterpoints
+
+#### Problem
 
 uploaded brics3 microcatchment and waterpoints data under username 'benards'.
 
@@ -7,8 +11,6 @@ uploaded brics3 microcatchment and waterpoints data under username 'benards'.
 | watepoints | 10:24:46 - 10:23:32 | benards | 46
 | halfmoons  | 15:49:46 - 16:00:00 | benards | 55
 
-
-## Waterpoints
 1. get uname id for 'benards'
 
 ```sql
@@ -351,6 +353,7 @@ BEGIN
 END $$;
 
 ```
+
 
 
 
