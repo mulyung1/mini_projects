@@ -76,7 +76,7 @@ from (
             order by trm.latitude desc, trm.longitude desc
         ) as row_number,
         trm.cohort_id,
-        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_entry,
+        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
         ent.plot_id, plt.name,
         ch.tp_entry_id,
         trm.comment
@@ -88,7 +88,7 @@ from (
 where row_number > 1 and cohort_id is not null and name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1';
 
 
- trm_id | latitude  | longitude | accuracy | rcc_cbh | row_number | cohort_id |            cohort_ids_per_entry             | plot_id |                 name                 | tp_entry_id |                  comment
+ trm_id | latitude  | longitude | accuracy | rcc_cbh | row_number | cohort_id |            cohort_ids_per_plot             | plot_id |                 name                 | tp_entry_id |                  comment
 --------+-----------+-----------+----------+---------+------------+-----------+---------------------------------------------+---------+--------------------------------------+-------------+-------------------------------------------
   16595 | -1.299590 | 30.553325 |     6.50 |    0.90 |          2 |     10674 | {10668,10669,10670,10671,10672,10673,10674} |   10410 | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |        4615 | Moderate survival rated planted in apiary
   16490 | -1.299590 | 30.553325 |     6.50 |    0.90 |          3 |     10569 | {10563,10564,10565,10566,10567,10568,10569} |   10384 | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |        4591 | Moderate survival rated planted in apiary
@@ -142,31 +142,25 @@ where row_number > 1 and cohort_id is not null and name = '06a139a3-29a9-474a-8b
 **Philosophy**
 - we will not consider `TEST` project
 
-**Why `ROW_NUMBER()`?**
+**Why `row_number()`?**
 - to assign a row number to every duplicate(partition) tree measurement(exact lat, lon)
 - to delete only where row_number > 1 (skip first record)
 
 **Why `partition by`?** 
-- defines the `window` of rows for the function to work on(The function being `ROW_NUMBER()`)
+- defines the `window` of rows for the function to work on(The function being `row_number()`)
 - it returns every individual record in the query.
 - 
 
 **why `ARRAY_AGG()`?**
-- allows us combine values from multiple rows(`many tree species in the same tp_entry`) into an array
+- allows us combine values from multiple rows(`many tree species in the same plot`) into an array
 
 https://www.geeksforgeeks.org/postgresql/postgresql-array_agg-function/
 
 **why aggregate species(`cohort_id`)ids?**
 
-- one entry can have many cohorts(Tree species) `1:M`
-    - theres need to delete all trees before deleting an entry 
-    - to achieve this, we aggregate trees based on entry
-
-- one tp plot has 1 tp entry but 
-    - one plot can have many entries `1:M`
-        - fmnr entries
-        - rangeland entries
-        - etc...
+- one plot can have many cohorts(Tree species) `1:M`
+    - theres need to delete all trees before deleting the associated plot 
+    - to achieve this, we aggregate trees based on plot
 
 
 ### related tables to delete from
@@ -188,7 +182,7 @@ delete all rows in tables below based on `cohort_id` & `plot_id`
 ## tp delete function
 
 ```sql
-create or replace function clean_dpls(plot_ide integer)
+create or replace function clean_tp_dpls(plot_ide integer)
 returns void
 language plpgsql
 as $$
@@ -204,40 +198,40 @@ begin
                 trm.longitude,
                 trm.accuracy,
                 trm.rcc_cbh,
-                ROW_NUMBER() over (
+                row_number() over (
                     partition by trm.latitude, trm.longitude
                     order by trm.latitude desc, trm.longitude desc
                 ) as row_number,
                 trm.cohort_id, 
-                ARRAY_AGG(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_entry,
+                ARRAY_AGG(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
                 ent.plot_id, plt.name,
                 ch.tp_entry_id,
                 trm.comment
             from respi_tree_measurement trm
-            left join respi_cohort ch ON ch.id = trm.cohort_id 
-            left join respi_tree_planting_entry ent ON ent.id=ch.tp_entry_id 
-            left join respi_plots plt ON plt.id = ent.plot_id
+            left join respi_cohort ch on ch.id = trm.cohort_id 
+            left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+            left join respi_plots plt on plt.id = ent.plot_id
         ) 
         where 
             row_number > 1 and 
-            cohort_id is not null  AND  
-            name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'   
-            -- and plot_id=plot_ide
+            cohort_id is not null  and  
+            --name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'and 
+            plot_id=plot_ide
     loop
         --delete tp_management_practices
-        delete from respi_tp_management_practices where cohort_id = any(r.cohort_ids_per_entry);
+        delete from respi_tp_management_practices where cohort_id = any(r.cohort_ids_per_plot);
 
         --delete tp_measurement
-        delete from respi_tree_measurement where cohort_id = any(r.cohort_ids_per_entry);
+        delete from respi_tree_measurement where cohort_id = any(r.cohort_ids_per_plot);
 
         --delete tp_tree_usage
-        delete from respi_tp_tree_usage where cohort_id = any(r.cohort_ids_per_entry);
+        delete from respi_tp_tree_usage where cohort_id = any(r.cohort_ids_per_plot);
 
         --delete tp_planting area type
-        delete from respi_tp_plantingarea_type where cohort_id = any(r.cohort_ids_per_entry);
+        delete from respi_tp_plantingarea_type where cohort_id = any(r.cohort_ids_per_plot);
 
         --delete tp_species
-        delete from respi_cohort where id = any(r.cohort_ids_per_entry);
+        delete from respi_cohort where id = any(r.cohort_ids_per_plot);
     end loop;
 
         --delete plot crops
@@ -396,35 +390,35 @@ create or replace function clean_fmnr_dpls(plot_ide integer)
 returns void
 language plpgsql
 as $$
-declare 
+declare
     r RECORD;
 begin
     for r in
-        select * 
+        select *
         from (
-            select 
-                trm.id as trm_id, 
-                trm.latitude, 
-                trm.longitude, 
-                trm.accuracy, 
-                row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num, 
+            select
+                trm.id as trm_id,
+                trm.latitude,
+                trm.longitude,
+                trm.accuracy,
+                row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num,
                 trm.fmnr_species_id,
                 array_agg(trm.fmnr_species_id) over (partition by plt.id) as sp_ids_per_plot,
-                sp.fmnr_entry_id, 
-                plt.id as plot_id, 
-                plt.name,         
-                trm.comment 
-            from 
-                respi_tree_measurement trm 
-            left join respi_fmnr_species sp on sp.id=trm.fmnr_species_id 
-            left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id 
+                sp.fmnr_entry_id,
+                plt.id as plot_id,
+                plt.name,     
+                trm.comment
+            from
+                respi_tree_measurement trm
+            left join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
+            left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
             left join respi_plots plt on plt.id=ent.plot_id
         )
-        where 
-            row_num > 1 and 
-            fmnr_species_id is not null and 
-            plot_id=plot_ide 
-            --AND  name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'     
+        where
+            row_num > 1 and
+            fmnr_species_id is not null and
+            plot_id=plot_ide
+            --and  name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'     
 
     loop
         --delete fmnr_management_practices
