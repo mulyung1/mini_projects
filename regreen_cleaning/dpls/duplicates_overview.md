@@ -1,4 +1,3 @@
-
 # Duplicates - FMNR & TP
 - all duplicates are based on 
     1. exactly same lat, lon, from `respi_tree_measurement` 
@@ -9,19 +8,22 @@
 
 # TP Plot Duplicates
 - Plots have dupicates(name based) but unique ids. e.g. '02993a44-12b0-48d2-8cbc-51d3792eb65e'
+- keep only plots with tp entries `inner join`
 ```sql
 select *
 from (
-    select 
-        plt.id as plot_id,  
-        plt.name, 
-        plt.crops, 
+    select
+        plt.id as plot_id,
+        plt.name,
+        plt.crops,
         row_number() over (partition by name) as row_no,
-        ent.recorded_dte, 
+        ent.recorded_dte,
         ent.project_id,
-        ent.id as tp_entry_id 
+        ent.id as tp_entry_id, fent.first_name, proj.project_name
     from respi_plots plt
-    left join respi_tree_planting_entry ent on ent.plot_id=plt.id 
+    inner join respi_tree_planting_entry ent on ent.plot_id=plt.id 
+    left join respi_farming_entity fent on fent.id=plt.farming_entity_id 
+    left join respi_projects proj on proj.id=ent.project_id
 )
 where 
     row_no > 1 and 
@@ -61,7 +63,7 @@ limit 300;
 
 ## Measurement Duplicates
 - These duplicated plots have repeating tree measurements 
-
+- only tree msmts with a cohort_id(tp module) survive
 ```sql
 select *
 from (
@@ -76,16 +78,18 @@ from (
             order by trm.latitude desc, trm.longitude desc
         ) as row_number,
         trm.cohort_id,
-        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_entry,
+        array_agg(trm.cohort_id) over (partition by ent.plot_id) as cohort_ids_per_plot,
         ent.plot_id, plt.name,
         ch.tp_entry_id,
         trm.comment
     from respi_tree_measurement trm
-    left join respi_cohort ch on ch.id = trm.cohort_id 
+    inner join respi_cohort ch on ch.id = trm.cohort_id 
     left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
     left join respi_plots plt on plt.id = ent.plot_id
 ) 
-where row_number > 1 and cohort_id is not null and name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1';
+where 
+    row_number > 1 and name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1';
 
 
  trm_id | latitude  | longitude | accuracy | rcc_cbh | row_number | cohort_id |            cohort_ids_per_plot             | plot_id |                 name                 | tp_entry_id |                  comment
@@ -136,7 +140,7 @@ where row_number > 1 and cohort_id is not null and name = '06a139a3-29a9-474a-8b
 
 - get all duplicates for one plot
 - based on id, check if all duplicated plots have same number of duplicates
-- choose one plot to retain
+- choose one plot to retain(first one)
 - the rest, delete tree and plot info(including plot ownership, planting area, crops...)
 
 **Philosophy**
@@ -208,13 +212,12 @@ begin
                 ch.tp_entry_id,
                 trm.comment
             from respi_tree_measurement trm
-            left join respi_cohort ch on ch.id = trm.cohort_id 
+            inner join respi_cohort ch on ch.id = trm.cohort_id 
             left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
             left join respi_plots plt on plt.id = ent.plot_id
         ) 
         where 
             row_number > 1 and 
-            cohort_id is not null  and  
             --name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'and 
             plot_id=plot_ide
     loop
@@ -258,8 +261,34 @@ end $$;
 # FMNR plot duplicates
 
 - plot name is occuring more than once
+- plot has fmnr entry `inner join`
 - plot is not in test project
 - 
+
+**check for only plots with fmnr entry**
+```sql
+select count(*)     
+from
+    respi_plots plt
+left join respi_fmnr_entry ent on ent.plot_id=plt.id ;
+ count
+-------
+ 17512
+(1 row)
+
+--only plots with fmnr entries
+select count(*)     
+from
+    respi_plots plt
+inner join respi_fmnr_entry ent on ent.plot_id=plt.id ;
+ count
+-------
+  2531
+(1 row)
+
+```
+assgn row numbers to plot names that are recurring
+
 ```sql
 select * 
 from (
@@ -273,8 +302,8 @@ from (
         ent.id as fmnr_entry_id 
     from 
         respi_plots plt
-    left join respi_fmnr_entry ent on ent.plot_id=plt.id 
-) where row_no >1 and fmnr_entry_id is not null and project_id != 6;
+    inner join respi_fmnr_entry ent on ent.plot_id=plt.id 
+) where row_no >1 and project_id != 6;
 
  plot_id |                 name                 |                                  crops                                  | row_no |         recorded_dte          | project_id | fmnr_entry_id
 ---------+--------------------------------------+-------------------------------------------------------------------------+-------------+-------------------------------+------------+---------------
@@ -331,6 +360,38 @@ from (
 
 ## Measurement Duplicates
 - These duplicated plots have repeating tree measurements 
+- keep only tree msmt rows with fmnr_species id
+
+**check for only tree msmts with fmnr species**
+
+```sql
+select count(*) 
+from 
+    respi_tree_measurement trm
+left join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
+left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
+left join respi_plots plt on plt.id=ent.plot_id;
+
+ count
+-------
+ 44764
+(1 row)
+--only tree msmt rows with fmnr_species id
+
+select count(*) 
+from
+    respi_tree_measurement trm
+inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
+left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
+left join respi_plots plt on plt.id=ent.plot_id;
+ count
+-------
+  5766
+(1 row)
+
+
+```
+
 
 ```sql
 select * 
@@ -349,7 +410,7 @@ from (
         trm.comment 
     from 
         respi_tree_measurement trm 
-    left join respi_fmnr_species sp on sp.id=trm.fmnr_species_id 
+    inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id 
     left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id 
     left join respi_plots plt on plt.id=ent.plot_id
 )
@@ -410,13 +471,12 @@ begin
                 trm.comment
             from
                 respi_tree_measurement trm
-            left join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
+            inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
             left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
             left join respi_plots plt on plt.id=ent.plot_id
         )
         where
             row_num > 1 and
-            fmnr_species_id is not null and
             plot_id=plot_ide
             --and  name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'     
 
