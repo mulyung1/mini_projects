@@ -1,4 +1,22 @@
-# Duplicates - FMNR & TP
+# Duplicates
+The regreen db has duplicates.
+
+We will explore them module by module.
+
+- [FMNR & TP Duplicates](#fmnr--tp-duplicates)
+    - [TP Plot Duplicates](#tp-plot-duplicates)
+        - [Measurement Duplicates](#measurement-duplicates)
+        - [related tables to delete from](#related-tables-to-delete-from)
+        - [tp delete function](#tp-delete-function)
+    - [FMNR plot duplicates](#fmnr-plot-duplicates)
+        - [Measurement Duplicates](#measurement-duplicates-1)
+        - [related tables to delete from](#related-tables-to-delete-from-1)
+        - [fmnr delete function](#fmnr-delete-function)
+    - [Nursery Duplicates](#nursery-duplicates)
+        - [case study: Christine Tree Nursery, REGREENING AFRICA_CHILDFUND project](#case-study-christine-tree-nursery-regreening-africa_childfund-project)
+
+## FMNR & TP Duplicates 
+
 - all duplicates are based on 
     1. exactly same lat, lon, from `respi_tree_measurement` 
     2. for a plot occuring more than once.
@@ -6,7 +24,7 @@
 - cohort_id >> `tp module`
 - fmnr-species_id >> `fmnr module`
 
-# TP Plot Duplicates
+### TP Plot Duplicates
 - Plots have dupicates(name based) but unique ids. e.g. '02993a44-12b0-48d2-8cbc-51d3792eb65e'
 - keep only plots with tp entries `inner join`
 ```sql
@@ -61,7 +79,7 @@ limit 300;
 :
 ```
 
-## Measurement Duplicates
+#### Measurement Duplicates
 - These duplicated plots have repeating tree measurements 
 - only tree msmts with a cohort_id(tp module) survive
 ```sql
@@ -167,7 +185,7 @@ https://www.geeksforgeeks.org/postgresql/postgresql-array_agg-function/
     - to achieve this, we aggregate trees based on plot
 
 
-### related tables to delete from
+#### related tables to delete from
 
 delete all rows in tables below based on `cohort_id` & `plot_id`
 - respi_tp_management_practices - `cohort_id`
@@ -183,7 +201,7 @@ delete all rows in tables below based on `cohort_id` & `plot_id`
 - respi_plots - `plot_id`
 
 
-## tp delete function
+#### tp delete function
 
 ```sql
 create or replace function clean_tp_dpls(plot_ide integer)
@@ -258,13 +276,11 @@ end $$;
 ```
 - Plots have dupicates(name based) but unique ids. e.g. '02993a44-12b0-48d2-8cbc-51d3792eb65e'
 
-# FMNR plot duplicates
-
+### FMNR plot duplicates
 - plot name is occuring more than once
 - plot has fmnr entry `inner join`
 - plot is not in test project
 - 
-
 **check for only plots with fmnr entry**
 ```sql
 select count(*)     
@@ -357,8 +373,7 @@ from (
     5875 | 342e62a7-d299-4064-a557-62a1ead6300a |                                                                         |          10 | 2024-05-22 14:04:24.334092+03 |         41 |           831
 ```
 
-
-## Measurement Duplicates
+#### Measurement Duplicates
 - These duplicated plots have repeating tree measurements 
 - keep only tree msmt rows with fmnr_species id
 
@@ -444,7 +459,23 @@ where
   14121 | 13.497901 | 39.604050 |     6.88 |       3 |            6074 | {6072,6065,6074,6073,6071,6070,6069,6068,6067,6066,6064} |          2586 |    8897 | e7ef9b4c-8c19-4faf-ad70-5583722333d8 |
 (22 rows)
 ```
-## fmnr delete function
+
+#### related tables to delete from
+delete all rows in tables below based on `species_id` & `plot_id`
+
+- respi_fmnr_management_practices - `species_id`
+- respi_tree_measurement - `species_id`
+- respi_fmnr_tree_usage - `species_id`
+- respi_fmnr_species - `species_id`
+- respi_crops - `plot_id`
+- respi_land_ownership_type - `plot_id`
+- respi_plot_points - `plot_id`
+- respi_plot_polygon - `plot_id`
+- respi_plots - `plot_id`
+- respi_fmnr_entry - `plot_id`
+
+
+#### fmnr delete function
 
 ```sql
 create or replace function clean_fmnr_dpls(plot_ide integer)
@@ -512,5 +543,154 @@ begin
         -- delete fmnr-entry
         delete from respi_fmnr_entry where plot_id = plot_ide;
 end $$;
+
+```
+
+## Nursery Duplicates
+
+**Questions**
+- Dow we expect nursery name to be unique?
+```sql
+  id  |         recorded_dte          |                              nursery_name                              | altitude |  latitude  | longitude  | accuracy | species_count | nursery_operator_id | nursery_ownership_type_id | project_id | sub_county_id |                             photo_url                             | date_started |           other_ownership_type           |        water_sources         |           other_water_sources
+------+-------------------------------+------------------------------------------------------------------------+----------+------------+------------+----------+---------------+---------------------+---------------------------+------------+---------------+-------------------------------------------------------------------+--------------+------------------------------------------+------------------------------+------------------------------------------
+  315 | 2024-03-04 15:10:42.095918+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       451 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  268 | 2024-02-28 15:35:48.534494+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       394 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  270 | 2024-02-28 16:39:54.203248+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       397 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  273 | 2024-02-28 17:53:05.70254+03  |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       401 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  266 | 2024-02-28 15:35:42.140915+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       391 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  287 | 2024-02-29 15:27:53.867657+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       418 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  303 | 2024-03-04 10:31:02.126074+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       437 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  358 | 2024-03-26 10:21:38.59253+03  |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       498 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  265 | 2024-02-28 15:30:42.176626+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       390 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  308 | 2024-03-04 11:57:22.329134+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       443 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  292 | 2024-02-29 16:33:48.934263+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       424 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  277 | 2024-02-29 09:43:04.536331+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       406 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  299 | 2024-02-29 16:42:06.977649+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       432 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  280 | 2024-02-29 15:27:43.826881+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       410 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  324 | 2024-03-05 17:20:41.528573+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       461 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  345 | 2024-03-26 10:20:23.172289+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       484 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+  336 | 2024-03-12 12:41:26.395875+03 |    Christine Tree Nursery                                              | 1188.508 |  -2.017078 |  37.462925 |     3.90 |             4 |                 111 |                       474 |         44 |           494 | JPEG_eaa225a4-2d4b-4110-988c-de291447fba7_3089708158651942435.jpg | 2018-03-06   |                                          | RAIN - SURFACE               | Purchase from local supp
+ 1106 | 2024-09-19 15:11:44.2162+03   |  CIFOR ICRAF                                                           |  359.000 |  12.527938 |  -8.070253 |    17.26 |             3 |                 459 |                      1365 |          6 |           709 | JPEG_63a64641-bf9a-41fb-be28-69b1cd9b05e0_3240493855555257873.jpg | 1988-09-08   | Institutions                             | UNDERGROUND                  |
+ 1138 | 2024-11-05 18:32:36.409797+03 |  Tegawende                                                             |  324.400 |  13.333690 |  -1.532971 |     1.90 |             2 |                 489 |                      1400 |          6 |           749 | JPEG_ee08a2a6-2813-488f-9ab5-ed47aa8412f5_8418393621962406215.jpg | 2024-11-05   |                                          | RAIN - UNDERGROUND           |
+ 1716 | 2025-10-06 12:21:28.57284+03  | 1                                                                      |  300.475 |  14.517415 |  -4.093880 |    15.00 |             1 |                 916 |                      2022 |          6 |           767 | JPEG_f3c0005a-ffd0-4078-93dd-4ee13efb80e3_7188026786016548051.jpg | 2025-10-02   |                                          | SURFACE - RAIN - UNDERGROUND |
+   68 | 2022-06-24 11:10:31.755626+03 | 2                                                                      |    0.000 |  -1.271342 |  36.782093 |     0.00 |             2 |                   7 |                        77 |          6 |            10 | JPEG_8dc4897a-a81e-45be-bb74-79ed823468c7_3498560658289358521.jpg | 2022-06-24   |                                          |                              |
+  130 | 2023-04-01 09:16:04.246055+03 | 4                                                                      |    0.000 |  -1.271342 |  36.782093 |     0.00 |         49499 |                   3 |                       164 |          6 |            42 | JPEG_e0112ac6-e404-48e2-9d27-089407891ffc_7454714828459329430.jpg | 2023-04-01   | ff                                       | SURFACE                      | 0
+ 2012 | 2025-10-24 12:20:33.963923+03 | alheri                                                                 |  235.500 |  14.206037 |   1.457302 |     2.70 |             2 |                1177 |                      2351 |         57 |          1089 | JPEG_b4ad0dff-c539-47c6-aea6-37bfd3fad273_8226051040177721456.jpg | 2025-10-24   |                                          | SURFACE                      |
+ 2014 | 2025-10-24 12:21:14.119189+03 | alheri                                                                 |  265.785 |  14.206098 |   1.457231 |     2.57 |             2 |                1182 |                      2353 |          6 |          1080 | JPEG_d5ac4bfc-7856-40c3-837b-9795d3641edd_3023064714348259063.jpg | 2013-11-14   |                                          | RAIN - SURFACE - UNDERGROUND |
+ 2013 | 2025-10-24 12:20:48.177119+03 | alheri                                                                 |  218.800 |  14.206044 |   1.457274 |     1.47 |             2 |                1177 |                      2352 |          6 |          1086 | JPEG_c2c74e3c-663e-4a79-ae01-a1b65f12fe50_2833818126445377594.jpg | 2013-11-14   |                                          | SURFACE - RAIN - UNDERGROUND |
+ 2007 | 2025-10-24 12:19:59.370414+03 | alheri                                                                 |  225.600 |  14.206013 |   1.457330 |     1.75 |             2 |                1179 |                      2346 |          6 |          1080 | JPEG_fe2399e2-2b73-4c89-8d98-a6fb123caab0_8956921412730095508.jpg | 2013-11-14   |                                          | UNDERGROUND - SURFACE - RAIN |
+ 2004 | 2025-10-24 12:19:46.294486+03 | alheri                                                                 |  235.500 |  14.206027 |   1.457369 |    11.44 |             2 |                1176 |                      2343 |          6 |          1085 | JPEG_c960e678-f756-4c92-ac34-06de05e6bdad_7475705634547917151.jpg | 2013-11-14   |                                          | UNDERGROUND - RAIN - SURFACE | eau de surface
+ 2010 | 2025-10-24 12:20:10.275437+03 | alheri                                                                 |  235.700 |  14.205987 |   1.457312 |     7.22 |             2 |                1180 |                      2349 |          6 |           710 | JPEG_89df610c-3a01-4860-ae98-22d99b4ec25b_1939590934658122188.jpg | 2013-11-14   |                                          | SURFACE - UNDERGROUND - RAIN |
+ 2005 | 2025-10-24 12:19:53.968782+03 | alheri                                                                 |  235.500 |  14.206038 |   1.457366 |     2.87 |             2 |                1177 |                      2344 |          6 |          1087 | JPEG_f83bdb6a-868a-48f8-b26a-ea6dda800d6d_1434690817808880140.jpg | 2013-10-10   |                                          | SURFACE                      |
+ 2009 | 2025-10-24 12:20:09.034698+03 | alheri                                                                 |  235.500 |  14.206169 |   1.457802 |    87.60 |             2 |                1177 |                      2348 |          6 |          1088 | JPEG_db924573-7ccf-4032-99fb-0709afe839f1_1496907422026842356.jpg | 2013-11-14   |                                          | SURFACE - UNDERGROUND - RAIN |
+ 2006 | 2025-10-24 12:19:55.183348+03 | alheri                                                                 |  235.500 |  14.206671 |   1.456006 |   200.00 |             2 |                1178 |                      2345 |          6 |          1085 | JPEG_2bb5d12b-9573-4ea5-b78b-5b14713f1dad_3127588209244473045.jpg | 2013-11-11   |                                          | UNDERGROUND - SURFACE - RAIN |
+ 2039 | 2025-10-27 20:47:20.904991+03 | alheri                                                                 |  237.537 |  14.205978 |   1.457335 |     1.03 |             2 |                1252 |                      2431 |          6 |          1084 | JPEG_5853c79f-149f-40a0-9ad1-7d5cbf4c1c9d_4172386501779079818.jpg | 2025-10-14   |                                          | SURFACE - UNDERGROUND - RAIN |
+ 1244 | 2024-12-08 13:21:19.623694+03 | Alheri                                                                 |  195.500 |  14.202434 |   1.454297 |     2.40 |             2 |                 575 |                      1533 |          6 |           797 | JPEG_accaf4c2-7d85-4aea-8f56-cf7ef4b0421f_7845668417481917777.jpg | 2023-04-23   |                                          | UNDERGROUND - SURFACE        |
+ 2008 | 2025-10-24 12:20:04.450825+03 | Alheri                                                                 |  235.500 |  14.206252 |   1.458015 |   500.00 |             2 |                1177 |                      2347 |          6 |          1083 | JPEG_a4d805a1-3bc4-40d1-ac86-e990e1d8522a_1016988131744620062.jpg | 2013-11-14   |                                          | UNDERGROUND - RAIN - SURFACE |
+ 2011 | 2025-10-24 12:20:11.56581+03  | Alheri                                                                 |    0.000 |  14.206671 |   1.456006 |   200.00 |             2 |                1181 |                      2350 |          6 |          1085 | JPEG_a1466775-4e4f-4931-943e-4de8f341fb5c_5650819762358522890.jpg | 2014-11-14   |                                          | SURFACE                      |
+  440 | 2024-05-07 12:33:04.90528+03  | ATC kwa kathoka                                                        | 1156.500 |  -1.848360 |  37.664008 |     5.47 |             7 |                 155 |                       601 |          6 |           530 | JPEG_0262f5e4-44c4-4937-a351-912e026b683d_7665572459343594122.jpg | 2020-01-02   |                                          | RAIN - UNDERGROUND           |
+  441 | 2024-05-07 12:33:05.617194+03 | ATC kwa kathoka                                                        | 1156.500 |  -1.848360 |  37.664008 |     5.47 |             7 |                 155 |                       602 |          6 |           530 | JPEG_0262f5e4-44c4-4937-a351-912e026b683d_7665572459343594122.jpg | 2020-01-02   |                                          | RAIN - UNDERGROUND           |
+  439 | 2024-05-07 12:32:58.913721+03 | ATC kwa kathoka                                                        | 1156.500 |  -1.848360 |  37.664008 |     5.47 |             7 |                 155 |                       600 |          6 |           530 | JPEG_0262f5e4-44c4-4937-a351-912e026b683d_7665572459343594122.jpg | 2020-01-02   |                                          | RAIN - UNDERGROUND           |
+  560 | 2024-05-08 16:13:28.225837+03 | ATC kwa kathoka                                                        | 1156.500 |  -1.848360 |  37.664008 |     5.47 |             7 |                 155 |                       736 |          6 |           530 | JPEG_0262f5e4-44c4-4937-a351-912e026b683d_7665572459343594122.jpg | 2020-01-02   |                                          | RAIN - UNDERGROUND           |
+  457 | 2024-05-07 16:27:36.882239+03 | ATC kwa Kathoka                                                        | 1158.763 |  -1.848290 |  37.664025 |    74.12 |             7 |                 155 |                       618 |          6 |           530 | JPEG_b2df1a5d-5c28-4ba7-bfe8-be3570b0bc02_4575205974138918625.jpg | 2020-01-01   |                                          | RAIN - UNDERGROUND           |
+  454 | 2024-05-07 16:27:23.426032+03 | ATC Kwa kathoka                                                        | 1145.325 |  -1.848366 |  37.664022 |     3.90 |             7 |                 155 |                       615 |          6 |           530 | JPEG_caf9cd63-0d1a-4a80-af44-3116e066ad09_7747155063529347598.jpg | 2020-01-01   |                                          | UNDERGROUND                  | rain
+  558 | 2024-05-08 16:10:31.550856+03 | ATC Kwa kathoka                                                        | 1154.202 |  -1.848293 |  37.663980 |     8.79 |            20 |                 165 |                       734 |          6 |           530 | JPEG_36eff2ff-d5cc-4a8e-92a9-95b30403bc9b_3849696698529592882.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  455 | 2024-05-07 16:27:27.982295+03 | ATC Kwa kathoka                                                        | 1151.338 |  -1.848278 |  37.663990 |     7.00 |             5 |                 165 |                       616 |          6 |           530 | JPEG_c0d6b61f-5dd2-4bff-bec6-ec114fe5a1b2_4290384775904389638.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  576 | 2024-05-08 16:15:21.10716+03  | ATC Kwa Kathoka                                                        | 1149.000 |  -1.848340 |  37.663957 |     7.30 |             5 |                 165 |                       754 |          6 |           530 | JPEG_09e34803-f53e-4511-86a2-fdc546b372b2_3826579111346859171.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  562 | 2024-05-08 16:13:46.933601+03 | ATC Kwa Kathoka                                                        | 1149.000 |  -1.848340 |  37.663957 |     7.30 |             5 |                 165 |                       738 |          6 |           530 | JPEG_09e34803-f53e-4511-86a2-fdc546b372b2_3826579111346859171.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  580 | 2024-05-08 16:17:30.067544+03 | ATC kwa kathoka nursery                                                | 1174.600 |  -1.848309 |  37.663948 |     3.90 |             5 |                 165 |                       758 |          6 |           530 | JPEG_faf0b032-5b0a-49e2-b25d-4b41317868be_1111762218.jpg          | 2010-10-01   |                                          | UNDERGROUND                  |
+  452 | 2024-05-07 16:27:11.717716+03 | ATC KWA KATHOKA NURSERY                                                | 1147.552 |  -1.848284 |  37.663955 |     5.40 |             5 |                 165 |                       613 |          6 |           530 | JPEG_1d251879-a7b8-4b88-97e2-f771b2c3ac34_5975469628562120019.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  451 | 2024-05-07 16:20:03.265986+03 | ATC Kwa Kathoka Nursery                                                | 1150.804 |  -1.848287 |  37.663942 |     3.90 |             5 |                 164 |                       612 |          6 |           530 | JPEG_1ebce9d4-f780-47e8-8368-e6f583076487_8462483117792255430.jpg | 2010-01-10   |                                          | UNDERGROUND                  |
+  460 | 2024-05-08 06:37:41.038555+03 | ATC KWA KATHOKA NURSERY                                                | 1150.000 |  -1.848252 |  37.663978 |    12.62 |             5 |                 165 |                       628 |          6 |           530 | JPEG_a26b01ee-5e4a-490d-88aa-3e0b3c217911_3074324837854318603.jpg | 2010-10-01   |                                          | UNDERGROUND                  | ground water
+  449 | 2024-05-07 16:19:48.201299+03 | Atc kwakathoka                                                         | 1149.300 |  -1.848314 |  37.664000 |     3.45 |             7 |                 155 |                       610 |          6 |           530 | JPEG_8da524d9-8e26-434d-9837-ed0bf97a8f23_193864653854547152.jpg  | 2020-01-02   |                                          | RAIN - UNDERGROUND           |
+  565 | 2024-05-08 16:14:04.03407+03  | ATC kwakathoka                                                         | 1148.451 |  -1.848313 |  37.664057 |    10.02 |             7 |                 155 |                       741 |          6 |           530 | JPEG_d7eb8563-c78a-4fb3-b4f8-64a57ba4e1e7_8249282192208929326.jpg | 2020-01-03   |                                          | RAIN - UNDERGROUND           |
+  584 | 2024-05-09 09:10:10.74129+03  | ATC KWAKATHOKA                                                         | 1144.302 |  -1.848310 |  37.663927 |     9.85 |             5 |                 240 |                       762 |          6 |           530 | JPEG_66a08178-29da-4518-8a8a-57ec4b25dde3_1220757588812761388.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  456 | 2024-05-07 16:27:28.013914+03 | ATC KwaKathoka Nursery                                                 | 1142.000 |  -1.848227 |  37.663838 |    10.75 |             5 |                 165 |                       617 |         57 |           530 | JPEG_84be5815-1840-4824-ad00-77243dfde39d_5902368413931523214.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  458 | 2024-05-07 16:27:49.432623+03 | ATC Kwakathoka Tree Nursery                                            | 1171.000 |  -1.848265 |  37.663965 |     3.00 |             5 |                 165 |                       619 |          6 |           530 | JPEG_936d70c1-58ba-4609-a6e7-b6b72487a3b5_4249723857763264401.jpg | 2010-10-01   |                                          | UNDERGROUND                  |
+  569 | 2024-05-08 16:14:48.920705+03 | ATC NURSARY                                                            | 1171.700 |  -1.848324 |  37.664011 |     1.44 |             7 |                 155 |                       745 |          6 |           530 | JPEG_aee839ec-ae21-4bc4-8a53-8c37834fe084_4559155660657812507.jpg | 2020-01-01   |                                          | UNDERGROUND - RAIN           |
+  563 | 2024-05-08 16:14:01.763976+03 | ATC nursery                                                            | 1152.100 |  -1.848337 |  37.663986 |     3.90 |             7 |                 155 |                       739 |          6 |           530 | JPEG_7063b3fd-a951-40d4-af62-62bf13c7e2a0_2420659367872710952.jpg | 2020-01-01   |                                          | UNDERGROUND - RAIN           |
+  572 | 2024-05-08 16:14:59.245744+03 | ATC nursery                                                            | 1164.700 |  -1.848360 |  37.664031 |     3.90 |             7 |                 237 |                       749 |          6 |           530 | JPEG_3a3fb311-ed16-43c1-bd1a-8d6e9b407a81_7119401981819768599.jpg | 2020-01-01   |                                          | UNDERGROUND - RAIN           |
+
+```
+
+**Same lat lon nursery records**
+```sql
+select *
+from (
+    select nurs.id, nurs.nursery_name, nurs.altitude, nurs.latitude, nurs.longitude, nurs.accuracy,
+        row_number() over(partition by latitude, longitude order by latitude desc, longitude desc) as location_row_no,
+        op.username, nurs.nursery_ownership_type_id, prj.id as proj_id, prj.project_name, nurs.sub_county_id
+    from
+    respi_nurserie nurs
+    left join respi_projects prj on prj.id=nurs.project_id left join respi_nursery_operator op on op.id=nurs.nursery_operator_id
+)
+where location_row_no > 1 and proj_id != 6;
+```
+### case study: Christine Tree Nursery, REGREENING AFRICA_CHILDFUND project
+
+```sql
+  id  |           nursery_name            | altitude | latitude  | longitude | accuracy | location_row_no |            username            | nursery_ownership_type_id | proj_id |        project_name         | sub_county_id
+------+-----------------------------------+----------+-----------+-----------+----------+-----------------+--------------------------------+---------------------------+---------+-----------------------------+---------------
+  358 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               2 | Christine Kanini               |                       498 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  345 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               3 | Christine Kanini               |                       484 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  336 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               4 | Christine Kanini               |                       474 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  315 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               5 | Christine Kanini               |                       451 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  308 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               6 | Christine Kanini               |                       443 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  303 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               7 | Christine Kanini               |                       437 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  299 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               8 | Christine Kanini               |                       432 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  292 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |               9 | Christine Kanini               |                       424 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  287 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              10 | Christine Kanini               |                       418 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  280 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              11 | Christine Kanini               |                       410 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  277 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              12 | Christine Kanini               |                       406 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  273 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              13 | Christine Kanini               |                       401 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  270 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              14 | Christine Kanini               |                       397 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  268 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              15 | Christine Kanini               |                       394 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  266 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              16 | Christine Kanini               |                       391 |      44 | REGREENING AFRICA_CHILDFUND |           494
+  265 |    Christine Tree Nursery         | 1188.508 | -2.017078 | 37.462925 |     3.90 |              17 | Christine Kanini               |                       390 |      44 | REGREENING AFRICA_CHILDFUND |           494
+
+```
+
+- is the associated info for each nursery id the same?
+    - what is the associated info?
+        - respi_nursery_operator
+        - respi_nursery_ownership_type
+        - respi_projects
+        - respi_subcounties
+        - respi_nursery_entry
+        - respi_nursery_specie
+        - respi_scion_source
+        - respi_seed_source
+        - respi_seedling_propagation_method
+        - respi_seedling_production_method 
+
+```sql
+select
+    nent.*, nurs.nursery_name, nspc.local_name, nspc.scientific_name, nspc.date_sown, nspc.price_per_seedling, nspc.purchase_unit,
+    nspc.seeds_germinated, nspc.seeds_purchased, nspc.seeds_sown, nspc.seeds_survived, nspc.sow_unit
+from
+    respi_nursery_entry nent
+left join respi_nursery_specie nspc on nspc.nursery_entry_id=nent.id
+left join respi_nurserie nurs on nurs.id=nent.nursery_id
+where 
+    nent.nursery_id in (358, 345,336,315,308,303, 299, 292, 287, 280, 277, 273, 270, 268, 266, 265);
+ id  |         recorded_dte          | date_collected | collector_id | nursery_id |        nursery_name        | local_name | scientific_name | date_sown  | price_per_seedling | purchase_unit | seeds_germinated | seeds_purchased | seeds_sown | seeds_survived | sow_unit
+-----+-------------------------------+----------------+--------------+------------+----------------------------+------------+-----------------+------------+--------------------+---------------+------------------+-----------------+------------+----------------+----------
+ 265 | 2024-02-28 15:30:42.18155+03  | 2024-02-28     |          464 |        265 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 266 | 2024-02-28 15:35:42.165665+03 | 2024-02-28     |          464 |        266 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 268 | 2024-02-28 15:35:48.540736+03 | 2024-02-28     |          464 |        268 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 270 | 2024-02-28 16:39:54.209673+03 | 2024-02-28     |          464 |        270 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 273 | 2024-02-28 17:53:05.72987+03  | 2024-02-28     |          464 |        273 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 277 | 2024-02-29 09:43:04.578596+03 | 2024-02-28     |          464 |        277 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 280 | 2024-02-29 15:27:43.832456+03 | 2024-02-28     |          464 |        280 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 287 | 2024-02-29 15:27:53.872927+03 | 2024-02-28     |          464 |        287 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 292 | 2024-02-29 16:33:48.939272+03 | 2024-02-28     |          464 |        292 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 299 | 2024-02-29 16:42:06.983216+03 | 2024-02-28     |          464 |        299 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 303 | 2024-03-04 10:31:02.13238+03  | 2024-02-28     |          464 |        303 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 308 | 2024-03-04 11:57:22.335374+03 | 2024-02-28     |          464 |        308 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 315 | 2024-03-04 15:10:42.101654+03 | 2024-02-28     |          464 |        315 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 336 | 2024-03-12 12:41:26.401614+03 | 2024-02-28     |          464 |        336 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 345 | 2024-03-26 10:20:23.177621+03 | 2024-02-28     |          464 |        345 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+ 358 | 2024-03-26 10:21:38.598629+03 | 2024-02-28     |          464 |        358 |    Christine Tree Nursery  | Maembe     |                 | 2024-02-05 |              50.00 | KG            |              350 |               4 |          4 |            350 | KG
+(16 rows)
 
 ```
