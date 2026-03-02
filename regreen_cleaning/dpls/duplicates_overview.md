@@ -623,29 +623,24 @@ left join respi_plots plt on plt.id=ent.plot_id;
 
 
 ```sql
-select * 
-from (
-    select 
-        trm.id as trm_id, 
-        trm.latitude, 
-        trm.longitude, 
-        trm.accuracy, 
-        row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num, 
-        trm.fmnr_species_id,
-        array_agg(trm.fmnr_species_id) over (partition by plt.id) as sp_ids_per_plot,
-        sp.fmnr_entry_id, 
-        plt.id as plot_id, 
-        plt.name,         
-        trm.comment 
-    from 
-        respi_tree_measurement trm 
-    inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id 
-    left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id 
-    left join respi_plots plt on plt.id=ent.plot_id
-)
+select 
+    trm.id as trm_id, 
+    trm.latitude, 
+    trm.longitude, 
+    trm.accuracy, 
+    row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num, 
+    trm.fmnr_species_id,
+    array_agg(trm.fmnr_species_id) over (partition by plt.id) as sp_ids_per_plot,
+    sp.fmnr_entry_id, 
+    plt.id as plot_id, 
+    plt.name,         
+    trm.comment 
+from 
+    respi_tree_measurement trm 
+inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id 
+left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id 
+left join respi_plots plt on plt.id=ent.plot_id
 where 
-    fmnr_species_id is not null and 
-    --row_num > 1 and 
     name = 'e7ef9b4c-8c19-4faf-ad70-5583722333d8';
 
  trm_id | latitude  | longitude | accuracy | row_num | fmnr_species_id |                     sp_ids_per_plot                     | fmnr_entry_id | plot_id |                 name                 | comment
@@ -701,28 +696,24 @@ declare
     r RECORD;
 begin
     for r in
-        select *
-        from (
-            select
-                trm.id as trm_id,
-                trm.latitude,
-                trm.longitude,
-                trm.accuracy,
-                row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num,
-                trm.fmnr_species_id,
-                array_agg(trm.fmnr_species_id) over (partition by plt.id) as sp_ids_per_plot,
-                sp.fmnr_entry_id,
-                plt.id as plot_id,
-                plt.name,     
-                trm.comment
-            from
-                respi_tree_measurement trm
-            inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
-            left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
-            left join respi_plots plt on plt.id=ent.plot_id
-        )
+        select
+            trm.id as trm_id,
+            trm.latitude,
+            trm.longitude,
+            trm.accuracy,
+            row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc) as row_num,
+            trm.fmnr_species_id,
+            array_agg(trm.fmnr_species_id) over (partition by plt.id) as sp_ids_per_plot,
+            sp.fmnr_entry_id,
+            plt.id as plot_id,
+            plt.name,     
+            trm.comment
+        from
+            respi_tree_measurement trm
+        inner join respi_fmnr_species sp on sp.id=trm.fmnr_species_id
+        left join respi_fmnr_entry ent on ent.id=sp.fmnr_entry_id
+        left join respi_plots plt on plt.id=ent.plot_id
         where
-            row_num > 1 and
             plot_id=plot_ide
             --and  name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'     
 
