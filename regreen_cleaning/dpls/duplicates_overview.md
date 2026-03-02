@@ -27,6 +27,7 @@ We will explore them module by module.
 ### TP Plot Duplicates
 - Plots have dupicates(name based) but unique ids. e.g. '02993a44-12b0-48d2-8cbc-51d3792eb65e'
 - keep only plots with tp entries `inner join`
+
 ```sql
 select *
 from (
@@ -184,6 +185,89 @@ https://www.geeksforgeeks.org/postgresql/postgresql-array_agg-function/
     - theres need to delete all trees before deleting the associated plot 
     - to achieve this, we aggregate trees based on plot
 
+```sql
+select
+    trm.id as trm_id, 
+    trm.latitude,
+    trm.longitude,
+    trm.accuracy,
+    trm.rcc_cbh,
+    row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc ) as row_number,
+    trm.cohort_id, 
+    array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+    plt.name, ent.plot_id, 
+    --row_number () over (partition by plt.id) as plots_with_one_name,
+    ch.tp_entry_id,
+    trm.comment
+from respi_tree_measurement trm
+inner join respi_cohort ch on ch.id = trm.cohort_id 
+left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+left join respi_plots plt on plt.id = ent.plot_id
+where 
+    name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'; 
+
+ trm_id | latitude  | longitude | accuracy | rcc_cbh | row_number | cohort_id |             cohort_ids_per_plot             |                 name                 | plot_id | tp_entry_id |                  comment
+--------+-----------+-----------+----------+---------+------------+-----------+---------------------------------------------+--------------------------------------+---------+-------------+-------------------------------------------
+  16574 | -1.299590 | 30.553325 |     6.50 |    0.90 |          1 |     10653 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | Moderate survival rated planted in apiary
+  16588 | -1.299590 | 30.553325 |     6.50 |    0.90 |          2 |     10667 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | Moderate survival rated planted in apiary
+  16560 | -1.299590 | 30.553325 |     6.50 |    0.90 |          3 |     10639 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | Moderate survival rated planted in apiary
+  16512 | -1.299590 | 30.553325 |     6.50 |    0.90 |          4 |     10591 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | Moderate survival rated planted in apiary
+  16567 | -1.299590 | 30.553325 |     6.50 |    0.90 |          5 |     10646 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | Moderate survival rated planted in apiary
+  16547 | -1.299590 | 30.553325 |     6.50 |    0.90 |          6 |     10626 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | Moderate survival rated planted in apiary
+  16490 | -1.299590 | 30.553325 |     6.50 |    0.90 |          7 |     10569 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | Moderate survival rated planted in apiary
+  16595 | -1.299590 | 30.553325 |     6.50 |    0.90 |          8 |     10674 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | Moderate survival rated planted in apiary
+  16566 | -1.299605 | 30.553887 |     0.68 |    1.20 |          1 |     10645 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | high survival rate planted near by apiary
+  16587 | -1.299605 | 30.553887 |     0.68 |    1.20 |          2 |     10666 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | high survival rate planted near by apiary
+  16511 | -1.299605 | 30.553887 |     0.68 |    1.20 |          3 |     10590 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | high survival rate planted near by apiary
+  16489 | -1.299605 | 30.553887 |     0.68 |    1.20 |          4 |     10568 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | high survival rate planted near by apiary
+  16546 | -1.299605 | 30.553887 |     0.68 |    1.20 |          5 |     10625 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | high survival rate planted near by apiary
+  16573 | -1.299605 | 30.553887 |     0.68 |    1.20 |          6 |     10652 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | high survival rate planted near by apiary
+  16594 | -1.299605 | 30.553887 |     0.68 |    1.20 |          7 |     10673 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | high survival rate planted near by apiary
+  16559 | -1.299605 | 30.553887 |     0.68 |    1.20 |          8 |     10638 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | high survival rate planted near by apiary
+  16572 | -1.299662 | 30.553655 |     7.44 |    0.60 |          1 |     10651 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | high growth rate
+  16565 | -1.299662 | 30.553655 |     7.44 |    0.60 |          2 |     10644 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | high growth rate
+  16593 | -1.299662 | 30.553655 |     7.44 |    0.60 |          3 |     10672 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | high growth rate
+  16510 | -1.299662 | 30.553655 |     7.44 |    0.60 |          4 |     10589 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | high growth rate
+  16586 | -1.299662 | 30.553655 |     7.44 |    0.60 |          5 |     10665 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | high growth rate
+  16545 | -1.299662 | 30.553655 |     7.44 |    0.60 |          6 |     10624 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | high growth rate
+  16488 | -1.299662 | 30.553655 |     7.44 |    0.60 |          7 |     10567 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | high growth rate
+  16558 | -1.299662 | 30.553655 |     7.44 |    0.60 |          8 |     10637 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | high growth rate
+  16487 | -1.300455 | 30.553559 |     1.67 |    3.00 |          1 |     10566 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | high survival and growth rate
+  16544 | -1.300455 | 30.553559 |     1.67 |    3.00 |          2 |     10623 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | high survival and growth rate
+  16557 | -1.300455 | 30.553559 |     1.67 |    3.00 |          3 |     10636 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | high survival and growth rate
+  16592 | -1.300455 | 30.553559 |     1.67 |    3.00 |          4 |     10671 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | high survival and growth rate
+  16564 | -1.300455 | 30.553559 |     1.67 |    3.00 |          5 |     10643 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | high survival and growth rate
+  16585 | -1.300455 | 30.553559 |     1.67 |    3.00 |          6 |     10664 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | high survival and growth rate
+  16571 | -1.300455 | 30.553559 |     1.67 |    3.00 |          7 |     10650 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | high survival and growth rate
+  16509 | -1.300455 | 30.553559 |     1.67 |    3.00 |          8 |     10588 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | high survival and growth rate
+  16591 | -1.300478 | 30.553588 |    14.83 |    1.60 |          1 |     10670 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | high survival and growth rate
+  16584 | -1.300478 | 30.553588 |    14.83 |    1.60 |          2 |     10663 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | high survival and growth rate
+  16570 | -1.300478 | 30.553588 |    14.83 |    1.60 |          3 |     10649 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | high survival and growth rate
+  16563 | -1.300478 | 30.553588 |    14.83 |    1.60 |          4 |     10642 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | high survival and growth rate
+  16556 | -1.300478 | 30.553588 |    14.83 |    1.60 |          5 |     10635 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | high survival and growth rate
+  16543 | -1.300478 | 30.553588 |    14.83 |    1.60 |          6 |     10622 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | high survival and growth rate
+  16508 | -1.300478 | 30.553588 |    14.83 |    1.60 |          7 |     10587 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | high survival and growth rate
+  16486 | -1.300478 | 30.553588 |    14.83 |    1.60 |          8 |     10565 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | high survival and growth rate
+  16541 | -1.300531 | 30.553982 |     5.49 |    0.90 |          1 |     10620 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | high growth rate
+  16484 | -1.300531 | 30.553982 |     5.49 |    0.90 |          2 |     10563 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | high growth rate
+  16589 | -1.300531 | 30.553982 |     5.49 |    0.90 |          3 |     10668 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | high growth rate
+  16568 | -1.300531 | 30.553982 |     5.49 |    0.90 |          4 |     10647 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | high growth rate
+  16561 | -1.300531 | 30.553982 |     5.49 |    0.90 |          5 |     10640 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | high growth rate
+  16582 | -1.300531 | 30.553982 |     5.49 |    0.90 |          6 |     10661 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | high growth rate
+  16554 | -1.300531 | 30.553982 |     5.49 |    0.90 |          7 |     10633 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | high growth rate
+  16506 | -1.300531 | 30.553982 |     5.49 |    0.90 |          8 |     10585 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | high growth rate
+  16569 | -1.300563 | 30.553803 |     7.27 |    0.80 |          1 |     10648 | {10649,10647,10648,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |        4612 | low survival rate
+  16583 | -1.300563 | 30.553803 |     7.27 |    0.80 |          2 |     10662 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |        4614 | low survival rate
+  16590 | -1.300563 | 30.553803 |     7.27 |    0.80 |          3 |     10669 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |        4615 | low survival rate
+  16485 | -1.300563 | 30.553803 |     7.27 |    0.80 |          4 |     10564 | {10564,10563,10569,10568,10567,10566,10565} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |        4591 | low survival rate
+  16507 | -1.300563 | 30.553803 |     7.27 |    0.80 |          5 |     10586 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |        4595 | low survival rate
+  16542 | -1.300563 | 30.553803 |     7.27 |    0.80 |          6 |     10621 | {10623,10620,10621,10622,10624,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |        4605 | low survival rate
+  16555 | -1.300563 | 30.553803 |     7.27 |    0.80 |          7 |     10634 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |        4610 | low survival rate
+  16562 | -1.300563 | 30.553803 |     7.27 |    0.80 |          8 |     10641 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |        4611 | low survival rate
+(56 rows)
+
+
+```
 
 #### related tables to delete from
 
@@ -202,6 +286,94 @@ delete all rows in tables below based on `cohort_id` & `plot_id`
 
 
 #### tp delete function
+we are deleting by plot id.
+- assign row numbers for the plot ids
+- 
+
+```sql
+select
+    trm.id as trm_id, 
+    trm.latitude,
+    trm.longitude,
+    trm.accuracy,
+    trm.rcc_cbh,
+    --row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc ) as row_number,
+    trm.cohort_id, 
+    array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+    plt.name, ent.plot_id, 
+    row_number () over (partition by plt.id) as plots_with_one_name,
+    ch.tp_entry_id,
+    trm.comment
+from respi_tree_measurement trm
+inner join respi_cohort ch on ch.id = trm.cohort_id 
+left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+left join respi_plots plt on plt.id = ent.plot_id 
+where 
+    name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'; 
+
+
+ trm_id | latitude  | longitude | accuracy | rcc_cbh | cohort_id |             cohort_ids_per_plot             |                 name                 | plot_id | plots_with_one_name | tp_entry_id |                  comment
+--------+-----------+-----------+----------+---------+-----------+---------------------------------------------+--------------------------------------+---------+---------------------+-------------+-------------------------------------------
+  16487 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10566 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   1 |        4591 | high survival and growth rate
+  16484 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10563 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   2 |        4591 | high growth rate
+  16485 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10564 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   3 |        4591 | low survival rate
+  16486 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10565 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   4 |        4591 | high survival and growth rate
+  16488 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10567 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   5 |        4591 | high growth rate
+  16489 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10568 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   6 |        4591 | high survival rate planted near by apiary
+  16490 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10569 | {10566,10563,10564,10565,10567,10568,10569} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10384 |                   7 |        4591 | Moderate survival rated planted in apiary
+  16506 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10585 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   1 |        4595 | high growth rate
+  16512 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10591 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   2 |        4595 | Moderate survival rated planted in apiary
+  16511 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10590 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   3 |        4595 | high survival rate planted near by apiary
+  16510 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10589 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   4 |        4595 | high growth rate
+  16509 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10588 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   5 |        4595 | high survival and growth rate
+  16508 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10587 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   6 |        4595 | high survival and growth rate
+  16507 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10586 | {10585,10591,10590,10589,10588,10587,10586} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10388 |                   7 |        4595 | low survival rate
+  16545 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10624 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   1 |        4605 | high growth rate
+  16541 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10620 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   2 |        4605 | high growth rate
+  16542 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10621 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   3 |        4605 | low survival rate
+  16543 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10622 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   4 |        4605 | high survival and growth rate
+  16544 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10623 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   5 |        4605 | high survival and growth rate
+  16546 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10625 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   6 |        4605 | high survival rate planted near by apiary
+  16547 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10626 | {10624,10620,10621,10622,10623,10625,10626} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10400 |                   7 |        4605 | Moderate survival rated planted in apiary
+  16556 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10635 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   1 |        4610 | high survival and growth rate
+  16555 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10634 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   2 |        4610 | low survival rate
+  16557 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10636 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   3 |        4610 | high survival and growth rate
+  16554 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10633 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   4 |        4610 | high growth rate
+  16558 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10637 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   5 |        4610 | high growth rate
+  16559 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10638 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   6 |        4610 | high survival rate planted near by apiary
+  16560 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10639 | {10635,10634,10636,10633,10637,10638,10639} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10405 |                   7 |        4610 | Moderate survival rated planted in apiary
+  16561 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10640 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   1 |        4611 | high growth rate
+  16563 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10642 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   2 |        4611 | high survival and growth rate
+  16564 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10643 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   3 |        4611 | high survival and growth rate
+  16565 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10644 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   4 |        4611 | high growth rate
+  16566 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10645 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   5 |        4611 | high survival rate planted near by apiary
+  16567 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10646 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   6 |        4611 | Moderate survival rated planted in apiary
+  16562 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10641 | {10640,10642,10643,10644,10645,10646,10641} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10406 |                   7 |        4611 | low survival rate
+  16569 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10648 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   1 |        4612 | low survival rate
+  16568 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10647 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   2 |        4612 | high growth rate
+  16570 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10649 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   3 |        4612 | high survival and growth rate
+  16571 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10650 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   4 |        4612 | high survival and growth rate
+  16572 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10651 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   5 |        4612 | high growth rate
+  16573 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10652 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   6 |        4612 | high survival rate planted near by apiary
+  16574 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10653 | {10648,10647,10649,10650,10651,10652,10653} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10407 |                   7 |        4612 | Moderate survival rated planted in apiary
+  16586 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10665 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   1 |        4614 | high growth rate
+  16588 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10667 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   2 |        4614 | Moderate survival rated planted in apiary
+  16587 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10666 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   3 |        4614 | high survival rate planted near by apiary
+  16582 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10661 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   4 |        4614 | high growth rate
+  16585 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10664 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   5 |        4614 | high survival and growth rate
+  16584 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10663 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   6 |        4614 | high survival and growth rate
+  16583 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10662 | {10665,10667,10666,10661,10664,10663,10662} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10409 |                   7 |        4614 | low survival rate
+  16589 | -1.300531 | 30.553982 |     5.49 |    0.90 |     10668 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   1 |        4615 | high growth rate
+  16590 | -1.300563 | 30.553803 |     7.27 |    0.80 |     10669 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   2 |        4615 | low survival rate
+  16591 | -1.300478 | 30.553588 |    14.83 |    1.60 |     10670 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   3 |        4615 | high survival and growth rate
+  16592 | -1.300455 | 30.553559 |     1.67 |    3.00 |     10671 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   4 |        4615 | high survival and growth rate
+  16593 | -1.299662 | 30.553655 |     7.44 |    0.60 |     10672 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   5 |        4615 | high growth rate
+  16594 | -1.299605 | 30.553887 |     0.68 |    1.20 |     10673 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   6 |        4615 | high survival rate planted near by apiary
+  16595 | -1.299590 | 30.553325 |     6.50 |    0.90 |     10674 | {10668,10669,10670,10671,10672,10673,10674} | 06a139a3-29a9-474a-8b94-479e9c8d6cc1 |   10410 |                   7 |        4615 | Moderate survival rated planted in apiary
+(56 rows)
+
+```
+
 
 ```sql
 create or replace function clean_tp_dpls(plot_ide integer)
@@ -212,32 +384,24 @@ declare
     r RECORD;
 begin
     for r in
-        select *
-        from (
-            select
-                trm.id as trm_id, 
-                trm.latitude,
-                trm.longitude,
-                trm.accuracy,
-                trm.rcc_cbh,
-                row_number() over (
-                    partition by trm.latitude, trm.longitude
-                    order by trm.latitude desc, trm.longitude desc
-                ) as row_number,
-                trm.cohort_id, 
-                ARRAY_AGG(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
-                ent.plot_id, plt.name,
-                ch.tp_entry_id,
-                trm.comment
-            from respi_tree_measurement trm
-            inner join respi_cohort ch on ch.id = trm.cohort_id 
-            left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
-            left join respi_plots plt on plt.id = ent.plot_id
-        ) 
-        where 
-            row_number > 1 and 
-            --name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'and 
-            plot_id=plot_ide
+        select
+            trm.id as trm_id, 
+            trm.latitude,
+            trm.longitude,
+            trm.accuracy,
+            trm.rcc_cbh,
+            --row_number() over (partition by trm.latitude, trm.longitude order by trm.latitude desc, trm.longitude desc ) as row_number,
+            trm.cohort_id, 
+            array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+            plt.name, ent.plot_id, 
+            row_number () over (partition by plt.id) as plots_with_one_name,
+            ch.tp_entry_id,
+            trm.comment
+        from respi_tree_measurement trm
+        inner join respi_cohort ch on ch.id = trm.cohort_id 
+        left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+        left join respi_plots plt on plt.id = ent.plot_id
+        where plot_id = plot_ide
     loop
         --delete tp_management_practices
         delete from respi_tp_management_practices where cohort_id = any(r.cohort_ids_per_plot);
@@ -274,7 +438,57 @@ begin
         delete from respi_tree_planting_entry where plot_id = plot_ide;
 end $$;
 ```
+
 - Plots have dupicates(name based) but unique ids. e.g. '02993a44-12b0-48d2-8cbc-51d3792eb65e'
+
+#### tp delete function 2
+**what if we delete by plot name?**
+- all plot ids for the same plot name deleted once.
+- we aggregate the plot ids based on user supplied plot name.
+- use a cte to aggregate once, then join to query.
+
+**challenge** 
+- this will aggregate even the skipped id, which will delete the info.
+
+```sql
+with plot_ids_per_name as (
+    select
+        plt.name,
+        array_agg(distinct ent.plot_id)  as plot_ids_per_name
+    from respi_tree_planting_entry ent
+    join respi_plots plt 
+        on plt.id = ent.plot_id
+    group by plt.name
+)
+
+select *
+from (
+    select
+        trm.id as trm_id, 
+        trm.latitude,
+        trm.longitude,
+        trm.accuracy,
+        trm.rcc_cbh,
+        row_number() over (
+            partition by trm.latitude, trm.longitude
+            order by trm.latitude desc, trm.longitude desc
+        ) as row_number,
+        trm.cohort_id, 
+        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+        ent.plot_id, pipn.plot_ids_per_name, plt.name,
+        ch.tp_entry_id,
+        trm.comment
+    from respi_tree_measurement trm
+    inner join respi_cohort ch on ch.id = trm.cohort_id 
+    left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+    left join respi_plots plt on plt.id = ent.plot_id
+    left join plot_ids_per_name pipn on pipn.name=plt.name
+) 
+where 
+    row_number > 1 and 
+    name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'
+```
+
 
 ### FMNR plot duplicates
 - plot name is occuring more than once
@@ -431,8 +645,9 @@ from (
 )
 where 
     fmnr_species_id is not null and 
-    row_num > 1 and 
+    --row_num > 1 and 
     name = 'e7ef9b4c-8c19-4faf-ad70-5583722333d8';
+
  trm_id | latitude  | longitude | accuracy | row_num | fmnr_species_id |                     sp_ids_per_plot                     | fmnr_entry_id | plot_id |                 name                 | comment
 --------+-----------+-----------+----------+---------+-----------------+----------------------------------------------------------+---------------+---------+--------------------------------------+---------
   14122 | 13.499581 | 39.603302 |     6.70 |       2 |            6075 | {6080,6081,6075,6076,6077,6084,6085,6079,6078,6083,6082} |          2587 |    8898 | e7ef9b4c-8c19-4faf-ad70-5583722333d8 |
