@@ -37,47 +37,68 @@ from (
         plt.crops,
         row_number() over (partition by name) as row_no,
         ent.recorded_dte,
-        ent.project_id,
-        ent.id as tp_entry_id, fent.first_name, proj.project_name
+        ent.id as tp_entry_id, fent.first_name as farmer_1st_name, fent.last_name as farmer_last_name, ent.project_id, proj.project_name, countries.country_name, countries.id as country_id, usrs.first_name as enumerator_1st_name, usrs.last_name as enumerator_lastname
     from respi_plots plt
     inner join respi_tree_planting_entry ent on ent.plot_id=plt.id 
     left join respi_farming_entity fent on fent.id=plt.farming_entity_id 
     left join respi_projects proj on proj.id=ent.project_id
+    left join respi_countries countries on countries.id = proj.country_id
+    left join respi_regreeningusers usrs on usrs.id=ent.collector_id
 )
 where 
-    --row_no > 1 and 
+    row_no > 1 and 
     project_id != 6  
 limit 300;
+--name='12AS';
 
- plot_id |                 name                 |                                 crops                                 | row_no |         recorded_dte          | project_id | tp_entry_id
----------+--------------------------------------+-----------------------------------------------------------------------+--------+-------------------------------+------------+-------------
-   11830 | 0024392a-9368-4683-8735-c57018665317 | Banana  - Cassava                                                     |      2 | 2025-05-01 18:00:24.48797+03  |         50 |        5654
-   12937 | 005b6fd3-814f-44e7-a43e-c14c39f83823 | Plantain  - Yam - Cocoyam - Cassava                                   |      2 | 2025-05-09 20:24:01.143521+03 |        115 |        6726
-   15980 | 009ecdbe-2f27-4a4f-bf19-827f22497228 | Banane                                                                |      2 | 2025-06-16 19:41:17.710342+03 |        122 |        8895
-   15977 | 009ecdbe-2f27-4a4f-bf19-827f22497228 | Banane                                                                |      3 | 2025-06-16 19:26:48.079649+03 |        122 |        8892
-   15979 | 009ecdbe-2f27-4a4f-bf19-827f22497228 | Banane                                                                |      4 | 2025-06-16 19:35:08.808854+03 |        122 |        8894
-   15847 | 009ecdbe-2f27-4a4f-bf19-827f22497228 | Banane                                                                |      5 | 2025-06-11 10:53:46.766512+03 |        122 |        8848
-   10998 | 00f8a17f-4377-4079-98ca-e6ea9a109033 |                                                                       |      2 | 2025-03-17 14:58:32.053109+03 |        115 |        5095
-   12867 | 01351558-a399-4017-b8c0-c349574d598c | Irish Potato  - Banana - Maize - Cassava Leaves  - Beans              |      2 | 2025-05-09 06:58:45.990595+03 |         50 |        6656
-   17086 | 0152ef8f-8cea-4837-affb-1e1af6081e93 | Ibishyimbo - Ibigori - Amasaka - Soya                                 |      2 | 2025-08-11 13:42:12.717741+03 |         41 |        9845
-   12612 | 01596ed1-85ca-4839-8efa-031c621bd214 | Banana tree - Beans  - Maize - yams                                   |      2 | 2025-05-08 18:47:39.204047+03 |         50 |        6421
-   10430 | 02993a44-12b0-48d2-8cbc-51d3792eb65e |                                                                       |      2 | 2025-02-14 20:10:38.791445+03 |         49 |        4634
-   10431 | 02993a44-12b0-48d2-8cbc-51d3792eb65e |                                                                       |      3 | 2025-02-14 20:10:50.854039+03 |         49 |        4635
-   10434 | 02993a44-12b0-48d2-8cbc-51d3792eb65e |                                                                       |      4 | 2025-02-14 20:24:04.14025+03  |         49 |        4638
-   10433 | 02993a44-12b0-48d2-8cbc-51d3792eb65e |                                                                       |      5 | 2025-02-14 20:21:54.228783+03 |         49 |        4637
-    6015 | 0373b36f-fdcb-4b1f-9596-23cefc8c06ac | Wheat                                                                 |      2 | 2024-05-24 14:13:07.93081+03  |         57 |        2789
-    6020 | 0373b36f-fdcb-4b1f-9596-23cefc8c06ac | Wheat                                                                 |      3 | 2024-05-24 14:16:56.801123+03 |         57 |        2794
-    6036 | 0373b36f-fdcb-4b1f-9596-23cefc8c06ac | Wheat                                                                 |      4 | 2024-05-24 14:40:08.601475+03 |         57 |        2810
-   10914 | 04688ac6-bc92-47bf-93a4-c7d8e4cd788e | Potatoes  - Cassava                                                   |      2 | 2025-03-07 17:29:10.499291+03 |        117 |        5013
-   10972 | 04c674ef-bf60-45ce-8146-5bdb589fa00e | maize - millet - beans - cassava                                      |      2 | 2025-03-12 16:55:51.538691+03 |         49 |        5069
-   10969 | 04c674ef-bf60-45ce-8146-5bdb589fa00e | maize - millet - beans - cassava                                      |      3 | 2025-03-12 16:47:01.670742+03 |         49 |        5066
-   10970 | 04c674ef-bf60-45ce-8146-5bdb589fa00e | maize - millet - beans - cassava                                      |      4 | 2025-03-12 16:51:22.276537+03 |         49 |        5067
-   13812 | 04e12ae8-b5bf-49e2-9fe7-2ef82c6324a6 | Plantain                                                              |      2 | 2025-05-17 12:24:54.652487+03 |        115 |        7467
-   12791 | 054e2dd5-93e7-4662-97b7-b3ac9d4d6a8b | Green Bananas - Irish Potato                                          |      2 | 2025-05-08 21:50:51.026826+03 |         50 |        6584
-   12782 | 054e2dd5-93e7-4662-97b7-b3ac9d4d6a8b | Green Bananas - Irish Potato                                          |      3 | 2025-05-08 21:47:37.837653+03 |         50 |        6580
-   12641 | 054e2dd5-93e7-4662-97b7-b3ac9d4d6a8b | Green Bananas - Irish Potato                                          |      4 | 2025-05-08 19:02:13.419992+03 |         50 |        6447
-   12440 | 058d9904-7451-452a-8d75-9d82f2d06767 |                                                                       |      2 | 2025-05-07 21:06:46.780892+03 |         50 |        6253
-:
+ plot_id |                 name                 |                                 crops                                 | row_no |         recorded_dte          | tp_entry_id |          farmer_1st_name           |          farmer_last_name          | project_id |        project_name         | country_name | country_id | enumerator_1st_name | enumerator_lastname
+---------+--------------------------------------+-----------------------------------------------------------------------+--------+-------------------------------+-------------+------------------------------------+------------------------------------+------------+-----------------------------+--------------+------------+---------------------+---------------------
+    3161 | 12AS                                 | Amateke - Beans                                                       |      2 | 2024-04-05 19:08:37.883109+03 |        1190 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3159 | 12AS                                 | Amateke - Beans                                                       |      3 | 2024-04-05 19:07:35.857193+03 |        1188 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3099 | 12AS                                 | Amateke - Beans                                                       |      4 | 2024-04-05 19:03:16.721409+03 |        1160 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3098 | 12AS                                 | Amateke - Beans                                                       |      5 | 2024-04-05 19:03:03.266791+03 |        1159 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3095 | 12AS                                 | Amateke - Beans                                                       |      6 | 2024-04-05 19:01:47.249861+03 |        1156 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3093 | 12AS                                 | Amateke - Beans                                                       |      7 | 2024-04-05 19:00:48.809515+03 |        1154 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3091 | 12AS                                 | Amateke - Beans                                                       |      8 | 2024-04-05 19:00:33.860731+03 |        1152 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+    3089 | 12AS                                 | Amateke - Beans                                                       |      9 | 2024-04-05 19:00:12.860566+03 |        1150 | Iyamuremye                         | Samuel                             |         50 | AfDB                        | Rwanda       |         15 | constance          | umwizawase
+   12027 | 12de3534-bb37-42d5-a245-d40fe92fceef | beans                                                                 |      2 | 2025-05-03 11:44:18.669368+03 |        5848 | Harerimana                         | joseph                             |         50 | AfDB                        | Rwanda       |         15 | Clement            | IRADUKUNDA
+   11872 | 12de3534-bb37-42d5-a245-d40fe92fceef | beans                                                                 |      3 | 2025-05-01 19:56:25.125628+03 |        5696 | Harerimana                         | joseph                             |         50 | AfDB                        | Rwanda       |         15 | Clement            | IRADUKUNDA
+   15283 | 12e0812d-9d0e-404c-8a9d-f9c32525cb97 | Rice                                                                  |      2 | 2025-05-28 20:40:51.246317+03 |        8425 | Moses                              | Affah                              |        115 | NbS_Guinean_Forests         |              |            | Sampson            | Alhassan
+    6812 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      2 | 2024-10-02 18:32:28.393078+03 |        3115 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    6805 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      3 | 2024-10-02 18:31:46.998034+03 |        3110 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    6809 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      4 | 2024-10-02 18:32:14.339241+03 |        3113 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    6798 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      5 | 2024-10-02 18:31:17.700983+03 |        3104 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    6811 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      6 | 2024-10-02 18:32:28.288101+03 |        3114 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    6800 | 13a9bc11-526f-410b-b75a-a488f65e7fd8 |                                                                       |      7 | 2024-10-02 18:31:24.373147+03 |        3106 | Agaissa                            | Traore                             |         20 | Regreening                  | Kenya        |          3 | Agaissa            | Traore
+    4393 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      2 | 2024-05-07 16:51:29.519854+03 |        1912 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4369 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      3 | 2024-05-07 16:31:01.545738+03 |        1892 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4390 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      4 | 2024-05-07 16:50:42.907276+03 |        1909 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4593 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      5 | 2024-05-08 13:02:08.740593+03 |        2046 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4367 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      6 | 2024-05-07 16:28:59.89796+03  |        1890 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4366 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      7 | 2024-05-07 16:28:15.044405+03 |        1889 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4391 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      8 | 2024-05-07 16:50:42.931443+03 |        1910 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+    4354 | 13ab30c3-e4a7-45c9-a81e-e7c6e5b70986 | Sorghum                                                               |      9 | 2024-05-07 16:27:07.126708+03 |        1888 | Munyinya                           | Theodore                           |         41 | MTF                         | Rwanda       |         15 | Cleophace          | MUTABARUKA
+   14530 | 13db487a-a714-4c12-829c-e587be0c0e48 | Plantain  - Pineapple  - Guava - Garden Eggs                          |      2 | 2025-05-22 20:28:15.287047+03 |        8054 | Despite                            | Acquah                             |        115 | NbS_Guinean_Forests         |              |            | Fati               | Alhassan
+   14526 | 13db487a-a714-4c12-829c-e587be0c0e48 | Plantain  - Pineapple  - Guava - Garden Eggs                          |      3 | 2025-05-22 20:26:50.259747+03 |        8050 | Despite                            | Acquah                             |        115 | NbS_Guinean_Forests         |              |            | Fati               | Alhassan
+   14482 | 13db487a-a714-4c12-829c-e587be0c0e48 | Plantain  - Pineapple  - Guava - Garden Eggs                          |      4 | 2025-05-22 18:54:53.992317+03 |        8011 | Despite                            | Acquah                             |        115 | NbS_Guinean_Forests         |              |            | Fati               | Alhassan
+   16294 | 141059b0-4a91-49f4-b420-4da7322a5ef7 |                                                                       |      2 | 2025-07-21 14:02:54.320251+03 |        9140 | The Go Getter Academy              | The Go Getter Academy              |         12 | UKPact_NbS                  | Kenya        |          3 | Jackline           | Mwikali
+   15398 | 14cc1964-49cc-4a11-aba4-ccced7f62523 | Plantain  - Maize  - Cassava                                          |      2 | 2025-05-30 00:44:53.763352+03 |        8506 | Matthew                            | Broni                              |        115 | NbS_Guinean_Forests         |              |            | Emmanuel           | Amoako
+   15394 | 14cc1964-49cc-4a11-aba4-ccced7f62523 | Plantain  - Maize  - Cassava                                          |      3 | 2025-05-30 00:25:54.528712+03 |        8503 | Matthew                            | Broni                              |        115 | NbS_Guinean_Forests         |              |            | Emmanuel           | Amoako
+   11208 | 155b31c0-1a01-499e-ba4a-9847a9168fa8 | Manioc                                                                |      2 | 2025-04-01 15:12:32.741717+03 |        5175 | Kangbe                             | Mamadou                            |        115 | NbS_Guinean_Forests         |              |            | Yao                | Yao Germain
+   11204 | 155b31c0-1a01-499e-ba4a-9847a9168fa8 | Manioc                                                                |      3 | 2025-04-01 12:35:29.616909+03 |        5171 | Kangbe                             | Mamadou                            |        115 | NbS_Guinean_Forests         |              |            | Yao                | Yao Germain
+   11206 | 155b31c0-1a01-499e-ba4a-9847a9168fa8 | Manioc                                                                |      4 | 2025-04-01 15:11:57.833744+03 |        5173 | Kangbe                             | Mamadou                            |        115 | NbS_Guinean_Forests         |              |            | Yao                | Yao Germain
+   15160 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      2 | 2025-05-28 11:50:16.363598+03 |        8382 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15229 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      3 | 2025-05-28 17:01:15.077109+03 |        8397 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15235 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      4 | 2025-05-28 17:10:44.122458+03 |        8403 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15234 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      5 | 2025-05-28 17:10:14.039206+03 |        8402 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15233 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      6 | 2025-05-28 17:10:03.990703+03 |        8401 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15232 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      7 | 2025-05-28 17:03:36.698266+03 |        8400 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15230 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      8 | 2025-05-28 17:01:44.09084+03  |        8398 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15231 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |      9 | 2025-05-28 17:02:31.331528+03 |        8399 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15228 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |     10 | 2025-05-28 17:00:11.070588+03 |        8396 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15163 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |     11 | 2025-05-28 11:51:45.417006+03 |        8385 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15164 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |     12 | 2025-05-28 11:52:08.548753+03 |        8386 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah
+   15161 | 15b1f815-1a80-45c5-8243-c20edc53d130 | Plantain - Cassava                                                    |     13 | 2025-05-28 11:50:59.17388+03  |        8383 | Veronica                           | Amoah                              |        115 | NbS_Guinean_Forests         |              |            | Kwasi Aning        | Dwumah:
 ```
 
 #### Measurement Duplicates
@@ -94,7 +115,8 @@ from (
         trm.rcc_cbh,
         row_number() over (
             partition by trm.latitude, trm.longitude
-            order by trm.latitude desc, trm.longitude desc
+            --order by trm.latitude desc, trm.longitude desc
+            order by ent.id
         ) as row_number,
         trm.cohort_id,
         array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_entry,
@@ -341,7 +363,7 @@ begin
         inner join respi_cohort ch on ch.id = trm.cohort_id
         left join respi_tree_planting_entry ent on ent.id = ch.tp_entry_id
         left join respi_plots plt on plt.id = ent.plot_id
-        --where name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'
+        --where name = '12AS'
         where name = plot_name
     ),
     --returns a single array
@@ -352,48 +374,34 @@ begin
     )
 
     --step1: collect the duplicate plot ids array
-    select grouped_plot_ids.* into plot_ids_array from grouped_plot_ids;
+    select grouped_plot_ids.* 
+    into plot_ids_array 
+    from grouped_plot_ids;
 
     --step2: delete cohort-related data
     for r in
         with msmt_dpls as (
             select
-                trm.id as trm_id,
-                trm.latitude,
-                trm.longitude,
-                trm.accuracy,
-                trm.rcc_cbh,
+                trm.id as trm_id, trm.latitude, trm.longitude, trm.accuracy, trm.rcc_cbh, 
+                ch.local_name, ch.scientific_name,ch.tp_entry_id,
                 row_number() over (
                     partition by trm.latitude, trm.longitude
                     order by ent.id
                 ) as row_number,
                 trm.cohort_id,
                 array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
-                plt.name,
-                ent.plot_id,
-                trm.comment,
-                ch.tp_entry_id
+                ent.plot_id, plt.name, 
+                trm.comment
             from respi_tree_measurement trm
             inner join respi_cohort ch on ch.id = trm.cohort_id
             left join respi_tree_planting_entry ent on ent.id = ch.tp_entry_id
             left join respi_plots plt on plt.id = ent.plot_id
-            --where name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1'
-            where name = plot_name
-        ),
-        --returns a single array
-        grouped_plot_ids as (
-            select array_agg(distinct plot_id) as plot_ids_without_first_tree
-            from msmt_dpls
-            where row_number > 1
         )
 
-        select 
-            msmt_dpls.*,
-            grouped_plot_ids.*
-        from msmt_dpls
-        cross join grouped_plot_ids
-        where row_number > 1
-
+        select * from msmt_dpls
+        --where name = '13ab30c3-e4a7-45c9-a81e-e7c6e5b70986'
+        where name = plot_name
+         and row_number > 1
     loop
         --delete tp_management_practices
         delete from respi_tp_management_practices where cohort_id = any(r.cohort_ids_per_plot);
