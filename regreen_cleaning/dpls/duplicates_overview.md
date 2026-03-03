@@ -45,7 +45,7 @@ from (
     left join respi_projects proj on proj.id=ent.project_id
 )
 where 
-    row_no > 1 and 
+    --row_no > 1 and 
     project_id != 6  
 limit 300;
 
@@ -351,7 +351,7 @@ begin
         where row_number > 1
     )
 
-    --step1: collect the duplicate plot ids
+    --step1: collect the duplicate plot ids array
     select grouped_plot_ids.* into plot_ids_array from grouped_plot_ids;
 
     --step2: delete cohort-related data
@@ -409,6 +409,8 @@ begin
 
         --delete tp_species
         delete from respi_cohort where id = any(r.cohort_ids_per_plot);
+        
+        raise notice 'deleting cohort data for plot: %', r.plot_id;
     end loop;
 
         --delete plot crops
@@ -428,7 +430,7 @@ begin
 
         -- delete tp-entry
         delete from respi_tree_planting_entry where plot_id = any(plot_ids_array);
-
+        
 end $$;
 ```
 
