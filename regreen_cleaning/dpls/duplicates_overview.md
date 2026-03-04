@@ -105,32 +105,44 @@ limit 300;
 - These duplicated plots have repeating tree measurements 
 - only tree msmts with a cohort_id(tp module) survive
 ```sql
-select *
-from (
+with msmt_dpls as (
     select
-        trm.id as trm_id, 
-        trm.latitude,
-        trm.longitude,
-        trm.accuracy,
-        trm.rcc_cbh,
+        trm.id as trm_id, trm.latitude, trm.longitude, trm.accuracy, trm.rcc_cbh, trm.comment,
+        mngt.id as management_id, mngt.management_practies,
+        usg.id as tree_usage_id, usg.tree_usage,
+        ch.id as species_id, ch.local_name, ch.scientific_name, ch.trees_planted, ch.trees_survived, ch.who_manages, ch.tp_entry_id,
+        crps.id as crop_id, crps.crop_name, 
         row_number() over (
             partition by trm.latitude, trm.longitude
-            --order by trm.latitude desc, trm.longitude desc
             order by ent.id
+            --order by trm.latitude, trm.longitude
         ) as row_number,
-        trm.cohort_id,
-        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_entry,
-        array_agg(trm.cohort_id) over (partition by ent.plot_id) as cohort_ids_per_plot,
-        ent.plot_id, plt.name,
-        ch.tp_entry_id,
-        trm.comment
+        ch.id as cohort_id,
+        array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
+        plt.id as plot_id, plt.name, plt.crops, plt.calculated_size,
+        --plpts.id as plot_point_id, plpts.latitude, plpts.longitude, plpts.altitude
+        plp.id as plot_polygon_id, plp.plot_poly,
+        usrs.id as collector_id, usrs.first_name as collector_1st_name, usrs.last_name as collector_2nd_name,
+        fent.id as farming_entity_id, fent.first_name as farming_entity_1st_name, fent.last_name as farming_entity_2nd_name,
+        prj.id as project_id, prj.project_name, prj.country_id, prj.country_name
     from respi_tree_measurement trm
-    inner join respi_cohort ch on ch.id = trm.cohort_id 
-    left join respi_tree_planting_entry ent on ent.id=ch.tp_entry_id 
+    inner join respi_cohort ch on ch.id = trm.cohort_id
+    left join respi_tp_management_practices mngt on mngt.cohort_id = ch.id 
+    left join respi_tp_tree_usage usg on usg.cohort_id = ch.id
+    left join respi_tree_planting_entry ent on ent.id = ch.tp_entry_id
     left join respi_plots plt on plt.id = ent.plot_id
-) 
-where 
-    row_number > 1 and name = '06a139a3-29a9-474a-8b94-479e9c8d6cc1';
+    left join respi_crops crps on crps.plot_id=plt.id
+    --left join respi_plot_points plpts on plpts.plot_id=plt.id
+    left join respi_plot_polygon plp on plp.plot_id=plt.id
+    left join respi_regreeningusers usrs on usrs.id=ent.collector_id
+    left join respi_farming_entity fent on fent.id=plt.farming_entity_id
+    left join respi_projects prj on prj.id=ent.project_id
+)
+
+select * from msmt_dpls
+where name = '13ab30c3-e4a7-45c9-a81e-e7c6e5b70986';
+
+
 
 
  trm_id | latitude  | longitude | accuracy | rcc_cbh | row_number | cohort_id |            cohort_ids_per_plot             | plot_id |                 name                 | tp_entry_id |                  comment
@@ -315,18 +327,17 @@ where row_number > 1
 #### related tables to delete from
 
 delete all rows in tables below based on `cohort_id` & `plot_id`
-- respi_tp_management_practices - `cohort_id`
-- respi_tree_measurement - `cohort_id`
-- respi_tp_tree_usage - `cohort_id`
-- respi_tp_plantingarea_type - `cohort_id`
-- respi_cohort - `cohort_id`
-- respi_tree_planting_entry - `plot_id`
-- respi_crops - `plot_id`
-- respi_land_ownership_type - `plot_id`
-- respi_plot_points  - `plot_id`
-- respi_plot_polygon  - `plot_id`
-- respi_plots - `plot_id`
-
+- respi_tp_management_practices - `cohort_id` ✅
+- respi_tree_measurement - `cohort_id` ✅
+- respi_tp_tree_usage - `cohort_id` ✅
+- respi_tp_plantingarea_type - `cohort_id` ✅
+- respi_cohort - `cohort_id` ✅
+- respi_tree_planting_entry - `plot_id` ✅
+- respi_crops - `plot_id` 
+- respi_land_ownership_type - `plot_id` ✅
+- respi_plot_points  - `plot_id` ✅
+- respi_plot_polygon  - `plot_id`✅
+- respi_plots - `plot_id` ✅
 
 #### tp delete function
 we are deleting by plot id.
@@ -382,26 +393,42 @@ begin
     for r in
         with msmt_dpls as (
             select
-                trm.id as trm_id, trm.latitude, trm.longitude, trm.accuracy, trm.rcc_cbh, 
-                ch.local_name, ch.scientific_name,ch.tp_entry_id,
+                trm.id as trm_id, trm.latitude, trm.longitude, trm.accuracy, trm.rcc_cbh, trm.comment,
+                mngt.id as management_id, mngt.management_practies,
+                usg.id as tree_usage_id, usg.tree_usage,
+                ch.id as species_id, ch.local_name, ch.scientific_name, ch.trees_planted, ch.trees_survived, ch.who_manages, ch.tp_entry_id,
+                crps.id as crop_id, crps.crop_name, 
                 row_number() over (
                     partition by trm.latitude, trm.longitude
                     order by ent.id
+					--order by trm.latitude, trm.longitude
                 ) as row_number,
-                trm.cohort_id,
+                ch.id as cohort_id,
                 array_agg(trm.cohort_id) over (partition by ent.id) as cohort_ids_per_plot,
-                ent.plot_id, plt.name, 
-                trm.comment
+                plt.id as plot_id, plt.name, plt.crops, plt.calculated_size,
+                --plpts.id as plot_point_id, plpts.latitude, plpts.longitude, plpts.altitude
+                plp.id as plot_polygon_id, plp.plot_poly,
+				usrs.id as collector_id, usrs.first_name as collector_1st_name, usrs.last_name as collector_2nd_name,
+				fent.id as farming_entity_id, fent.first_name as farming_entity_1st_name, fent.last_name as farming_entity_2nd_name,
+				prj.id as project_id, prj.project_name, prj.country_id, prj.country_name
             from respi_tree_measurement trm
             inner join respi_cohort ch on ch.id = trm.cohort_id
+            left join respi_tp_management_practices mngt on mngt.cohort_id = ch.id 
+            left join respi_tp_tree_usage usg on usg.cohort_id = ch.id
             left join respi_tree_planting_entry ent on ent.id = ch.tp_entry_id
             left join respi_plots plt on plt.id = ent.plot_id
+            left join respi_crops crps on crps.plot_id=plt.id
+            --left join respi_plot_points plpts on plpts.plot_id=plt.id
+            left join respi_plot_polygon plp on plp.plot_id=plt.id
+			left join respi_regreeningusers usrs on usrs.id=ent.collector_id
+			left join respi_farming_entity fent on fent.id=plt.farming_entity_id
+			left join respi_projects prj on prj.id=ent.project_id
         )
 
         select * from msmt_dpls
-        --where name = '13ab30c3-e4a7-45c9-a81e-e7c6e5b70986'
-        where name = plot_name
-         and row_number > 1
+        where name = '13ab30c3-e4a7-45c9-a81e-e7c6e5b70986'
+        --where name = plot_name
+        and row_number > 1
     loop
         --delete tp_management_practices
         delete from respi_tp_management_practices where cohort_id = any(r.cohort_ids_per_plot);
