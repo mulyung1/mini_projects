@@ -215,7 +215,7 @@ For the rest of the steps, read more [here](https://medium.com/@simaalkan/jmeter
 ![alt text](jmeter_csv_dataset.png)
 
 - in the request, add z, x, y as parameters.
-![alt text](image.png)
+![alt text](jmeter_http_req.png)
 
 **Run a Load test - CLI**
 
