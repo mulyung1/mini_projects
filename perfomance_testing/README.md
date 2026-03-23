@@ -118,8 +118,8 @@ search for:
 2. Postman
 
 |   Features/Criteria                       |                 Apache jmeter                                     |       Postman     
-|:-----------------------------------------:|:-----------------------------------------------------------------:|:--------------------
-|   Primary functionality & purpose         |    load, permance & functional testing                            |     functional & integration testing
+|:-----------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------:
+|   Primary functionality & purpose         |    load, perfomance & functional testing                            |     functional & integration testing
 |   Primary user base                       |    perfomance engineers evaluating system behavior under load     |     developers, manual & automation QAs for api development, debugging & functional testing
 |   supported protocols                     |   Broad: HTTP, HTTPS, Websocket, JMS, FTP, SOAP etc.              |     Limited to: HTTP, HTTPS & Websocket protocols
 |   primary use case metrics                |   perfomance metrics: latency, response time, throughput & error rates under load    |     validating functional aspects: API contracts, schemas, JSON structure, status codes & headers
@@ -193,19 +193,38 @@ Total requests = Num of Threads(users) x Loop Count
 ```
 **Setting the test up**
 
-Add a `Thread group` (Virtual users with ceryain behaviour)
+1. **Add virtual users**
+
+Add a `Thread group` (Virtual users with certain behaviour)
+
 - User/Thread count: `25`
 - Ramp-up period : `100 secs` - Total time(in seconds) it takes to add all test users
     - each user will start 4 seconds after the previous user begins
-- Loop Count - the number of times each user will make a request(Repeat)
+- Loop Count:  `4` - the number of times each user will make a request(Repeat)
 
-For detailed setup steps, read more [here](https://medium.com/@simaalkan/jmeter-performance-testing-with-harry-potter-api-504365c5e60a)
+For the rest of the steps, read more [here](https://medium.com/@simaalkan/jmeter-performance-testing-with-harry-potter-api-504365c5e60a)
+
+**Adding dynamic url data**
+- this data will be used to pass XYZ values for the tiles endpoint
+- use [this file](https://github.com/mulyung1/gis_spacial/blob/main/find_zxy.py) (may require access) to generate the csv.
+
+- add a csv dataset configuration
+![alt text](jmeter_csv_data.png)
+
+- set up variables
+![alt text](jmeter_csv_dataset.png)
+
+- in the request, add z, x, y as parameters.
+![alt text](image.png)
 
 **Run a Load test - CLI**
 
 For heavy tests, it is recomended to use the non-GUI mode.
 ```zsh
 jmeter -n -t test_plan.jmx -l results/results_$(date +%Y%m%d_%H%M%S).jtl -e -o results/dashboard_$(date +%Y%m%d_%H%M%S)
+
+jmeter -n -t test_plan.jmx -l results/results_$(date +%Y%m%d_%H%M%S).jtl -e -o results/dashboard_$(date +%Y%m%d_%H%M%S)
+
 ```
 - `n` : non‑GUI mode
 - `t` : path to your test plan
@@ -213,7 +232,7 @@ jmeter -n -t test_plan.jmx -l results/results_$(date +%Y%m%d_%H%M%S).jtl -e -o r
 - `e` : generate HTML dashboard after test
 - `o` : output directory for dashboard (must be empty or non‑existent)
 
-### 
+
 
 
 
